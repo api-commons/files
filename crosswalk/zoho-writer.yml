@@ -7,8 +7,8 @@ concepts:
     path_segment:
     - documents
     properties:
-      created_at: created_time
       mime_type: type
+      created_at: created_time
       updated_at: modified_time
       status: status
       owner_id:

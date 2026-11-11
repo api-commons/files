@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       name: name
-      created_at: createdTime
       mime_type: mimeType
+      created_at: createdTime
       size: size
       updated_at: modifiedTime
       parent_id: parents

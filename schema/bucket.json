@@ -12,6 +12,7 @@
       "x-commons-providers": 4,
       "x-commons-spellings": [
         "name",
+        "title",
         "displayName"
       ]
     }

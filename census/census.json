@@ -28,8 +28,21 @@
      "uploadUri": "string",
      "mediaType": "string",
      "downloadUri": "string",
-     "nb_results": "integer",
-     "files": "array"
+     "id": "integer",
+     "title": "string",
+     "creator_name": "string",
+     "creator_id": "integer",
+     "content_type": "string",
+     "width": "integer",
+     "height": "integer",
+     "thumbnail_url": "string",
+     "thumbnail_width": "integer",
+     "thumbnail_height": "integer",
+     "comp_url": "string",
+     "category": "object",
+     "keywords": "array",
+     "is_licensed": "string",
+     "premium_level_id": "integer"
     },
     "evidence": [
      "openapi/_original/adobe-pdf-services-api-openapi-original.yml#DELETE /assets/{assetID}",
@@ -82,17 +95,17 @@
      "handledCount": "number",
      "failedCount": "number",
      "success": "object",
-     "imsOrgId": "string",
-     "sandboxId": "string",
-     "failedRecords": "array",
+     "type": "string",
+     "value": "string",
+     "comments": "string",
+     "failureReason": "string",
      "base": "string",
      "id": "string",
-     "type": "string",
      "subtype": "string",
      "links": "object",
      "payload": "object",
+     "asset": "object",
      "resources": "array",
-     "album": "object",
      "errors": "array",
      "assetID": "string",
      "uploadUri": "string",
@@ -124,8 +137,6 @@
      "POST collection"
     ],
     "properties": {
-     "kind": "string",
-     "contents": "array",
      "id": "number",
      "name": "string",
      "sizeBytes": "number",
@@ -134,7 +145,10 @@
      "downloadUrl": "string",
      "originalName": "string",
      "activityUrl": "string",
-     "activityIds": "array"
+     "activityIds": "array",
+     "version": "string",
+     "type": "string",
+     "activityRef": "object"
     },
     "evidence": [
      "openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/activities/{id}/files",
@@ -464,24 +478,27 @@
      "POST collection"
     ],
     "properties": {
-     "documents": "array",
-     "totalPages": "integer",
-     "documentId": "integer",
-     "recipients": "array",
-     "uploadUrl": "string",
-     "title": "string",
-     "externalId": "string",
-     "folderId": "string",
-     "meta": "object",
-     "formValues": "object",
      "id": "integer",
      "userId": "integer",
      "teamId": "integer",
+     "externalId": "string",
+     "folderId": "string",
+     "title": "string",
      "status": "string",
      "createdAt": "string",
      "updatedAt": "string",
      "completedAt": "string",
-     "fields": "array"
+     "recipients": "array",
+     "fields": "array",
+     "documentId": "integer",
+     "email": "string",
+     "name": "string",
+     "role": "string",
+     "signingOrder": "integer",
+     "token": "string",
+     "signingStatus": "string",
+     "readStatus": "string",
+     "sendStatus": "string"
     },
     "evidence": [
      "openapi/_original/documenso-openapi.yml#DELETE /documents/{id}",
@@ -517,7 +534,11 @@
      "folder_name": "string",
      "shared_link": "boolean",
      "author": "object",
-     "merge": "boolean"
+     "file": "string",
+     "html": "string",
+     "position": "integer",
+     "replace": "boolean",
+     "remove": "boolean"
     },
     "evidence": [
      "openapi/_original/docuseal-docuseal-api-openapi.yml#GET /submissions/{id}/documents",
@@ -540,8 +561,15 @@
      "PUT item"
     ],
     "properties": {
-     "envelopeId": "string",
-     "envelopeDocuments": "array",
+     "documentId": "string",
+     "name": "string",
+     "type": "string",
+     "uri": "string",
+     "order": "string",
+     "pages": "array",
+     "containsPdfFormFields": "string",
+     "display": "string",
+     "includeInDownload": "string",
      "accessibility": "string",
      "allowMarkup": "string",
      "allowReassign": "string",
@@ -574,6 +602,7 @@
      "emailSubject": "string",
      "enableWetSign": "string",
      "enforceSignerVisibility": "string",
+     "envelopeId": "string",
      "envelopeIdStamping": "string",
      "envelopeUri": "string",
      "eventNotification": "object",
@@ -602,8 +631,6 @@
      "useDisclosure": "string",
      "voidedDateTime": "string",
      "voidedReason": "string",
-     "documentId": "integer",
-     "name": "string",
      "roomId": "integer",
      "ownerId": "integer",
      "size": "integer",
@@ -677,10 +704,19 @@
      "GET collection"
     ],
     "properties": {
-     "files": "array",
-     "subdirectories": "array",
-     "nextPageToken": "string",
-     "isTruncated": "boolean"
+     "path": "string",
+     "name": "string",
+     "size": [
+      "integer",
+      "string"
+     ],
+     "lastModified": "string",
+     "uri": "string",
+     "downloadUrl": "string",
+     "storageClass": [
+      "string",
+      "null"
+     ]
     },
     "evidence": [
      "openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/executions/{execution_id}/files",
@@ -877,8 +913,6 @@
      "POST item"
     ],
     "properties": {
-     "documents": "array",
-     "nextPageToken": "string",
      "name": "string",
      "fields": "object",
      "createTime": "string",
@@ -933,8 +967,6 @@
      "POST collection"
     ],
     "properties": {
-     "nextPageToken": "string",
-     "files": "array",
      "id": "string",
      "name": "string",
      "mimeType": "string",
@@ -1050,10 +1082,6 @@
      "PUT item"
     ],
     "properties": {
-     "objects": "array",
-     "page": "integer",
-     "pages": "integer",
-     "total": "integer",
      "id": "string",
      "title": "string",
      "type": "string",
@@ -1212,15 +1240,16 @@
      "PUT item"
     ],
     "properties": {
-     "base": "string",
-     "resources": "array",
-     "links": "object",
      "id": "string",
      "type": "string",
      "subtype": "string",
      "created": "string",
      "updated": "string",
-     "payload": "object"
+     "payload": "object",
+     "links": "object",
+     "resources": "array",
+     "revision_ids": "array",
+     "base": "string"
     },
     "evidence": [
      "openapi/_original/lightroom-albums-openapi.yml#DELETE /catalogs/{catalog_id}/albums/{album_id}/assets/{asset_id}",
@@ -1294,8 +1323,13 @@
      "PUT item"
     ],
     "properties": {
-     "assetCount": "integer",
-     "assets": "array",
+     "id": "string",
+     "title": "string",
+     "media": "object",
+     "file": "object",
+     "visible": "boolean",
+     "brandedPortalVersionSections": "object",
+     "permissions": "object",
      "brandedPortalId": "string",
      "versionId": "string",
      "sectionId": "string",
@@ -1309,14 +1343,9 @@
      "_links": "object",
      "translationKeys": "object",
      "interpolations": "object",
-     "permissions": "array",
-     "id": "string",
      "fileSizeInBytes": "integer",
      "filename": "string",
      "fileNameVersioning": "boolean",
-     "title": "string",
-     "media": "object",
-     "file": "object",
      "description": "string",
      "altText": "string",
      "containerName": "string",
@@ -1390,7 +1419,6 @@
      "isDefault": "boolean",
      "isMajorVersion": "boolean",
      "language": "string",
-     "localizations": "array",
      "versions": "array",
      "azureStorageUri": "string",
      "azureStorageUriExpirationDateTime": "string",
@@ -1436,6 +1464,7 @@
      "documentSetVersions": "array",
      "driveItem": null,
      "fields": null,
+     "localizations": "array",
      "createdBy": null,
      "description": "string",
      "eTag": "string",
@@ -1760,12 +1789,13 @@
      "more_items_remaining": "boolean",
      "total_item_count": "integer",
      "name": "string",
-     "context": null,
+     "context": "string",
      "target_type": "string",
      "directory": null,
      "keep_for": "integer",
      "keep_size": "integer",
-     "errors": "array",
+     "location_context": null,
+     "message": "string",
      "id": "string",
      "resource_type": "string"
     },
@@ -1797,7 +1827,14 @@
      "originalContentChecksum": "string",
      "inputs": "array",
      "pages": "array",
-     "metaData": "string"
+     "metaData": "string",
+     "type": "string",
+     "partyReference": "string",
+     "optional": "boolean",
+     "prompt": "string",
+     "position": "object",
+     "font": "object",
+     "configuration": "object"
     },
     "evidence": [
      "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /documents/{documentId}",
@@ -1844,11 +1881,10 @@
      "tags": "array",
      "error_message": "string",
      "content": "string",
-     "Count": "integer",
-     "From": "integer",
-     "Total": "integer",
-     "CloudHSMDocuments": "array",
-     "is_ok": "boolean"
+     "ID": "string",
+     "CreatedAt": "string",
+     "ModifiedAt": "string",
+     "Name": "string"
     },
     "evidence": [
      "openapi/_original/ai-engine-rag-api.yaml#DELETE /v1/documents/{id}/",
@@ -1962,12 +1998,6 @@
      "POST collection"
     ],
     "properties": {
-     "documents": "array",
-     "current_page": "integer",
-     "next_page": "integer",
-     "previous_page": "integer",
-     "total_count": "integer",
-     "total_pages": "integer",
      "test_mode": "boolean",
      "id": "string",
      "api_application_id": "string",
@@ -2011,7 +2041,13 @@
      "text_tags": "boolean",
      "exclude_placeholders": "array",
      "template_fields": "array",
-     "user_id": "string"
+     "user_id": "string",
+     "documents": "array",
+     "current_page": "integer",
+     "next_page": "integer",
+     "previous_page": "integer",
+     "total_count": "integer",
+     "total_pages": "integer"
     },
     "evidence": [
      "openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}",
@@ -2036,40 +2072,43 @@
      "PUT item"
     ],
     "properties": {
-     "totalRecords": "number",
-     "files": "array",
-     "fileId": "number",
-     "name": "string",
-     "representationType": "string",
-     "property": "object",
      "id": "number",
      "ownedBy": "string",
      "createdDate": "string",
      "createdBy": "string",
      "lastUpdated": "string",
      "updatedBy": "string",
+     "name": "string",
      "address": "string",
      "contactInfo": "string",
-     "fileType": "string",
+     "type": "string",
+     "representationType": "string",
      "templateCategory": "string",
-     "closingDateTime": "string",
-     "acceptanceDateTime": "string",
-     "mlsNumber": "string",
-     "purchasePrice": "number",
-     "documentData": "object",
-     "fileData": "object",
-     "transactionMeta": [
-      "null",
-      "object"
-     ],
-     "contacts": "array",
-     "commissions": "array",
-     "isDeleted": "boolean",
+     "documentCount": "number",
+     "envelopeCount": "number",
      "isArchived": "boolean",
      "meta": [
       "null",
       "object"
      ],
+     "mlsNumber": "string",
+     "mlsMarketName": "string",
+     "photoUrl": "string",
+     "transactionMeta": [
+      "null",
+      "object"
+     ],
+     "fileId": "number",
+     "property": "object",
+     "fileType": "string",
+     "closingDateTime": "string",
+     "acceptanceDateTime": "string",
+     "purchasePrice": "number",
+     "documentData": "object",
+     "fileData": "object",
+     "contacts": "array",
+     "commissions": "array",
+     "isDeleted": "boolean",
      "didAddendumsChange": "boolean",
      "formName": "string",
      "formId": [
@@ -2307,16 +2346,28 @@
      "PUT item"
     ],
     "properties": {
-     "responseStatus": "string",
-     "documents": "array",
-     "size": "integer",
-     "start": "integer",
      "id": "integer",
-     "external_id__v": "string",
+     "name__v": "string",
+     "type__v": "string",
+     "subtype__v": "string",
+     "classification__v": "string",
+     "lifecycle__v": "string",
+     "status__v": "string",
+     "created_by__v": "integer",
+     "last_modified_by__v": "integer",
+     "created_date__v": "string",
+     "last_modified_date__v": "string",
      "major_version_number__v": "integer",
      "minor_version_number__v": "integer",
-     "document": "object",
-     "versions": "array",
+     "document_number__v": "string",
+     "description__v": "string",
+     "size__v": "integer",
+     "format__v": "string",
+     "responseStatus": "string",
+     "external_id__v": "string",
+     "number": "string",
+     "value": "string",
+     "format": null,
      "errors": "array"
     },
     "evidence": [
@@ -2422,14 +2473,13 @@
      "success": "boolean",
      "metadata": "object",
      "timestamp": "string",
-     "appId": "string",
-     "version": "string",
-     "effectiveDate": "string",
-     "totalDocumentCount": "number",
-     "documentDetails": "array",
+     "binaryData": "string",
+     "formId": "string",
+     "formName": "string",
+     "documentCategory": "string",
+     "documentFileType": "string",
      "eappId": "string",
      "externalDocumentId": "string",
-     "binaryData": "string",
      "formNumber": "string",
      "category": "string"
     },
@@ -2458,10 +2508,6 @@
      "POST collection"
     ],
     "properties": {
-     "offset": "integer",
-     "total_count": "integer",
-     "limit": "integer",
-     "documents": "array",
      "document_id": "string",
      "document_name": "string",
      "document_type": "string",
@@ -2677,7 +2723,9 @@
      "latest_document_version": "object",
      "group": "object",
      "external_properties": "array",
-     "restore": "boolean"
+     "restore": "boolean",
+     "value": "string",
+     "_destroy": "boolean"
     },
     "evidence": [
      "openapi/_original/clio-openapi.json#DELETE /folders/{id}.json",
@@ -3225,7 +3273,8 @@
      "space": null,
      "time_remaining": "integer",
      "workload": "object",
-     "errors": "array",
+     "location_context": null,
+     "message": "string",
      "resource_type": "string",
      "source": null,
      "_as_of": "integer",
@@ -3492,14 +3541,34 @@
      "POST collection"
     ],
     "properties": {
-     "name": "string",
+     "activeChecklistItemCount": "number",
+     "appliedCategories": null,
+     "assigneePriority": "string",
+     "assignments": null,
+     "bucketId": "string",
+     "checklistItemCount": "number",
+     "completedBy": null,
+     "completedDateTime": "string",
+     "conversationThreadId": "string",
+     "createdBy": null,
+     "createdDateTime": "string",
+     "dueDateTime": "string",
+     "hasDescription": "boolean",
      "orderHint": "string",
+     "percentComplete": "number",
      "planId": "string",
-     "tasks": "array",
+     "previewType": null,
+     "priority": "number",
+     "referenceCount": "number",
+     "startDateTime": "string",
+     "title": "string",
+     "assignedToTaskBoardFormat": null,
+     "bucketTaskBoardFormat": null,
+     "details": null,
+     "progressTaskBoardFormat": null,
      "@odata.type": "string",
      "id": "string",
      "containerTypeId": "string",
-     "createdDateTime": "string",
      "customProperties": null,
      "description": "string",
      "displayName": "string",
@@ -3575,10 +3644,11 @@
      "continuation_token": "string",
      "more_items_remaining": "boolean",
      "total_item_count": "integer",
-     "errors": "array",
+     "context": null,
+     "location_context": null,
+     "message": "string",
      "id": "string",
      "name": "string",
-     "context": null,
      "account": null,
      "created": "integer",
      "destroyed": "boolean",
@@ -3732,8 +3802,11 @@
      "POST collection"
     ],
     "properties": {
-     "session_id": "string",
-     "buckets": "array",
+     "name": "string",
+     "hard_limit_bytes": "number",
+     "path": "string",
+     "used_bytes": "number",
+     "fs": "string",
      "data": null,
      "bucket_name": "string",
      "policy": "string",
@@ -3927,7 +4000,6 @@
      "shareToDisplayName": "string",
      "shareToLogin": "string",
      "accessLevel": "string",
-     "shares": "array",
      "success": "boolean"
     },
     "evidence": [
@@ -4188,8 +4260,6 @@
      "POST collection"
     ],
     "properties": {
-     "nextPageToken": "string",
-     "permissions": "array",
      "id": "string",
      "type": "string",
      "role": "string",
@@ -4532,13 +4602,14 @@
     "properties": {
      "continuation_token": "string",
      "total_item_count": "integer",
-     "context": null,
+     "context": "string",
      "actions": "array",
      "resource": "string",
      "role": null,
      "id": "string",
      "name": "string",
-     "errors": "array"
+     "location_context": null,
+     "message": "string"
     },
     "evidence": [
      "openapi/_original/flashblade-rest-api-openapi.yml#DELETE /api/2.26/management-access-policies/roles/permissions",
@@ -4615,8 +4686,8 @@
      "jwt": "string",
      "jwt_claims": "object",
      "subject_export_id": "string",
-     "target_accounts": "array",
-     "type": "string"
+     "auto_accept": "boolean",
+     "local_subject": "string"
     },
     "evidence": [
      "openapi/_original/synadia-communications-control-plane-openapi.yaml#DELETE /core/beta/stream-exports/{streamExportId}/shares/{targetAccountNKeyPublic}",
@@ -4681,8 +4752,8 @@
      "target_type": null,
      "user": "string",
      "name": "string",
-     "path": "string",
-     "acl": "array"
+     "target": "string",
+     "permission": "string"
     },
     "evidence": [
      "openapi/_original/upcloud-openapi.json#DELETE /1.3/file-storage/{service-uuid}/shares/{share-name}",
@@ -6082,6 +6153,7 @@
     "iconik",
     "inkit",
     "lev",
+    "lightroom",
     "linode",
     "mycase",
     "nasuni",
@@ -6103,6 +6175,14 @@
     "zamzar",
     "zoho-writer"
    ],
+   "other": [
+    "adobe-suite",
+    "clio",
+    "mediavalet",
+    "microsoft-graph",
+    "pure-storage",
+    "veeva"
+   ],
    "PascalCase": [
     "boldsign",
     "citrix-sharefile",
@@ -6110,13 +6190,6 @@
     "nitro-software",
     "propertyme",
     "sakura-internet"
-   ],
-   "other": [
-    "adobe-suite",
-    "mediavalet",
-    "microsoft-graph",
-    "pure-storage",
-    "veeva"
    ],
    "kebab-case": [
     "lakekeeper",

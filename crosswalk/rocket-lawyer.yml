@@ -9,7 +9,9 @@ concepts:
     properties:
       id: id
       name: name
-      mime_type: contentType
+      mime_type:
+      - contentType
+      - type
       metadata: metaData
     core_coverage: 0.6
     evidence:

@@ -12,8 +12,8 @@ concepts:
       name:
       - fileName
       - name
-      created_at: dateCreated
       mime_type: type
+      created_at: dateCreated
       size:
       - size
       - sizeBytes

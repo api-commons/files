@@ -11,9 +11,10 @@ concepts:
       name:
       - name
       - originalName
+      mime_type: type
       size: sizeBytes
       url: downloadUrl
-    core_coverage: 0.6
+    core_coverage: 0.8
     evidence:
     - openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/activities/{id}/files
     - openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/holdings/{id}/files

@@ -6,8 +6,14 @@ concepts:
   file:
     path_segment:
     - files
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      name: name
+      size: size
+      updated_at: lastModified
+      url:
+      - uri
+      - downloadUrl
+    core_coverage: 0.4
     evidence:
     - openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/executions/{execution_id}/files
     - openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/runs/{run_id}/files

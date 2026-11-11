@@ -10,10 +10,10 @@ concepts:
     properties:
       id: id
       name: name
-      created_at: created_at
       mime_type:
       - type
       - extension
+      created_at: created_at
       size: size
       updated_at: modified_at
       parent_id: parent

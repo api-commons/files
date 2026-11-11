@@ -95,8 +95,8 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 36
-      share: 0.818
+      providers: 37
+      share: 0.841
       type: string
       spellings:
       - id
@@ -105,10 +105,11 @@ concepts:
       - fileId
       - guid
       - Id
+      - ID
     - name: name
       tier: core
-      providers: 34
-      share: 0.773
+      providers: 36
+      share: 0.818
       type: string
       spellings:
       - name
@@ -119,6 +120,20 @@ concepts:
       - displayName
       - originalName
       - originalFilename
+    - name: mime_type
+      tier: core
+      providers: 29
+      share: 0.659
+      type: string
+      spellings:
+      - type
+      - contentType
+      - content_type
+      - extension
+      - mimeType
+      - format
+      - mediaType
+      - fileType
     - name: created_at
       tier: core
       providers: 27
@@ -133,20 +148,6 @@ concepts:
       - createTime
       - uploadedAt
       - createdTime
-    - name: mime_type
-      tier: core
-      providers: 27
-      share: 0.614
-      type: string
-      spellings:
-      - type
-      - contentType
-      - extension
-      - mimeType
-      - mediaType
-      - content_type
-      - fileType
-      - mime_type
     - name: size
       tier: core
       providers: 27
@@ -161,8 +162,8 @@ concepts:
       - Size
     - name: updated_at
       tier: extended
-      providers: 17
-      share: 0.386
+      providers: 19
+      share: 0.432
       type: string
       spellings:
       - updated
@@ -170,9 +171,9 @@ concepts:
       - lastModifiedDateTime
       - last_modified
       - modified_at
+      - lastModified
       - modifiedTime
       - date_modified
-      - modified
     - name: parent_id
       tier: extended
       providers: 14
@@ -223,39 +224,42 @@ concepts:
       - owner
     - name: url
       tier: extended
-      providers: 10
-      share: 0.227
+      providers: 12
+      share: 0.273
       type: string
       spellings:
       - download_url
+      - downloadUrl
+      - uri
       - location
       - webViewLink
       - webUrl
       - href
-      - downloadUrl
       - link
-    long_tail_count: 530
+    long_tail_count: 553
     long_tail_sample:
     - checksum
     - version
     - description
     - document_id
+    - path
     - document_type
     - fields
     - page_count
-    - path
     - permissions
     - asset_id
     - created_date_time
     - folder_path
-    - from
     - last_updated
-    - limit
-    - offset
+    - order
+    - thumbnail_url
     - allow_reassign
     - base
     - case_id
+    - category
     - content
+    - creator_id
+    - document_category
     - document_name
     - download_uri
     - error
@@ -263,19 +267,17 @@ concepts:
     - expires_at
     - file_data
     - file_extension
+    - form_id
+    - form_name
+    - from
     - is_archived
     - is_deleted
     - is_uploaded
+    - keywords
     - language
+    - limit
     - matter
-    - next_page_token
-    - order
-    - pages
-    - payload
-    - recipients
-    - resources
-    - response_status
-    - session_id
+    - number
   folder:
     segments_seen:
       folders: 11
@@ -395,7 +397,7 @@ concepts:
       type: string
       spellings:
       - type
-    long_tail_count: 133
+    long_tail_count: 135
     long_tail_sample:
     - etag
     - locked
@@ -430,13 +432,13 @@ concepts:
     - created_by_information
     - deleted_at
     - delivery_recepient_notification_type
+    - destroy
     - destroyed
     - directory_name
     - document_category
     - enforce_unique_filenames
     - envelope_ids
     - extension
-    - external_properties
   bucket:
     segments_seen:
       buckets: 4
@@ -480,49 +482,50 @@ concepts:
       type: string
       spellings:
       - name
+      - title
       - displayName
-    long_tail_count: 73
+    long_tail_count: 92
     long_tail_sample:
     - created_at
     - id
     - storage_class
     - account
+    - active_checklist_item_count
+    - applied_categories
     - arrays
     - as_of
+    - assigned_to_task_board_format
+    - assignee_priority
+    - assignments
     - basic
+    - bucket_task_board_format
     - bucket_type
+    - checklist_item_count
     - cluster_id
     - columns
+    - completed_by
+    - completed_date_time
     - container_type_id
     - context
     - continuation_token
+    - conversation_thread_id
     - created_date_time
     - custom_properties
     - data_reduction
     - description
     - destroyed
     - drive
+    - due_date_time
     - eradication_config
     - footprint
     - hard_limit_enabled
+    - has_description
     - jurisdiction
+    - location_context
     - location_hint
     - lock_state
     - member
     - messages
-    - migration_jobs
-    - more_items_remaining
-    - num_objects
-    - num_transactions
-    - object_count
-    - object_lock_config
-    - odata_type
-    - order_hint
-    - permissions
-    - plan
-    - plan_id
-    - policy
-    - public_access_config
   file_version:
     segments_seen:
       versions: 3

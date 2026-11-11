@@ -9,13 +9,15 @@ concepts:
     - documents
     properties:
       id:
-      - fileId
       - id
+      - fileId
       name: name
+      mime_type:
+      - type
+      - fileType
       created_at:
       - createdDate
       - createdOn
-      mime_type: fileType
       owner_id:
       - ownedBy
       - createdBy

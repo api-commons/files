@@ -8,8 +8,12 @@ concepts:
     - assets
     - files
     properties:
-      mime_type: mediaType
-    core_coverage: 0.2
+      id: id
+      name: title
+      mime_type:
+      - mediaType
+      - content_type
+    core_coverage: 0.6
     evidence:
     - openapi/_original/adobe-pdf-services-api-openapi-original.yml#DELETE /assets/{assetID}
     - openapi/_original/adobe-pdf-services-api-openapi-original.yml#GET /assets/{assetID}

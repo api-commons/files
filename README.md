@@ -12,7 +12,7 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| file | 51 | 44 | id 82%, name 77%, created_at 61%, mime_type 61%, size 61% | files 28, documents 19, assets 7, file 7 |
+| file | 51 | 44 | id 84%, name 82%, mime_type 66%, created_at 61%, size 61% | files 28, documents 19, assets 7, file 7 |
 | folder | 13 | 11 | name 100%, id 91%, parent_id 82%, created_at 64% | folders 11, folder 1, directories 1 |
 | bucket | 4 | 4 | name 100% | buckets 4, containers 1 |
 | file_version | 3 | 3 | id 100%, name 100% | versions 3 |

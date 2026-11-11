@@ -8,22 +8,23 @@
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.818,
-      "x-commons-providers": 36,
+      "x-commons-share": 0.841,
+      "x-commons-providers": 37,
       "x-commons-spellings": [
         "id",
         "uuid",
         "key",
         "fileId",
         "guid",
-        "Id"
+        "Id",
+        "ID"
       ]
     },
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.773,
-      "x-commons-providers": 34,
+      "x-commons-share": 0.818,
+      "x-commons-providers": 36,
       "x-commons-spellings": [
         "name",
         "filename",
@@ -33,6 +34,22 @@
         "displayName",
         "originalName",
         "originalFilename"
+      ]
+    },
+    "mime_type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.659,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "type",
+        "contentType",
+        "content_type",
+        "extension",
+        "mimeType",
+        "format",
+        "mediaType",
+        "fileType"
       ]
     },
     "created_at": {
@@ -52,22 +69,6 @@
       ],
       "format": "date-time"
     },
-    "mime_type": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.614,
-      "x-commons-providers": 27,
-      "x-commons-spellings": [
-        "type",
-        "contentType",
-        "extension",
-        "mimeType",
-        "mediaType",
-        "content_type",
-        "fileType",
-        "mime_type"
-      ]
-    },
     "size": {
       "type": "integer",
       "x-commons-tier": "core",
@@ -85,17 +86,17 @@
     "updated_at": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.386,
-      "x-commons-providers": 17,
+      "x-commons-share": 0.432,
+      "x-commons-providers": 19,
       "x-commons-spellings": [
         "updated",
         "updated_at",
         "lastModifiedDateTime",
         "last_modified",
         "modified_at",
+        "lastModified",
         "modifiedTime",
-        "date_modified",
-        "modified"
+        "date_modified"
       ],
       "format": "date-time"
     },
@@ -158,15 +159,16 @@
     "url": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.227,
-      "x-commons-providers": 10,
+      "x-commons-share": 0.273,
+      "x-commons-providers": 12,
       "x-commons-spellings": [
         "download_url",
+        "downloadUrl",
+        "uri",
         "location",
         "webViewLink",
         "webUrl",
         "href",
-        "downloadUrl",
         "link"
       ]
     }

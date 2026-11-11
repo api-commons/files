@@ -9,10 +9,10 @@ concepts:
     properties:
       id: id
       name: name
-      created_at: created
       mime_type:
       - type
       - contentType
+      created_at: created
       size: size
       updated_at: modified
       parent_id: folder

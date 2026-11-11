@@ -7,9 +7,16 @@ concepts:
     path_segment:
     - documents
     properties:
-      id: id
-      name: name
-      created_at: created_at
+      id:
+      - id
+      - ID
+      name:
+      - name
+      - Name
+      created_at:
+      - created_at
+      - CreatedAt
+      updated_at: ModifiedAt
       status: status
       metadata: tags
     core_coverage: 0.6

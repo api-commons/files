@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       name: title
-      created_at: date_created
       mime_type: type
+      created_at: date_created
       updated_at: date_modified
       status: status
     core_coverage: 0.8
