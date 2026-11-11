@@ -1,7 +1,7 @@
 provider: adobe-creative-cloud
 apis_io: https://apis.io/providers/adobe-creative-cloud/
 context: files
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   file:
     path_segment:

@@ -1,7 +1,7 @@
 openapi: 3.1.0
 info:
   title: Files and Documents (API Commons)
-  version: 0.1.0-draft.20261110
+  version: 0.1.0-draft.20261111
   description: 'The common Files and Documents interface, distilled from the harvested OpenAPI of 133 providers
     in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
     so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
@@ -286,7 +286,7 @@ paths:
     parameters:
     - $ref: '#/components/parameters/file_id'
     get:
-      operationId: listFileVersions
+      operationId: listVersions
       summary: List versions
       tags:
       - File Versions

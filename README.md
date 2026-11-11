@@ -18,7 +18,7 @@ generated. Every number below is a count of providers.
 | file_version | 3 | 3 | id 100%, name 100% | versions 3 |
 | permission | 13 | 13 | id 77%, name 54% | permissions 12, shares 3, share 2, collaborations 1 |
 
-Cohort: 133 providers with harvested OpenAPI, 51 crosswalks. Of the providers exposing a file: 71% create, 78% list, 82% fetch, 49% update, 59% delete. Generated 2026-11-10 by build.py.
+Cohort: 133 providers with harvested OpenAPI, 51 crosswalks. Of the providers exposing a file: 71% create, 78% list, 82% fetch, 49% update, 59% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
