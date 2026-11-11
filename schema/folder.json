@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/files/main/schema/folder.json",
+  "title": "Folder",
+  "description": "The common folder in Files and Documents, distilled from 11 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.909,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "id"
+      ]
+    },
+    "parent_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.818,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "parentId",
+        "parent",
+        "parentFolderId",
+        "parent_id"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.636,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "created_at",
+        "created",
+        "createdAt",
+        "createdOn"
+      ],
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "description"
+      ]
+    },
+    "owner_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "createdBy",
+        "created_by",
+        "owned_by",
+        "creator",
+        "owner",
+        "userId"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.455,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "modifiedAt",
+        "modified_at",
+        "lastModified"
+      ],
+      "format": "date-time"
+    },
+    "path": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "path"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.273,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "files",
+    "concept": "folder",
+    "providers": 11,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

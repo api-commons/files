@@ -1,0 +1,21 @@
+provider: google-suites
+apis_io: https://apis.io/providers/google-suites/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id: id
+      name: name
+      mime_type: mimeType
+      size: size
+      parent_id: parents
+      url: webViewLink
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/google-suites-openapi.yml#DELETE /drive/v3/files/{fileId}
+    - openapi/_original/google-suites-openapi.yml#GET /drive/v3/files
+    - openapi/_original/google-suites-openapi.yml#GET /drive/v3/files/{fileId}
+    - openapi/_original/google-suites-openapi.yml#POST /drive/v3/files

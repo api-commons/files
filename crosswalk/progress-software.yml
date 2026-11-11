@@ -1,0 +1,49 @@
+provider: progress-software
+apis_io: https://apis.io/providers/progress-software/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id:
+      - id
+      - fileId
+      name:
+      - originalFilename
+      - name
+      size:
+      - size
+      - bytes
+      parent_id: folderID
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#DELETE /api/v1/files/{Id}
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/files
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/files/{Id}
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{Id}/files
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{folderId}/files/{fileId}
+  folder:
+    path_segment:
+    - folders
+    properties:
+      name: name
+      id: id
+      parent_id: parentId
+      description: description
+      owner_id: owner
+      path: path
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#DELETE /api/v1/folders/{Id}
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{Id}
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#PATCH /api/v1/folders/{Id}
+  permission:
+    path_segment:
+    - permissions
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/progress-software-moveit-transfer-openapi-original.json#POST /api/v1/settings/security/password/permissions

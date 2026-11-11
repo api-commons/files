@@ -1,0 +1,15 @@
+provider: temp-md
+apis_io: https://apis.io/providers/temp-md/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id: fileId
+      size: size
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/temp-md-openapi.json#PUT /publish-sessions/{sessionId}/files/{fileId}
+    - openapi/_original/temp-md-openapi.yml#PUT /publish-sessions/{sessionId}/files/{fileId}

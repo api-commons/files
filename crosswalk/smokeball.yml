@@ -1,0 +1,37 @@
+provider: smokeball
+apis_io: https://apis.io/providers/smokeball/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    - files
+    properties:
+      id: id
+      mime_type: type
+      url: href
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /tasks/{taskId}/documents/{id}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents/{id}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#POST /search/files
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#POST /tasks/{taskId}/documents
+  folder:
+    path_segment:
+    - folders
+    properties:
+      name: name
+      id: id
+      parent_id:
+      - parentId
+      - parentFolderId
+      owner_id: userId
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /matters/{matterId}/documents/folders/{folderId}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/folders
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/folders/{folderId}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#PATCH /matters/{matterId}/documents/folders/{folderId}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#POST /matters/{matterId}/documents/folders

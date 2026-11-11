@@ -1,0 +1,18 @@
+provider: mycase
+apis_io: https://apis.io/providers/mycase/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      mime_type: content_type
+      created_at: created_at
+      size: size
+      parent_id: folder_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mycase-open-api-openapi.yml#POST /cases/{caseId}/documents

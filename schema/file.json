@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/files/main/schema/file.json",
+  "title": "File",
+  "description": "The common file in Files and Documents, distilled from 42 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.81,
+      "x-commons-providers": 34,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "key",
+        "fileId",
+        "guid",
+        "Id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.762,
+      "x-commons-providers": 32,
+      "x-commons-spellings": [
+        "name",
+        "filename",
+        "title",
+        "file_name",
+        "displayName",
+        "fileName",
+        "originalName",
+        "originalFilename"
+      ]
+    },
+    "mime_type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.619,
+      "x-commons-providers": 26,
+      "x-commons-spellings": [
+        "type",
+        "contentType",
+        "extension",
+        "mimeType",
+        "mediaType",
+        "content_type",
+        "fileType",
+        "mime_type"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.595,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "created_at",
+        "created",
+        "createdDate",
+        "createdOn",
+        "createdAt",
+        "createTime",
+        "uploadedAt",
+        "createdTime"
+      ],
+      "format": "date-time"
+    },
+    "size": {
+      "type": "integer",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.595,
+      "x-commons-providers": 25,
+      "x-commons-spellings": [
+        "size",
+        "size_bytes",
+        "fileSize",
+        "sizeBytes",
+        "bytes",
+        "Size"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.357,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "updated",
+        "updated_at",
+        "lastModifiedDateTime",
+        "last_modified",
+        "modified_at",
+        "modifiedTime",
+        "modified",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "parent_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.31,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "parent",
+        "folder",
+        "folderId",
+        "parents",
+        "parentReference",
+        "parent_id",
+        "folder_id",
+        "folderID"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.262,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "metadata",
+        "tags",
+        "customFields",
+        "attributes",
+        "metaData",
+        "labels"
+      ]
+    },
+    "owner_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.262,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "createdBy",
+        "created_by",
+        "creator",
+        "user_id",
+        "uploadedBy",
+        "owned_by",
+        "ownerId",
+        "owner"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.262,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "status",
+        "Status"
+      ]
+    },
+    "url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.238,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "download_url",
+        "location",
+        "webViewLink",
+        "webUrl",
+        "href",
+        "downloadUrl",
+        "link"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "files",
+    "concept": "file",
+    "providers": 42,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

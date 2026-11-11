@@ -1,0 +1,70 @@
+provider: cloudflare
+apis_io: https://apis.io/providers/cloudflare/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - objects
+    - assets
+    - file
+    - files
+    - uploads
+    properties:
+      id:
+      - id
+      - key
+      name:
+      - name
+      - filename
+      created_at: created_at
+      size:
+      - size_bytes
+      - size
+      updated_at:
+      - updated_at
+      - last_modified
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{id}/objects
+    - openapi/_original/cloudflare-durable-objects-openapi.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{namespace_id}/objects
+    - openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{id}/objects
+    - openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/custom_pages/assets/{asset_name}
+    - openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}/objects
+  bucket:
+    path_segment:
+    - buckets
+    properties:
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/r2/buckets
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/r2/buckets/{bucket_name}
+    - openapi/_original/cloudflare-accounts--openapi-original.yml#POST /accounts/{account_id}/r2/buckets
+    - openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}
+  permission:
+    path_segment:
+    - shares
+    - permissions
+    properties:
+      id:
+      - uuid
+      - id
+      name: name
+      role: role
+      created_at:
+      - createdAt
+      - created
+      status: status
+      updated_at:
+      - updatedAt
+      - modified
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions/{grant_id}
+    - openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/shares/{share_id}
+    - openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions
+    - openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/shares
+    - openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/shares/{share_id}

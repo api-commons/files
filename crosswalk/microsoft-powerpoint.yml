@@ -1,0 +1,24 @@
+provider: microsoft-powerpoint
+apis_io: https://apis.io/providers/microsoft-powerpoint/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - items
+    properties:
+      id: id
+      name: name
+      size: size
+      updated_at: lastModifiedDateTime
+      parent_id:
+      - folder
+      - parentReference
+      url: webUrl
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/powerpoint-driveitems-api-openapi.yml#DELETE /me/drive/items/{item-id}
+    - openapi/_original/powerpoint-driveitems-api-openapi.yml#GET /me/drive/items/{item-id}
+    - openapi/_original/powerpoint-driveitems-api-openapi.yml#PATCH /me/drive/items/{item-id}
+    - openapi/_original/powerpoint-openapi.yml#DELETE /me/drive/items/{item-id}
+    - openapi/_original/powerpoint-openapi.yml#GET /me/drive/items/{item-id}

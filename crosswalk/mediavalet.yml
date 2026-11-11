@@ -1,0 +1,58 @@
+provider: mediavalet
+apis_io: https://apis.io/providers/mediavalet/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - assets
+    - uploads
+    properties:
+      id: id
+      name:
+      - filename
+      - title
+      - name
+      mime_type: type
+      created_at: createdAt
+      metadata: attributes
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/assets
+    - openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/sections/{sectionId}/uploads
+    - openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/{sectionId}/assets
+    - openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/assets
+    - openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/categories/{categoryId}/assets
+  folder:
+    path_segment:
+    - folders
+    properties:
+      name: name
+      id: id
+      parent_id: parentId
+      description: description
+      path: path
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/mediavalet-openapi.yml#GET /folders
+    - openapi/_original/mediavalet-openapi.yml#GET /folders/{categoryGuid}
+    - openapi/_original/mediavalet-openapi.yml#PATCH /folders/{categoryId}
+    - openapi/_original/mediavalet-openapi.yml#POST /folders
+  permission:
+    path_segment:
+    - share
+    - permissions
+    properties:
+      id: id
+      name: title
+      grantee: emailAddress
+      role: roleId
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/mediavalet-openapi.yml#GET /public/share/{shareCode}
+    - openapi/_original/mediavalet-openapi.yml#GET /savedsearches/{savedSearchId}/share
+    - openapi/_original/mediavalet-openapi.yml#GET /users/current/permissions
+    - openapi/_original/mediavalet-openapi.yml#POST /savedsearches/{savedSearchId}/share
+    - openapi/_original/mediavalet-saved-searches-api-openapi.yml#GET /savedsearches/{savedSearchId}/share

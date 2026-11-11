@@ -1,0 +1,25 @@
+provider: signwell
+apis_io: https://apis.io/providers/signwell/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      created_at: created_at
+      updated_at: updated_at
+      metadata:
+      - metadata
+      - labels
+      owner_id: user_id
+      status: status
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/bulk_sends/{id}/documents
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents
+    - openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents/{id}
+    - openapi/_original/signwell-signwell-api-openapi.yml#POST /api/v1/document_templates/documents

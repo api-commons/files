@@ -1,0 +1,84 @@
+provider: box
+apis_io: https://apis.io/providers/box/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - items
+    properties:
+      id: id
+      name: name
+      mime_type:
+      - type
+      - extension
+      created_at: created_at
+      size: size
+      updated_at: modified_at
+      parent_id: parent
+      metadata:
+      - tags
+      - metadata
+      owner_id:
+      - created_by
+      - owned_by
+      url: download_url
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/box-openapi.json#DELETE /files/{file_id}
+    - openapi/_original/box-openapi.json#GET /files/{file_id}
+    - openapi/_original/box-openapi.json#GET /folders/trash/items
+    - openapi/_original/box-openapi.json#GET /folders/{folder_id}/items
+    - openapi/_original/box-openapi.json#POST /files/{file_id}
+  folder:
+    path_segment:
+    - folders
+    properties:
+      name: name
+      id: id
+      parent_id: parent
+      created_at: created_at
+      description: description
+      owner_id:
+      - created_by
+      - owned_by
+      updated_at: modified_at
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/box-openapi.json#DELETE /folders/{folder_id}
+    - openapi/_original/box-openapi.json#GET /folders/{folder_id}
+    - openapi/_original/box-openapi.json#POST /folders
+    - openapi/_original/box-openapi.json#POST /folders/{folder_id}
+    - openapi/_original/box-openapi.json#PUT /folders/{folder_id}
+  file_version:
+    path_segment:
+    - versions
+    properties:
+      id: id
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/box-openapi.json#DELETE /files/{file_id}/versions/{file_version_id}
+    - openapi/_original/box-openapi.json#GET /files/{file_id}/versions
+    - openapi/_original/box-openapi.json#GET /files/{file_id}/versions/{file_version_id}
+    - openapi/_original/box-openapi.json#PUT /files/{file_id}/versions/{file_version_id}
+  permission:
+    path_segment:
+    - collaborations
+    properties:
+      id: id
+      grantee: accessible_by
+      role: role
+      created_at: created_at
+      status: status
+      type: type
+      updated_at: modified_at
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/box-openapi.json#DELETE /collaborations/{collaboration_id}
+    - openapi/_original/box-openapi.json#GET /collaborations
+    - openapi/_original/box-openapi.json#GET /collaborations/{collaboration_id}
+    - openapi/_original/box-openapi.json#GET /files/{file_id}/collaborations
+    - openapi/_original/box-openapi.json#GET /folders/{folder_id}/collaborations

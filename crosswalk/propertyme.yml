@@ -1,0 +1,24 @@
+provider: propertyme
+apis_io: https://apis.io/providers/propertyme/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: Id
+      name: FileName
+      mime_type:
+      - MimeType
+      - FileType
+      created_at: CreatedOn
+      size: Size
+      status: Status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/propertyme-openapi.json#GET /v1/jobtasks/{Id}/documents
+    - openapi/_original/propertyme-openapi.json#POST /v1/contacts/{Id}/documents
+    - openapi/_original/propertyme-openapi.json#POST /v1/inspections/{Id}/documents
+    - openapi/_original/propertyme-openapi.json#POST /v1/jobtasks/{Id}/documents
+    - openapi/_original/propertyme-openapi.json#POST /v1/jobtasks/{Id}/quotation/{QuoteId}/documents

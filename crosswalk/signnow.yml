@@ -1,0 +1,21 @@
+provider: signnow
+apis_io: https://apis.io/providers/signnow/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - document
+    properties:
+      id: id
+      created_at: created
+      updated_at: updated
+      metadata: tags
+      owner_id: user_id
+      status: status
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/signnow-openapi.yml#DELETE /document/{document_id}
+    - openapi/_original/signnow-openapi.yml#GET /document
+    - openapi/_original/signnow-openapi.yml#GET /document/{document_id}
+    - openapi/_original/signnow-openapi.yml#POST /document

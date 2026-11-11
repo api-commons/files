@@ -1,0 +1,1217 @@
+[
+ {
+  "slug": "acronis",
+  "specs": [
+   "openapi/_original/acronis-account-management-v2-openapi.json",
+   "openapi/_original/acronis-advanced-automation-v1-openapi.json",
+   "openapi/_original/acronis-agents-v2-openapi.json",
+   "openapi/_original/acronis-alerts-v1-openapi.json",
+   "openapi/_original/acronis-disaster-recovery-v2-openapi.json",
+   "openapi/_original/acronis-events-v1-openapi.json",
+   "openapi/_original/acronis-files-v1-openapi.json",
+   "openapi/_original/acronis-mdr-v1-openapi.json",
+   "openapi/_original/acronis-pricelist-v1-openapi.json",
+   "openapi/_original/acronis-resource-policy-management-v4-openapi.json",
+   "openapi/_original/acronis-tasks-v2-openapi.json",
+   "openapi/_original/acronis-vaultman-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "actionstep",
+  "specs": [
+   "openapi/_original/actionstep-actionbillsettings-openapi.yml",
+   "openapi/_original/actionstep-actionfolders-openapi.yml",
+   "openapi/_original/actionstep-actionnetdocssettings-openapi.yml",
+   "openapi/_original/actionstep-actionparticipants-openapi.yml",
+   "openapi/_original/actionstep-actions-openapi.yml",
+   "openapi/_original/actionstep-actiontypeparticipanttypes-openapi.yml",
+   "openapi/_original/actionstep-actiontypes-openapi.yml",
+   "openapi/_original/actionstep-bills-openapi.yml",
+   "openapi/_original/actionstep-contactdocuments-openapi.yml",
+   "openapi/_original/actionstep-contactfolders-openapi.yml",
+   "openapi/_original/actionstep-contactnotes-openapi.yml",
+   "openapi/_original/actionstep-contactrelationships-openapi.yml",
+   "openapi/_original/actionstep-culturalidentity-openapi.yml",
+   "openapi/_original/actionstep-datacollectionfielddropdownchoices-openapi.yml",
+   "openapi/_original/actionstep-datacollectionfields-openapi.yml",
+   "openapi/_original/actionstep-datacollectionrecords-openapi.yml",
+   "openapi/_original/actionstep-datacollectionrecordvalues-openapi.yml",
+   "openapi/_original/actionstep-datacollections-openapi.yml",
+   "openapi/_original/actionstep-disabilitystatus-openapi.yml",
+   "openapi/_original/actionstep-disbursements-openapi.yml",
+   "openapi/_original/actionstep-filenotes-openapi.yml",
+   "openapi/_original/actionstep-gendertypes-openapi.yml",
+   "openapi/_original/actionstep-participantadditionalnotificationmethods-openapi.yml",
+   "openapi/_original/actionstep-participantdatafielddropdownchoices-openapi.yml",
+   "openapi/_original/actionstep-participantdefaulttypes-openapi.yml",
+   "openapi/_original/actionstep-participantrelationshiptypes-openapi.yml",
+   "openapi/_original/actionstep-participants-openapi.yml",
+   "openapi/_original/actionstep-participanttypedatafields-openapi.yml",
+   "openapi/_original/actionstep-phonerecords-openapi.yml",
+   "openapi/_original/actionstep-primarylanguage-openapi.yml",
+   "openapi/_original/actionstep-quickcodes-openapi.yml",
+   "openapi/_original/actionstep-resthooks-openapi.yml",
+   "openapi/_original/actionstep-tasks-openapi.yml",
+   "openapi/_original/actionstep-timeentries-openapi.yml",
+   "openapi/_original/actionstep-utbmscodes-openapi.yml"
+  ]
+ },
+ {
+  "slug": "adobe-creative-cloud",
+  "specs": [
+   "openapi/_original/adobe-cc-libraries-api-openapi-original.yml",
+   "openapi/_original/adobe-firefly-api-openapi-original.yml",
+   "openapi/_original/adobe-pdf-services-api-openapi-original.yml",
+   "openapi/_original/adobe-stock-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "adobe-suite",
+  "specs": [
+   "openapi/_original/adobe-suite-aep-access-control-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-ad-hoc-activation-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-audit-query-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-batch-ingestion-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-catalog-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-data-access-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-data-distiller-auth-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-data-hygiene-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-data-prep-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-dataset-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-destination-authoring-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-destinations-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-flow-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-identity-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-mtls-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-observability-insights-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-policy-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-privacy-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-profile-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-query-service-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-reactor-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-sandbox-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-schema-registry-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-segmentation-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-sensei-machine-learning-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-streaming-ingestion-openapi.yaml",
+   "openapi/_original/adobe-suite-aep-unified-tags-openapi.yaml",
+   "openapi/_original/adobe-suite-analytics-bulk-data-insertion-openapi.json",
+   "openapi/_original/adobe-suite-analytics-classification-openapi.json",
+   "openapi/_original/adobe-suite-analytics-data-repair-openapi.json",
+   "openapi/_original/adobe-suite-analytics-openapi.json",
+   "openapi/_original/adobe-suite-cc-libraries-openapi.json",
+   "openapi/_original/adobe-suite-cloud-manager-events-openapi.yaml",
+   "openapi/_original/adobe-suite-cloud-manager-openapi.yaml",
+   "openapi/_original/adobe-suite-commerce-data-ingestion-openapi.yaml",
+   "openapi/_original/adobe-suite-commerce-rest-customer-openapi.yaml",
+   "openapi/_original/adobe-suite-commerce-rest-guest-openapi.yaml",
+   "openapi/_original/adobe-suite-data-collection-openapi.yaml",
+   "openapi/_original/adobe-suite-firefly-audio-video-openapi.json",
+   "openapi/_original/adobe-suite-firefly-express-openapi.json",
+   "openapi/_original/adobe-suite-firefly-illustrator-openapi.json",
+   "openapi/_original/adobe-suite-firefly-indesign-openapi.json",
+   "openapi/_original/adobe-suite-firefly-lightroom-openapi.json",
+   "openapi/_original/adobe-suite-firefly-openapi.json",
+   "openapi/_original/adobe-suite-firefly-photoshop-v2-openapi.json",
+   "openapi/_original/adobe-suite-firefly-substance-3d-openapi.yaml",
+   "openapi/_original/adobe-suite-firefly-translate-lipsync-openapi.json",
+   "openapi/_original/adobe-suite-firefly-workflow-builder-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-campaigns-retrieve-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-co-trigger-api-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-content-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-journey-retrieve-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-journeys-throttling-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-loyalty-challenges-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-loyalty-challenges-state-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-messaging-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-orchestrated-campaign-dataset-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-simulations-openapi.yaml",
+   "openapi/_original/adobe-suite-journey-optimizer-suppression-openapi.yaml",
+   "openapi/_original/adobe-suite-lightroom-openapi.json",
+   "openapi/_original/adobe-suite-marketo-identity-openapi.json",
+   "openapi/_original/adobe-suite-marketo-user-openapi.json",
+   "openapi/_original/adobe-suite-media-edge-openapi.yaml",
+   "openapi/_original/adobe-suite-pdf-services-openapi.json",
+   "openapi/_original/adobe-suite-photoshop-openapi.json",
+   "openapi/_original/adobe-suite-status-openapi.yaml",
+   "openapi/_original/adobe-suite-vip-marketplace-partners-openapi.json",
+   "openapi/_original/adobe-suite-workfront-planning-openapi.yaml",
+   "openapi/_original/adobe-suite-workfront-unified-approvals-openapi.json",
+   "openapi/_original/adobe-suite-workfront-workflow-openapi.json"
+  ]
+ },
+ {
+  "slug": "amazon-efs",
+  "specs": [
+   "openapi/_original/amazon-efs-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-s3",
+  "specs": [
+   "openapi/_original/amazon-s3-control-api-openapi.yml",
+   "openapi/_original/amazon-s3-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amazon-simpledb",
+  "specs": [
+   "openapi/_original/amazon-simpledb.yaml"
+  ]
+ },
+ {
+  "slug": "amazon-storage-gateway",
+  "specs": [
+   "openapi/_original/amazon-storage-gateway-api-openapi.yml",
+   "openapi/_original/amazon-storage-gateway.yaml"
+  ]
+ },
+ {
+  "slug": "arch",
+  "specs": [
+   "openapi/_original/arch-client-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "archil",
+  "specs": [
+   "openapi/_original/archil-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "autodesk-bim360",
+  "specs": [
+   "openapi/_original/autodesk-bim360-account-admin-openapi.yml",
+   "openapi/_original/autodesk-bim360-issues-openapi.yml"
+  ]
+ },
+ {
+  "slug": "automq",
+  "specs": [
+   "openapi/_original/automq-openapi.yml",
+   "openapi/_original/automq-wellknown-openapi.json"
+  ]
+ },
+ {
+  "slug": "aws-s3",
+  "specs": [
+   "openapi/_original/aws-s3-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "azure-file-storage",
+  "specs": [
+   "openapi/_original/azure-file-storage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "azure-storage-accounts",
+  "specs": [
+   "openapi/_original/azure-storage-accounts-blob-openapi.yaml",
+   "openapi/_original/azure-storage-accounts-management-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "bitrix24",
+  "specs": [
+   "openapi/_original/bitrix24-openapi.json"
+  ]
+ },
+ {
+  "slug": "bluebeam",
+  "specs": [
+   "openapi/_original/bluebeam-studio-openapi.yml"
+  ]
+ },
+ {
+  "slug": "boldsign",
+  "specs": [
+   "openapi/_original/boldsign-esignature-openapi.yml"
+  ]
+ },
+ {
+  "slug": "box",
+  "specs": [
+   "openapi/_original/box-openapi.json"
+  ]
+ },
+ {
+  "slug": "bytark",
+  "specs": [
+   "openapi/_original/bytark-openapi.yml"
+  ]
+ },
+ {
+  "slug": "canto",
+  "specs": [
+   "openapi/_original/canto-pim-openapi.json"
+  ]
+ },
+ {
+  "slug": "ceph",
+  "specs": [
+   "openapi/_original/ceph-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ci-hub",
+  "specs": [
+   "openapi/_original/ci-hub-access-openapi.yml"
+  ]
+ },
+ {
+  "slug": "citrix-sharefile",
+  "specs": [
+   "openapi/_original/citrix-sharefile-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clickup",
+  "specs": [
+   "openapi/_original/clickup-api-v2-reference-openapi.json",
+   "openapi/_original/clickup-api-v2-reference-openapi_2.json",
+   "openapi/_original/clickup-comments-openapi.yml",
+   "openapi/_original/clickup-custom-fields-openapi.yml",
+   "openapi/_original/clickup-folders-openapi.yml",
+   "openapi/_original/clickup-goals-openapi.yml",
+   "openapi/_original/clickup-lists-openapi.yml",
+   "openapi/_original/clickup-oauth-openapi.yml",
+   "openapi/_original/clickup-public-api-v3-openapi.json",
+   "openapi/_original/clickup-public-api-v3-openapi_2.json",
+   "openapi/_original/clickup-spaces-openapi.yml",
+   "openapi/_original/clickup-tasks-openapi.yml",
+   "openapi/_original/clickup-teams-openapi.yml",
+   "openapi/_original/clickup-time-tracking-openapi.yml",
+   "openapi/_original/clickup-views-openapi.yml",
+   "openapi/_original/clickup-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "clio",
+  "specs": [
+   "openapi/_original/clio-openapi.json"
+  ]
+ },
+ {
+  "slug": "cloudflare",
+  "specs": [
+   "openapi/_original/cloudflare-accounts--openapi-original.yml",
+   "openapi/_original/cloudflare-ai-gateway-openapi.yml",
+   "openapi/_original/cloudflare-certificates--openapi-original.yml",
+   "openapi/_original/cloudflare-d1-openapi.yml",
+   "openapi/_original/cloudflare-dns-openapi.yml",
+   "openapi/_original/cloudflare-durable-objects-openapi.yml",
+   "openapi/_original/cloudflare-hyperdrive-openapi.yml",
+   "openapi/_original/cloudflare-images-openapi.yml",
+   "openapi/_original/cloudflare-ips--openapi-original.yml",
+   "openapi/_original/cloudflare-kv-openapi.yml",
+   "openapi/_original/cloudflare-logpush-openapi.yml",
+   "openapi/_original/cloudflare-memberships--openapi-original.yml",
+   "openapi/_original/cloudflare-openapi-original.yml",
+   "openapi/_original/cloudflare-openapi.json",
+   "openapi/_original/cloudflare-pages-openapi.yml",
+   "openapi/_original/cloudflare-queues-openapi.yml",
+   "openapi/_original/cloudflare-r2-openapi.yml",
+   "openapi/_original/cloudflare-radar--openapi-original.yml",
+   "openapi/_original/cloudflare-stream-openapi.yml",
+   "openapi/_original/cloudflare-turnstile-openapi.yml",
+   "openapi/_original/cloudflare-user--openapi-original.yml",
+   "openapi/_original/cloudflare-vectorize-openapi.yml",
+   "openapi/_original/cloudflare-workers-ai-openapi.yml",
+   "openapi/_original/cloudflare-workers-openapi.yml",
+   "openapi/_original/cloudflare-zones--openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "cloudflare-r2",
+  "specs": [
+   "openapi/_original/cloudflare-r2-s3-compatible-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudkit",
+  "specs": [
+   "openapi/_original/cloudkit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coda-project",
+  "specs": [
+   "openapi/_original/coda-project-admin-openapi-original.json",
+   "openapi/_original/coda-project-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "commvault",
+  "specs": [
+   "openapi/_original/commvault-automation-openapi.yml",
+   "openapi/_original/commvault-command-center-openapi.yml",
+   "openapi/_original/commvault-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "concord-com",
+  "specs": [
+   "openapi/_original/concord-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contabo",
+  "specs": [
+   "openapi/_original/contabo-api-redoc-embedded.json",
+   "openapi/_original/contabo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "convertapi",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "crusoe",
+  "specs": [
+   "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json",
+   "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json"
+  ]
+ },
+ {
+  "slug": "cubefs",
+  "specs": [
+   "openapi/_original/cubefs-master-api-openapi.yml",
+   "openapi/_original/cubefs-s3-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docling",
+  "specs": [
+   "openapi/_original/docling-cli-openapi.yml",
+   "openapi/_original/docling-serve-openapi.yml"
+  ]
+ },
+ {
+  "slug": "documenso",
+  "specs": [
+   "openapi/_original/documenso-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docuseal",
+  "specs": [
+   "openapi/_original/docuseal-docuseal-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "docusign",
+  "specs": [
+   "openapi/_original/docusign-admin-openapi-original.yml",
+   "openapi/_original/docusign-click-openapi-original.yml",
+   "openapi/_original/docusign-esignature-openapi.yml",
+   "openapi/_original/docusign-maestro-openapi-original.yml",
+   "openapi/_original/docusign-monitor-openapi-original.yml",
+   "openapi/_original/docusign-openapi-original.yml",
+   "openapi/_original/docusign-rooms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "dotloop",
+  "specs": [
+   "openapi/_original/dotloop-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dropbox",
+  "specs": [
+   "openapi/_original/dropbox-openapi-original.yml",
+   "openapi/_original/dropbox-openapi.yml"
+  ]
+ },
+ {
+  "slug": "egnyte",
+  "specs": [
+   "openapi/_original/egnyte-openapi.yml"
+  ]
+ },
+ {
+  "slug": "element-biosciences",
+  "specs": [
+   "openapi/_original/element-biosciences-cloud-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "eon",
+  "specs": [
+   "openapi/_original/eon-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "figshare",
+  "specs": [
+   "openapi/_original/figshare-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "filebase",
+  "specs": [
+   "openapi/_original/filebase-ipfs-rpc-api-openapi.yml",
+   "openapi/_original/filebase-openapi.json",
+   "openapi/_original/filebase-platform-api-openapi.yml",
+   "openapi/_original/filebase-s3-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "filevine",
+  "specs": [
+   "openapi/_original/filevine-time-entries-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "finalcad",
+  "specs": [
+   "openapi/_original/finalcad-authentication-openapi.yml",
+   "openapi/_original/finalcad-libraries-openapi.yml",
+   "openapi/_original/finalcad-medias-openapi.yml",
+   "openapi/_original/finalcad-organizations-openapi.yml",
+   "openapi/_original/finalcad-projects-openapi.yml",
+   "openapi/_original/finalcad-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "formstack",
+  "specs": [
+   "openapi/_original/formstack-openapi.json"
+  ]
+ },
+ {
+  "slug": "gcp-cloud-storage",
+  "specs": [
+   "openapi/_original/gcp-cloud-storage-json-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "getaccept",
+  "specs": [
+   "openapi/_original/getaccept-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "gonitro",
+  "specs": [
+   "openapi/_original/gonitro-pdf-services-openapi.json",
+   "openapi/_original/gonitro-sign-openapi.json"
+  ]
+ },
+ {
+  "slug": "google-cloud-firestore",
+  "specs": [
+   "openapi/_original/cloud-firestore-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-cloud-transfer-service",
+  "specs": [
+   "openapi/_original/storage-transfer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-docs",
+  "specs": [
+   "openapi/_original/google-docs-api-v1-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-drive",
+  "specs": [
+   "openapi/_original/google-drive-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-suite-docs-sheets-slides-gmail",
+  "specs": [
+   "openapi/_original/google-suite-docs-sheets-slides-gmail-openapi.yml"
+  ]
+ },
+ {
+  "slug": "google-suites",
+  "specs": [
+   "openapi/_original/google-suites-openapi.yml"
+  ]
+ },
+ {
+  "slug": "govinfo",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "hellosign",
+  "specs": [
+   "openapi/_original/hellosign-openapi-original.yaml"
+  ]
+ },
+ {
+  "slug": "hubflo",
+  "specs": [
+   "openapi/_original/hubflo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "iconik",
+  "specs": [
+   "openapi/_original/iconik-openapi.yml"
+  ]
+ },
+ {
+  "slug": "imgauth-api-di-attestazione-opere-digitali",
+  "specs": [
+   "openapi/_original/imgauth-api-di-attestazione-opere-digitali-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "imgbb",
+  "specs": [
+   "openapi/_original/imgbb-openapi.yml"
+  ]
+ },
+ {
+  "slug": "impossible-cloud",
+  "specs": [
+   "openapi/_original/impossible-cloud-management-console-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "inkit",
+  "specs": [
+   "openapi/_original/inkit-document-generation-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "intralinks",
+  "specs": [
+   "openapi/_original/intralinks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ipfs",
+  "specs": [
+   "openapi/_original/ipfs-kubo-rpc-api.json",
+   "openapi/_original/ipfs-pinning-service-api.yaml"
+  ]
+ },
+ {
+  "slug": "la-poste-groupe",
+  "specs": [
+   "openapi/_original/la-poste-groupe-digiposte-openapi.json",
+   "openapi/_original/la-poste-groupe-lettre-recommandee-en-ligne-openapi.json",
+   "openapi/_original/la-poste-groupe-open-data-openapi.json",
+   "openapi/_original/la-poste-groupe-suivi-openapi.json"
+  ]
+ },
+ {
+  "slug": "lakekeeper",
+  "specs": [
+   "openapi/_original/lakekeeper-catalog-api-openapi.yml",
+   "openapi/_original/lakekeeper-management-api-openapi.yml",
+   "openapi/_original/lakekeeper-management-plus-api-openapi.yml",
+   "openapi/_original/lakekeeper-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lawvu",
+  "specs": [
+   "openapi/_original/lawvu-invoices-openapi-original.json",
+   "openapi/_original/lawvu-openapi.yml"
+  ]
+ },
+ {
+  "slug": "leaseweb",
+  "specs": [
+   "openapi/_original/leaseweb-abuse-openapi.yaml",
+   "openapi/_original/leaseweb-abuse-openapi.yml",
+   "openapi/_original/leaseweb-aggregationpack-openapi.yaml",
+   "openapi/_original/leaseweb-aggregationpack-openapi.yml",
+   "openapi/_original/leaseweb-dedicatedserver-openapi.yaml",
+   "openapi/_original/leaseweb-dedicatedserver-openapi.yml",
+   "openapi/_original/leaseweb-dns-openapi.yaml",
+   "openapi/_original/leaseweb-dns-openapi.yml",
+   "openapi/_original/leaseweb-invoice-openapi.yaml",
+   "openapi/_original/leaseweb-invoice-openapi.yml",
+   "openapi/_original/leaseweb-ipmgmt-openapi.yaml",
+   "openapi/_original/leaseweb-ipmgmt-openapi.yml",
+   "openapi/_original/leaseweb-networkequipment-openapi.yaml",
+   "openapi/_original/leaseweb-networkequipment-openapi.yml",
+   "openapi/_original/leaseweb-objectstorage-openapi.yaml",
+   "openapi/_original/leaseweb-objectstorage-openapi.yml",
+   "openapi/_original/leaseweb-openapi-openapi.yml",
+   "openapi/_original/leaseweb-ordering-openapi.yaml",
+   "openapi/_original/leaseweb-ordering-openapi.yml",
+   "openapi/_original/leaseweb-publiccloud-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "lev",
+  "specs": [
+   "openapi/_original/lev-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lightroom",
+  "specs": [
+   "openapi/_original/lightroom-albums-openapi.yml",
+   "openapi/_original/lightroom-assets-openapi.yml",
+   "openapi/_original/lightroom-catalog-openapi.yml",
+   "openapi/_original/lightroom-firefly-services-openapi.yml",
+   "openapi/_original/lightroom-services-openapi.yml"
+  ]
+ },
+ {
+  "slug": "linode",
+  "specs": [
+   "openapi/_original/linode-api-v4-official-openapi.json",
+   "openapi/_original/linode-api-v4-openapi.yml"
+  ]
+ },
+ {
+  "slug": "loopio",
+  "specs": [
+   "openapi/_original/loopio-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "lucidlink",
+  "specs": [
+   "openapi/_original/lucidlink-service-api.json"
+  ]
+ },
+ {
+  "slug": "machinelibrary-ai",
+  "specs": [
+   "openapi/_original/machinelibrary-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "mediavalet",
+  "specs": [
+   "openapi/_original/mediavalet-attribute-groups-api-openapi.yml",
+   "openapi/_original/mediavalet-branded-portals-api-openapi.yml",
+   "openapi/_original/mediavalet-direct-links-api-openapi.yml",
+   "openapi/_original/mediavalet-introduction-and-help-api-openapi.yml",
+   "openapi/_original/mediavalet-keyword-groups-api-openapi.yml",
+   "openapi/_original/mediavalet-openapi.yml",
+   "openapi/_original/mediavalet-org-unit-api-openapi.yml",
+   "openapi/_original/mediavalet-reports-v2-api-openapi.yml",
+   "openapi/_original/mediavalet-saved-searches-api-openapi.yml",
+   "openapi/_original/mediavalet-terms-and-conditions-api-openapi.yml",
+   "openapi/_original/mediavalet-user-groups-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-azure-blob-storage",
+  "specs": [
+   "openapi/_original/azure-blob-storage-rest-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-graph",
+  "specs": [
+   "openapi/_original/admin-openapi-original.yml",
+   "openapi/_original/agreementacceptances-openapi-original.yml",
+   "openapi/_original/agreements-openapi-original.yml",
+   "openapi/_original/appcatalogs-openapi-original.yml",
+   "openapi/_original/applications-openapi-original.yml",
+   "openapi/_original/applicationtemplates-openapi-original.yml",
+   "openapi/_original/auditlogs-openapi-original.yml",
+   "openapi/_original/authenticationmethodconfigurations-openapi-original.yml",
+   "openapi/_original/authenticationmethodspolicy-openapi-original.yml",
+   "openapi/_original/certificatebasedauthconfiguration-openapi-original.yml",
+   "openapi/_original/chats-openapi-original.yml",
+   "openapi/_original/communications-openapi-original.yml",
+   "openapi/_original/compliance-openapi-original.yml",
+   "openapi/_original/connections-openapi-original.yml",
+   "openapi/_original/contacts-openapi-original.yml",
+   "openapi/_original/contracts-openapi-original.yml",
+   "openapi/_original/copilot-openapi-original.yml",
+   "openapi/_original/datapolicyoperations-openapi-original.yml",
+   "openapi/_original/deviceappmanagement-openapi-original.yml",
+   "openapi/_original/devicemanagement-openapi-original.yml",
+   "openapi/_original/devices-openapi-original.yml",
+   "openapi/_original/directory-openapi-original.yml",
+   "openapi/_original/directoryobjects-openapi-original.yml",
+   "openapi/_original/directoryroles-openapi-original.yml",
+   "openapi/_original/directoryroletemplates-openapi-original.yml",
+   "openapi/_original/domaindnsrecords-openapi-original.yml",
+   "openapi/_original/domains-openapi-original.yml",
+   "openapi/_original/drives-openapi-original.yml",
+   "openapi/_original/education-openapi-original.yml",
+   "openapi/_original/employeeexperience-openapi-original.yml",
+   "openapi/_original/external-openapi-original.yml",
+   "openapi/_original/filteroperators-openapi-original.yml",
+   "openapi/_original/functions-openapi-original.yml",
+   "openapi/_original/grouplifecyclepolicies-openapi-original.yml",
+   "openapi/_original/groups-openapi-original.yml",
+   "openapi/_original/groupsettings-openapi-original.yml",
+   "openapi/_original/groupsettingtemplates-openapi-original.yml",
+   "openapi/_original/identity-openapi-original.yml",
+   "openapi/_original/identitygovernance-openapi-original.yml",
+   "openapi/_original/identityprotection-openapi-original.yml",
+   "openapi/_original/identityproviders-openapi-original.yml",
+   "openapi/_original/informationprotection-openapi-original.yml",
+   "openapi/_original/invitations-openapi-original.yml",
+   "openapi/_original/me-openapi-original.yml",
+   "openapi/_original/microsoft-graph-api-openapi.yml",
+   "openapi/_original/oauth2permissiongrants-openapi-original.yml",
+   "openapi/_original/organization-openapi-original.yml",
+   "openapi/_original/permissiongrants-openapi-original.yml",
+   "openapi/_original/places-openapi-original.yml",
+   "openapi/_original/planner-openapi-original.yml",
+   "openapi/_original/policies-openapi-original.yml",
+   "openapi/_original/print-openapi-original.yml",
+   "openapi/_original/privacy-openapi-original.yml",
+   "openapi/_original/reports-openapi-original.yml",
+   "openapi/_original/rolemanagement-openapi-original.yml",
+   "openapi/_original/schemaextensions-openapi-original.yml",
+   "openapi/_original/scopedrolememberships-openapi-original.yml",
+   "openapi/_original/search-openapi-original.yml",
+   "openapi/_original/security-openapi-original.yml",
+   "openapi/_original/serviceprincipals-openapi-original.yml",
+   "openapi/_original/shares-openapi-original.yml",
+   "openapi/_original/sites-openapi-original.yml",
+   "openapi/_original/solutions-openapi-original.yml",
+   "openapi/_original/storage-openapi-original.yml",
+   "openapi/_original/subscribedskus-openapi-original.yml",
+   "openapi/_original/subscriptions-openapi-original.yml",
+   "openapi/_original/teams-openapi-original.yml",
+   "openapi/_original/teamstemplates-openapi-original.yml",
+   "openapi/_original/teamwork-openapi-original.yml",
+   "openapi/_original/tenantrelationships-openapi-original.yml",
+   "openapi/_original/users-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-powerpoint",
+  "specs": [
+   "openapi/_original/powerpoint-driveitems-api-openapi.yml",
+   "openapi/_original/powerpoint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mycase",
+  "specs": [
+   "openapi/_original/mycase-open-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nasuni",
+  "specs": [
+   "openapi/_original/nasuni-global-file-acceleration-telemetry-openapi.json",
+   "openapi/_original/nasuni-global-file-acceleration-telemetry-openapi.yml",
+   "openapi/_original/nasuni-nasuni-data-service-aws-openapi.json",
+   "openapi/_original/nasuni-nasuni-data-service-aws-openapi.yml",
+   "openapi/_original/nasuni-nasuni-data-service-azure-openapi.json",
+   "openapi/_original/nasuni-nasuni-data-service-azure-openapi.yml",
+   "openapi/_original/nasuni-nmc-v1-0-openapi.json",
+   "openapi/_original/nasuni-nmc-v1-0-openapi.yml",
+   "openapi/_original/nasuni-nmc-v1-1-openapi.json",
+   "openapi/_original/nasuni-nmc-v1-1-openapi.yml",
+   "openapi/_original/nasuni-nmc-v1-2-openapi.json",
+   "openapi/_original/nasuni-nmc-v1-2-openapi.yml",
+   "openapi/_original/nasuni-portal-v0-openapi.json",
+   "openapi/_original/nasuni-portal-v0-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nextcloud",
+  "specs": [
+   "openapi/_original/nextcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nhost",
+  "specs": [
+   "openapi/_original/nhost-authentication-openapi.yml",
+   "openapi/_original/nhost-storage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nitro-software",
+  "specs": [
+   "openapi/_original/nitro-software-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nuxeo",
+  "specs": [
+   "openapi/_original/nuxeo-rest-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "oracle-cloud",
+  "specs": [
+   "openapi/_original/oracle-cloud-core-services-openapi.yaml",
+   "openapi/_original/oracle-cloud-database-openapi.yaml",
+   "openapi/_original/oracle-cloud-events-openapi.yaml",
+   "openapi/_original/oracle-cloud-functions-openapi.yaml",
+   "openapi/_original/oracle-cloud-identity-openapi.yaml",
+   "openapi/_original/oracle-cloud-kubernetes-engine-openapi.yaml",
+   "openapi/_original/oracle-cloud-monitoring-openapi.yaml",
+   "openapi/_original/oracle-cloud-notifications-openapi.yaml",
+   "openapi/_original/oracle-cloud-object-storage-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "outline",
+  "specs": [
+   "openapi/_original/outline-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pandadoc",
+  "specs": [
+   "openapi/_original/pandadoc-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pdffiller",
+  "specs": [
+   "openapi/_original/pdffiller-pdffiller-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plangrid",
+  "specs": [
+   "openapi/_original/plangrid-no-api-explorer-openapi.yml",
+   "openapi/_original/plangrid-no-api-explorer-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "postalform-com",
+  "specs": [
+   "openapi/_original/postalform-com-machine-payments-openapi.json",
+   "openapi/_original/postalform-com-projects-openapi.json"
+  ]
+ },
+ {
+  "slug": "powerpoint",
+  "specs": [
+   "openapi/_original/powerpoint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "prisma",
+  "specs": [
+   "openapi/_original/prisma-accelerate-openapi.yml",
+   "openapi/_original/prisma-client-openapi.yml",
+   "openapi/_original/prisma-data-platform-openapi.yml",
+   "openapi/_original/prisma-optimize-openapi.yml",
+   "openapi/_original/prisma-postgres-management-api-openapi.json",
+   "openapi/_original/prisma-postgres-management-openapi.yml",
+   "openapi/_original/prisma-pulse-openapi.yml"
+  ]
+ },
+ {
+  "slug": "progress-software",
+  "specs": [
+   "openapi/_original/progress-software-chef-automate-openapi-original.json",
+   "openapi/_original/progress-software-moveit-transfer-openapi-original.json",
+   "openapi/_original/progress-software-whatsup-gold-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "propertyme",
+  "specs": [
+   "openapi/_original/propertyme-openapi.json"
+  ]
+ },
+ {
+  "slug": "pure-storage",
+  "specs": [
+   "openapi/_original/flasharray-rest-api-openapi.yml",
+   "openapi/_original/flashblade-rest-api-openapi.yml",
+   "openapi/_original/pure1-cloud-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "relativityone",
+  "specs": [
+   "openapi/_original/relativityone-legal-hold-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ricoh-usa",
+  "specs": [
+   "openapi/_original/theta-web-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rocket-lawyer",
+  "specs": [
+   "openapi/_original/rocket-lawyer-authentication-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-events-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml",
+   "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rook",
+  "specs": [
+   "openapi/_original/rook-ceph-object-storage-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sadq-holding-limited",
+  "specs": [
+   "openapi/_original/sadq-holding-limited-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "sakura-internet",
+  "specs": [
+   "openapi/_original/addon-api.yaml",
+   "openapi/_original/ai-engine-inference-api.yaml",
+   "openapi/_original/ai-engine-rag-api.yaml",
+   "openapi/_original/apigw-api.yaml",
+   "openapi/_original/apprun-dedicated-api.yaml",
+   "openapi/_original/apprun-shared-api.yaml",
+   "openapi/_original/eventbus-api.yaml",
+   "openapi/_original/iam-api.yaml",
+   "openapi/_original/monitoring-suite-api.yaml",
+   "openapi/_original/networking-suite-api.yaml",
+   "openapi/_original/nosql-api.yaml",
+   "openapi/_original/objectstorage-api.yaml",
+   "openapi/_original/phy-api-original-swagger.json",
+   "openapi/_original/sakura-internet-addon-openapi.yml",
+   "openapi/_original/sakura-internet-ai-engine-inference-openapi.yml",
+   "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml",
+   "openapi/_original/sakura-internet-apigw-openapi.yml",
+   "openapi/_original/sakura-internet-apprun-dedicated-openapi.yml",
+   "openapi/_original/sakura-internet-apprun-shared-openapi.yml",
+   "openapi/_original/sakura-internet-eventbus-openapi.yml",
+   "openapi/_original/sakura-internet-iam-openapi.yml",
+   "openapi/_original/sakura-internet-monitoring-suite-openapi.yml",
+   "openapi/_original/sakura-internet-networking-suite-openapi.yml",
+   "openapi/_original/sakura-internet-nosql-openapi.yml",
+   "openapi/_original/sakura-internet-objectstorage-openapi.yml",
+   "openapi/_original/sakura-internet-phy-openapi.yml",
+   "openapi/_original/sakura-internet-security-control-openapi.yml",
+   "openapi/_original/sakura-internet-security-encryption-openapi.yml",
+   "openapi/_original/sakura-internet-seg-openapi.yml",
+   "openapi/_original/sakura-internet-simple-notification-openapi.yml",
+   "openapi/_original/sakura-internet-simplemq-openapi.yml",
+   "openapi/_original/sakura-internet-simplemq-sacloud-openapi.yml",
+   "openapi/_original/sakura-internet-workflows-openapi.yml",
+   "openapi/_original/security-control-api.yaml",
+   "openapi/_original/security-encryption-api.yaml",
+   "openapi/_original/seg-api.yaml",
+   "openapi/_original/simple-notification-api.yaml",
+   "openapi/_original/simplemq-api.yaml",
+   "openapi/_original/simplemq-sacloud-api.yaml",
+   "openapi/_original/workflows-api.yaml"
+  ]
+ },
+ {
+  "slug": "sevalla",
+  "specs": [
+   "openapi/_original/sevalla-openapi.yml"
+  ]
+ },
+ {
+  "slug": "seven-bridges",
+  "specs": [
+   "openapi/_original/seven-bridges-cgc-openapi.json",
+   "openapi/_original/seven-bridges-platform-openapi.json"
+  ]
+ },
+ {
+  "slug": "signnow",
+  "specs": [
+   "openapi/_original/signnow-openapi.yml"
+  ]
+ },
+ {
+  "slug": "signwell",
+  "specs": [
+   "openapi/_original/signwell-signwell-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "skyslope",
+  "specs": [
+   "openapi/_original/skyslope-forms-partnership-openapi.yml",
+   "openapi/_original/skyslope-offers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "slide",
+  "specs": [
+   "openapi/_original/slide-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "smokeball",
+  "specs": [
+   "openapi/_original/smokeball-smokeball-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "synadia-communications",
+  "specs": [
+   "openapi/_original/synadia-communications-control-plane-openapi.yaml",
+   "openapi/_original/synadia-communications-http-gateway-openapi.json"
+  ]
+ },
+ {
+  "slug": "temp-md",
+  "specs": [
+   "openapi/_original/temp-md-openapi.json",
+   "openapi/_original/temp-md-openapi.yml",
+   "openapi/_original/temp-md-platform-openapi.json",
+   "openapi/_original/temp-md-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tigris-data",
+  "specs": [
+   "openapi/_original/tigris-data-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tiledb",
+  "specs": [
+   "openapi/_original/tiledb-cloud-v1-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v1-openapi_2.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi.yaml",
+   "openapi/_original/tiledb-cloud-v2-openapi_2.yaml"
+  ]
+ },
+ {
+  "slug": "turbopuffer",
+  "specs": [
+   "openapi/_original/turbopuffer-openapi.yml"
+  ]
+ },
+ {
+  "slug": "upcloud",
+  "specs": [
+   "openapi/_original/upcloud-openapi.json",
+   "openapi/_original/upcloud-openapi.yml"
+  ]
+ },
+ {
+  "slug": "uploadcare",
+  "specs": [
+   "openapi/_original/uploadcare-cdn-api-openapi.yml",
+   "openapi/_original/uploadcare-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "veeva",
+  "specs": [
+   "openapi/_original/veeva-vault-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vultr",
+  "specs": [
+   "openapi/_original/vultr-iam-management-api-openapi.yml",
+   "openapi/_original/vultr-iam-management-api.yml",
+   "openapi/_original/vultr-iam-openapi.yml",
+   "openapi/_original/vultr-openapi.yml",
+   "openapi/_original/vultr-schema-openapi.json",
+   "openapi/_original/vultr-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "warpstream",
+  "specs": [
+   "openapi/_original/warpstream-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weka",
+  "specs": [
+   "openapi/_original/weka-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "workist",
+  "specs": [
+   "openapi/_original/workist-integrations-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "xerox",
+  "specs": [
+   "openapi/_original/xerox-public-print-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xiaomi",
+  "specs": [
+   "openapi/_original/xiaomi-galaxy-fds-openapi.yml",
+   "openapi/_original/xiaomi-mimo-api-openapi.yml",
+   "openapi/_original/xiaomi-open-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xsky",
+  "specs": [
+   "openapi/_original/xsky-xms-swagger-original.yaml"
+  ]
+ },
+ {
+  "slug": "zadara",
+  "specs": [
+   "openapi/_original/zadara-command-center-25.07.yml",
+   "openapi/_original/zadara-command-center-openapi.yml",
+   "openapi/_original/zadara-object-storage-25.07.yml",
+   "openapi/_original/zadara-object-storage-openapi.yml",
+   "openapi/_original/zadara-provisioning-portal-25.07.yml",
+   "openapi/_original/zadara-provisioning-portal-openapi.yml",
+   "openapi/_original/zadara-vpsa-25.07.yml",
+   "openapi/_original/zadara-vpsa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zamzar",
+  "specs": [
+   "openapi/_original/zamzar-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "zinnia",
+  "specs": [
+   "openapi/_original/zinnia-case-management-openapi.json",
+   "openapi/_original/zinnia-case-management-openapi.yml",
+   "openapi/_original/zinnia-documents-openapi.json",
+   "openapi/_original/zinnia-documents-openapi.yml",
+   "openapi/_original/zinnia-illustration-client-cases-openapi.json",
+   "openapi/_original/zinnia-illustration-client-cases-openapi.yml",
+   "openapi/_original/zinnia-illustration-openapi.json",
+   "openapi/_original/zinnia-illustration-openapi.yml",
+   "openapi/_original/zinnia-market-connect-order-entry-openapi.json",
+   "openapi/_original/zinnia-market-connect-order-entry-openapi.yml",
+   "openapi/_original/zinnia-new-business-annuity-openapi.json",
+   "openapi/_original/zinnia-new-business-annuity-openapi.yml",
+   "openapi/_original/zinnia-new-business-openapi.json",
+   "openapi/_original/zinnia-new-business-openapi.yml",
+   "openapi/_original/zinnia-policy-service-openapi.json",
+   "openapi/_original/zinnia-policy-service-openapi.yml",
+   "openapi/_original/zinnia-policy-transactions-openapi.json",
+   "openapi/_original/zinnia-policy-transactions-openapi.yml",
+   "openapi/_original/zinnia-product-service-openapi.json",
+   "openapi/_original/zinnia-product-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zoho-sign",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "zoho-writer",
+  "specs": [
+   "openapi/_original/zoho-writer-openapi.json"
+  ]
+ }
+]

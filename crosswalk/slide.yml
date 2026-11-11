@@ -1,0 +1,16 @@
+provider: slide
+apis_io: https://apis.io/providers/slide/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - file
+    properties:
+      created_at: created_at
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/slide-openapi-original.json#DELETE /v1/restore/file/{file_restore_id}
+    - openapi/_original/slide-openapi-original.json#GET /v1/restore/file
+    - openapi/_original/slide-openapi-original.json#GET /v1/restore/file/{file_restore_id}
+    - openapi/_original/slide-openapi-original.json#POST /v1/restore/file

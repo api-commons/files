@@ -1,0 +1,13 @@
+provider: docling
+apis_io: https://apis.io/providers/docling/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - file
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/docling-serve-openapi.yml#POST /v1/convert/file

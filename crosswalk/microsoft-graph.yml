@@ -1,0 +1,83 @@
+provider: microsoft-graph
+apis_io: https://apis.io/providers/microsoft-graph/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - documents
+    - items
+    - file
+    properties:
+      id: id
+      name:
+      - displayName
+      - fileName
+      - name
+      mime_type: contentType
+      size: size
+      updated_at: lastModifiedDateTime
+      parent_id:
+      - folder
+      - parentReference
+      owner_id: createdBy
+      url:
+      - location
+      - webUrl
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/agreements-openapi-original.yml#DELETE /agreements/{agreement-id}/file
+    - openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file
+    - openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/files
+    - openapi/_original/agreements-openapi-original.yml#PATCH /agreements/{agreement-id}/file
+    - openapi/_original/agreements-openapi-original.yml#POST /agreements/{agreement-id}/files
+  bucket:
+    path_segment:
+    - buckets
+    - containers
+    properties:
+      name:
+      - name
+      - displayName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/groups-openapi-original.yml#DELETE /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}
+    - openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets
+    - openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}
+    - openapi/_original/groups-openapi-original.yml#PATCH /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}
+    - openapi/_original/groups-openapi-original.yml#POST /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets
+  file_version:
+    path_segment:
+    - versions
+    properties:
+      id: id
+      name:
+      - displayName
+      - fileName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/agreements-openapi-original.yml#DELETE /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}
+    - openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions
+    - openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}
+    - openapi/_original/agreements-openapi-original.yml#PATCH /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}
+    - openapi/_original/agreements-openapi-original.yml#POST /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions
+  permission:
+    path_segment:
+    - permissions
+    - shares
+    - share
+    properties:
+      id: id
+      name:
+      - displayName
+      - name
+      status: status
+      updated_at: lastModifiedDateTime
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/drives-openapi-original.yml#DELETE /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}
+    - openapi/_original/drives-openapi-original.yml#GET /drives/{drive-id}/items/{driveItem-id}/permissions
+    - openapi/_original/drives-openapi-original.yml#GET /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}
+    - openapi/_original/drives-openapi-original.yml#PATCH /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}
+    - openapi/_original/drives-openapi-original.yml#POST /drives/{drive-id}/items/{driveItem-id}/permissions

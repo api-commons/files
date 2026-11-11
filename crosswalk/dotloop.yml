@@ -1,0 +1,24 @@
+provider: dotloop
+apis_io: https://apis.io/providers/dotloop/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - document
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document
+    - openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document/{document_id}
+    - openapi/_original/dotloop-openapi.yml#POST /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document
+  folder:
+    path_segment:
+    - folder
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder
+    - openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}
+    - openapi/_original/dotloop-openapi.yml#PATCH /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}
+    - openapi/_original/dotloop-openapi.yml#POST /profile/{profile_id}/loop/{loop_id}/folder

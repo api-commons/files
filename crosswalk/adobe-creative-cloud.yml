@@ -1,0 +1,17 @@
+provider: adobe-creative-cloud
+apis_io: https://apis.io/providers/adobe-creative-cloud/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - assets
+    - files
+    properties:
+      mime_type: mediaType
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/adobe-pdf-services-api-openapi-original.yml#DELETE /assets/{assetID}
+    - openapi/_original/adobe-pdf-services-api-openapi-original.yml#GET /assets/{assetID}
+    - openapi/_original/adobe-pdf-services-api-openapi-original.yml#POST /assets
+    - openapi/_original/adobe-stock-api-openapi-original.yml#GET /Rest/Media/1/Search/Files

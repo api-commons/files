@@ -1,0 +1,23 @@
+provider: uploadcare
+apis_io: https://apis.io/providers/uploadcare/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - document
+    properties:
+      id: uuid
+      name: original_filename
+      mime_type:
+      - mime_type
+      - format
+      size: size
+      metadata: metadata
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/uploadcare-rest-api-openapi.yml#GET /convert/document/{uuid}/
+    - openapi/_original/uploadcare-rest-api-openapi.yml#GET /files/
+    - openapi/_original/uploadcare-rest-api-openapi.yml#GET /files/{uuid}/
+    - openapi/_original/uploadcare-rest-api-openapi.yml#POST /convert/document/

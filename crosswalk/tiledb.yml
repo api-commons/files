@@ -1,0 +1,23 @@
+provider: tiledb
+apis_io: https://apis.io/providers/tiledb/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - assets
+    properties:
+      id: uuid
+      name:
+      - file_name
+      - name
+      mime_type: mime_type
+      created_at: created_at
+      metadata: metadata
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /assets/{namespace}
+    - openapi/_original/tiledb-cloud-v1-openapi.yaml#POST /files/{namespace}
+    - openapi/_original/tiledb-cloud-v1-openapi_2.yaml#GET /assets/{namespace}
+    - openapi/_original/tiledb-cloud-v1-openapi_2.yaml#POST /files/{namespace}

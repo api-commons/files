@@ -1,0 +1,21 @@
+provider: zinnia
+apis_io: https://apis.io/providers/zinnia/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    - document
+    properties:
+      name:
+      - fileName
+      - displayName
+      mime_type: fileType
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v1/applications/documents
+    - openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v2/applications/documents
+    - openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v1/applications/documents
+    - openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v2/applications/documents
+    - openapi/_original/zinnia-new-business-openapi.json#POST /newbusiness/v2/application/{eAppId}/document

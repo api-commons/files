@@ -1,0 +1,15 @@
+provider: sevalla
+apis_io: https://apis.io/providers/sevalla/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - objects
+    properties:
+      id: key
+      size: size_bytes
+      updated_at: last_modified
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/sevalla-openapi.yml#GET /object-storages/{id}/objects

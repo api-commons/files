@@ -1,0 +1,22 @@
+provider: arch
+apis_io: https://apis.io/providers/arch/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id: id
+      name:
+      - name
+      - originalName
+      size: sizeBytes
+      url: downloadUrl
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/activities/{id}/files
+    - openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/holdings/{id}/files
+    - openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/tax-documents/{taxDocId}/files
+    - openapi/_original/arch-client-api-openapi.json#POST /client-api/v0/activities/files
+    - openapi/_original/arch-client-api-openapi.json#POST /client-api/v0/holdings/{id}/files

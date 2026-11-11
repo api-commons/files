@@ -1,0 +1,14 @@
+provider: element-biosciences
+apis_io: https://apis.io/providers/element-biosciences/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/executions/{execution_id}/files
+    - openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/runs/{run_id}/files
+    - openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/storage-connections/{storage_connection_id}/files

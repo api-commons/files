@@ -1,0 +1,27 @@
+provider: finalcad
+apis_io: https://apis.io/providers/finalcad/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    - uploads
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/finalcad-medias-openapi.yml#POST /medias/uploads
+    - openapi/_original/finalcad-projects-openapi.yml#DELETE /projects/{project_id}/documents/{document_id}
+    - openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/documents
+    - openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/documents/{document_id}
+    - openapi/_original/finalcad-projects-openapi.yml#POST /projects/{project_id}/documents
+  folder:
+    path_segment:
+    - folders
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/finalcad-projects-openapi.yml#DELETE /projects/{projectId}/folders/{folderId}
+    - openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/folders
+    - openapi/_original/finalcad-projects-openapi.yml#POST /projects/{project_id}/folders
+    - openapi/_original/finalcad-projects-openapi.yml#PUT /projects/{projectId}/folders/{folderId}

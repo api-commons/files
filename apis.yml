@@ -1,0 +1,57 @@
+aid: common-files
+name: Files and Documents
+type: Common
+description: 'The common Files and Documents vocabulary, distilled from the harvested OpenAPI of 133 providers in
+  APIs.io: shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names
+  to each provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Cloud Storage
+- Object Storage
+- Document Management
+- Documents
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/files/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-files:files
+  name: Common Files and Documents Interface
+  description: The Files and Documents interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/files
+  tags:
+  - Cloud Storage
+  - Object Storage
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/files/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/files/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/files/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: file
+    url: https://raw.githubusercontent.com/api-commons/files/main/schema/file.json
+  - type: JSONSchema
+    name: folder
+    url: https://raw.githubusercontent.com/api-commons/files/main/schema/folder.json
+  - type: JSONSchema
+    name: bucket
+    url: https://raw.githubusercontent.com/api-commons/files/main/schema/bucket.json
+  - type: JSONSchema
+    name: file_version
+    url: https://raw.githubusercontent.com/api-commons/files/main/schema/file_version.json
+  - type: JSONSchema
+    name: permission
+    url: https://raw.githubusercontent.com/api-commons/files/main/schema/permission.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/files/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -1,0 +1,14 @@
+provider: hellosign
+apis_io: https://apis.io/providers/hellosign/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hellosign-openapi-original.yaml#GET /fax/files/{fax_id}
+    - openapi/_original/hellosign-openapi-original.yaml#GET /signature_request/files/{signature_request_id}
+    - openapi/_original/hellosign-openapi-original.yaml#GET /template/files/{template_id}

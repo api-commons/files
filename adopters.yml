@@ -1,0 +1,281 @@
+context: files
+generated: '2026-11-10'
+adopters:
+- provider: adobe-creative-cloud
+  apis_io: https://apis.io/providers/adobe-creative-cloud/
+  crosswalk: crosswalk/adobe-creative-cloud.yml
+  concepts:
+  - file
+- provider: adobe-suite
+  apis_io: https://apis.io/providers/adobe-suite/
+  crosswalk: crosswalk/adobe-suite.yml
+  concepts:
+  - file
+  - folder
+- provider: arch
+  apis_io: https://apis.io/providers/arch/
+  crosswalk: crosswalk/arch.yml
+  concepts:
+  - file
+- provider: bluebeam
+  apis_io: https://apis.io/providers/bluebeam/
+  crosswalk: crosswalk/bluebeam.yml
+  concepts:
+  - file
+- provider: box
+  apis_io: https://apis.io/providers/box/
+  crosswalk: crosswalk/box.yml
+  concepts:
+  - file
+  - file_version
+  - folder
+  - permission
+- provider: clio
+  apis_io: https://apis.io/providers/clio/
+  crosswalk: crosswalk/clio.yml
+  concepts:
+  - file
+  - file_version
+  - folder
+- provider: cloudflare
+  apis_io: https://apis.io/providers/cloudflare/
+  crosswalk: crosswalk/cloudflare.yml
+  concepts:
+  - bucket
+  - file
+  - permission
+- provider: docling
+  apis_io: https://apis.io/providers/docling/
+  crosswalk: crosswalk/docling.yml
+  concepts:
+  - file
+- provider: docusign
+  apis_io: https://apis.io/providers/docusign/
+  crosswalk: crosswalk/docusign.yml
+  concepts:
+  - file
+  - folder
+  - permission
+- provider: dotloop
+  apis_io: https://apis.io/providers/dotloop/
+  crosswalk: crosswalk/dotloop.yml
+  concepts:
+  - file
+  - folder
+- provider: dropbox
+  apis_io: https://apis.io/providers/dropbox/
+  crosswalk: crosswalk/dropbox.yml
+  concepts:
+  - file
+- provider: element-biosciences
+  apis_io: https://apis.io/providers/element-biosciences/
+  crosswalk: crosswalk/element-biosciences.yml
+  concepts:
+  - file
+- provider: figshare
+  apis_io: https://apis.io/providers/figshare/
+  crosswalk: crosswalk/figshare.yml
+  concepts:
+  - file
+- provider: finalcad
+  apis_io: https://apis.io/providers/finalcad/
+  crosswalk: crosswalk/finalcad.yml
+  concepts:
+  - file
+  - folder
+- provider: google-drive
+  apis_io: https://apis.io/providers/google-drive/
+  crosswalk: crosswalk/google-drive.yml
+  concepts:
+  - file
+  - permission
+- provider: google-suites
+  apis_io: https://apis.io/providers/google-suites/
+  crosswalk: crosswalk/google-suites.yml
+  concepts:
+  - file
+- provider: hellosign
+  apis_io: https://apis.io/providers/hellosign/
+  crosswalk: crosswalk/hellosign.yml
+  concepts:
+  - file
+- provider: hubflo
+  apis_io: https://apis.io/providers/hubflo/
+  crosswalk: crosswalk/hubflo.yml
+  concepts:
+  - file
+  - folder
+- provider: intralinks
+  apis_io: https://apis.io/providers/intralinks/
+  crosswalk: crosswalk/intralinks.yml
+  concepts:
+  - file
+  - folder
+  - permission
+- provider: la-poste-groupe
+  apis_io: https://apis.io/providers/la-poste-groupe/
+  crosswalk: crosswalk/la-poste-groupe.yml
+  concepts:
+  - file
+  - permission
+- provider: lawvu
+  apis_io: https://apis.io/providers/lawvu/
+  crosswalk: crosswalk/lawvu.yml
+  concepts:
+  - file
+- provider: lev
+  apis_io: https://apis.io/providers/lev/
+  crosswalk: crosswalk/lev.yml
+  concepts:
+  - file
+- provider: lightroom
+  apis_io: https://apis.io/providers/lightroom/
+  crosswalk: crosswalk/lightroom.yml
+  concepts:
+  - file
+- provider: loopio
+  apis_io: https://apis.io/providers/loopio/
+  crosswalk: crosswalk/loopio.yml
+  concepts:
+  - file
+- provider: mediavalet
+  apis_io: https://apis.io/providers/mediavalet/
+  crosswalk: crosswalk/mediavalet.yml
+  concepts:
+  - file
+  - folder
+  - permission
+- provider: microsoft-graph
+  apis_io: https://apis.io/providers/microsoft-graph/
+  crosswalk: crosswalk/microsoft-graph.yml
+  concepts:
+  - bucket
+  - file
+  - file_version
+  - permission
+- provider: microsoft-powerpoint
+  apis_io: https://apis.io/providers/microsoft-powerpoint/
+  crosswalk: crosswalk/microsoft-powerpoint.yml
+  concepts:
+  - file
+- provider: mycase
+  apis_io: https://apis.io/providers/mycase/
+  crosswalk: crosswalk/mycase.yml
+  concepts:
+  - file
+- provider: nasuni
+  apis_io: https://apis.io/providers/nasuni/
+  crosswalk: crosswalk/nasuni.yml
+  concepts:
+  - file
+  - permission
+- provider: nhost
+  apis_io: https://apis.io/providers/nhost/
+  crosswalk: crosswalk/nhost.yml
+  concepts:
+  - file
+- provider: progress-software
+  apis_io: https://apis.io/providers/progress-software/
+  crosswalk: crosswalk/progress-software.yml
+  concepts:
+  - file
+  - folder
+  - permission
+- provider: propertyme
+  apis_io: https://apis.io/providers/propertyme/
+  crosswalk: crosswalk/propertyme.yml
+  concepts:
+  - file
+- provider: pure-storage
+  apis_io: https://apis.io/providers/pure-storage/
+  crosswalk: crosswalk/pure-storage.yml
+  concepts:
+  - bucket
+  - file
+  - folder
+  - permission
+- provider: rocket-lawyer
+  apis_io: https://apis.io/providers/rocket-lawyer/
+  crosswalk: crosswalk/rocket-lawyer.yml
+  concepts:
+  - file
+- provider: sadq-holding-limited
+  apis_io: https://apis.io/providers/sadq-holding-limited/
+  crosswalk: crosswalk/sadq-holding-limited.yml
+  concepts:
+  - file
+- provider: sakura-internet
+  apis_io: https://apis.io/providers/sakura-internet/
+  crosswalk: crosswalk/sakura-internet.yml
+  concepts:
+  - bucket
+  - file
+  - folder
+  - permission
+- provider: sevalla
+  apis_io: https://apis.io/providers/sevalla/
+  crosswalk: crosswalk/sevalla.yml
+  concepts:
+  - file
+- provider: seven-bridges
+  apis_io: https://apis.io/providers/seven-bridges/
+  crosswalk: crosswalk/seven-bridges.yml
+  concepts:
+  - file
+  - permission
+- provider: signnow
+  apis_io: https://apis.io/providers/signnow/
+  crosswalk: crosswalk/signnow.yml
+  concepts:
+  - file
+- provider: signwell
+  apis_io: https://apis.io/providers/signwell/
+  crosswalk: crosswalk/signwell.yml
+  concepts:
+  - file
+- provider: skyslope
+  apis_io: https://apis.io/providers/skyslope/
+  crosswalk: crosswalk/skyslope.yml
+  concepts:
+  - file
+- provider: slide
+  apis_io: https://apis.io/providers/slide/
+  crosswalk: crosswalk/slide.yml
+  concepts:
+  - file
+- provider: smokeball
+  apis_io: https://apis.io/providers/smokeball/
+  crosswalk: crosswalk/smokeball.yml
+  concepts:
+  - file
+  - folder
+- provider: temp-md
+  apis_io: https://apis.io/providers/temp-md/
+  crosswalk: crosswalk/temp-md.yml
+  concepts:
+  - file
+- provider: tiledb
+  apis_io: https://apis.io/providers/tiledb/
+  crosswalk: crosswalk/tiledb.yml
+  concepts:
+  - file
+- provider: uploadcare
+  apis_io: https://apis.io/providers/uploadcare/
+  crosswalk: crosswalk/uploadcare.yml
+  concepts:
+  - file
+- provider: zamzar
+  apis_io: https://apis.io/providers/zamzar/
+  crosswalk: crosswalk/zamzar.yml
+  concepts:
+  - file
+- provider: zinnia
+  apis_io: https://apis.io/providers/zinnia/
+  crosswalk: crosswalk/zinnia.yml
+  concepts:
+  - file
+- provider: zoho-writer
+  apis_io: https://apis.io/providers/zoho-writer/
+  crosswalk: crosswalk/zoho-writer.yml
+  concepts:
+  - file

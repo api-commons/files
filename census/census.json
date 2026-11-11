@@ -1,0 +1,5943 @@
+{
+ "cohort_size": 133,
+ "unreadable": [
+  {
+   "spec": "leaseweb/openapi/_original/leaseweb-openapi-openapi.yml",
+   "error": "while parsing a block mapping"
+  },
+  {
+   "spec": "leaseweb/openapi/_original/leaseweb-publiccloud-openapi.yaml",
+   "error": "while parsing a block mapping"
+  }
+ ],
+ "concepts": {
+  "file": {
+   "adobe-creative-cloud": {
+    "segments": [
+     "assets",
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "assetID": "string",
+     "uploadUri": "string",
+     "mediaType": "string",
+     "downloadUri": "string",
+     "nb_results": "integer",
+     "files": "array"
+    },
+    "evidence": [
+     "openapi/_original/adobe-pdf-services-api-openapi-original.yml#DELETE /assets/{assetID}",
+     "openapi/_original/adobe-pdf-services-api-openapi-original.yml#GET /assets/{assetID}",
+     "openapi/_original/adobe-pdf-services-api-openapi-original.yml#POST /assets",
+     "openapi/_original/adobe-stock-api-openapi-original.yml#GET /Rest/Media/1/Search/Files"
+    ]
+   },
+   "adobe-suite": {
+    "segments": [
+     "assets",
+     "document",
+     "files",
+     "uploads",
+     "file"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "sizeInBytes": "integer",
+     "dataSetFileId": "string",
+     "dataSetViewId": "string",
+     "version": "string",
+     "created": "string",
+     "updated": "string",
+     "records": "string",
+     "size": "string",
+     "isValid": "boolean",
+     "_links": "object",
+     "path": "string",
+     "jobId": "string",
+     "user": "string",
+     "filename": "string",
+     "createTime": "number",
+     "endTime": "number",
+     "status": "string",
+     "responseCode": "number",
+     "responseText": "string",
+     "recordCount": "number",
+     "handledCount": "number",
+     "failedCount": "number",
+     "success": "object",
+     "imsOrgId": "string",
+     "sandboxId": "string",
+     "failedRecords": "array",
+     "base": "string",
+     "id": "string",
+     "type": "string",
+     "subtype": "string",
+     "links": "object",
+     "payload": "object",
+     "resources": "array",
+     "album": "object",
+     "errors": "array",
+     "assetID": "string",
+     "uploadUri": "string",
+     "mediaType": "string",
+     "downloadUri": "string",
+     "data": null
+    },
+    "evidence": [
+     "openapi/_original/adobe-suite-aep-batch-ingestion-openapi.yaml#PATCH /batches/{batchId}/datasets/{datasetId}/files/{filePath}",
+     "openapi/_original/adobe-suite-aep-batch-ingestion-openapi.yaml#POST /batches/{batchId}/datasets/{datasetId}/files/{filePath}",
+     "openapi/_original/adobe-suite-aep-batch-ingestion-openapi.yaml#PUT /batches/{batchId}/datasets/{datasetId}/files/{filePath}",
+     "openapi/_original/adobe-suite-aep-data-access-openapi.yaml#GET /batches/{batchId}/files",
+     "openapi/_original/adobe-suite-aep-data-access-openapi.yaml#GET /files/{dataSetFileId}",
+     "openapi/_original/adobe-suite-analytics-classification-openapi.json#GET /{globalCompanyId}/classification/job/export/file/{job_id}",
+     "openapi/_original/adobe-suite-journey-optimizer-suppression-openapi.yaml#DELETE /config/suppression/uploads/{jobId}",
+     "openapi/_original/adobe-suite-journey-optimizer-suppression-openapi.yaml#GET /config/suppression/uploads",
+     "openapi/_original/adobe-suite-journey-optimizer-suppression-openapi.yaml#GET /config/suppression/uploads/{jobId}",
+     "openapi/_original/adobe-suite-journey-optimizer-suppression-openapi.yaml#POST /config/suppression/uploads",
+     "openapi/_original/adobe-suite-lightroom-openapi.json#GET /v2/catalogs/{catalog_id}/albums/{album_id}/assets",
+     "openapi/_original/adobe-suite-lightroom-openapi.json#GET /v2/catalogs/{catalog_id}/assets"
+    ]
+   },
+   "arch": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "kind": "string",
+     "contents": "array",
+     "id": "number",
+     "name": "string",
+     "sizeBytes": "number",
+     "uploadTime": "string",
+     "fileHash": "string",
+     "downloadUrl": "string",
+     "originalName": "string",
+     "activityUrl": "string",
+     "activityIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/activities/{id}/files",
+     "openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/holdings/{id}/files",
+     "openapi/_original/arch-client-api-openapi.json#GET /client-api/v0/tax-documents/{taxDocId}/files",
+     "openapi/_original/arch-client-api-openapi.json#POST /client-api/v0/activities/files",
+     "openapi/_original/arch-client-api-openapi.json#POST /client-api/v0/holdings/{id}/files"
+    ]
+   },
+   "bluebeam": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "sessionId": "string",
+     "name": "string",
+     "pageCount": "integer",
+     "fileSize": "integer",
+     "uploadedBy": "string",
+     "uploadedAt": "string",
+     "markupCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/bluebeam-studio-openapi.yml#GET /studio/v1/sessions/{sessionId}/documents",
+     "openapi/_original/bluebeam-studio-openapi.yml#POST /studio/v1/sessions/{sessionId}/documents"
+    ]
+   },
+   "boldsign": {
+    "segments": [
+     "document"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "documentId": "string",
+     "files": "array",
+     "title": "string",
+     "message": "string",
+     "signers": "array",
+     "cc": "array",
+     "enableSigningOrder": "boolean",
+     "expiryDays": "integer",
+     "expiryDateType": "string",
+     "expiryValue": "integer",
+     "reminderSettings": "object",
+     "enableEmbeddedSigning": "boolean",
+     "disableEmails": "boolean",
+     "disableSMS": "boolean",
+     "brandId": "string",
+     "hideDocumentId": "boolean",
+     "labels": "array",
+     "fileUrls": "array",
+     "sendLinkValidTill": "string",
+     "useTextTags": "boolean",
+     "textTagDefinitions": "array",
+     "enablePrintAndSign": "boolean",
+     "enableReassign": "boolean",
+     "disableExpiryAlert": "boolean",
+     "documentInfo": "array",
+     "onBehalfOf": "string",
+     "AutoDetectFields": "boolean",
+     "documentDownloadOption": "string",
+     "isSandbox": "boolean",
+     "metaData": "object",
+     "formGroups": "array",
+     "recipientNotificationSettings": "object",
+     "enableAuditTrailLocalization": "boolean",
+     "downloadFileName": "string",
+     "scheduledSendTime": "integer",
+     "allowScheduledSend": "boolean",
+     "allowedSignatureTypes": "array",
+     "groupSignerSettings": "object",
+     "enableAllowSignEverywhere": "boolean",
+     "documentTimeZone": "string"
+    },
+    "evidence": [
+     "openapi/_original/boldsign-esignature-openapi.yml#POST /v1/document/send"
+    ]
+   },
+   "box": {
+    "segments": [
+     "files",
+     "items"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "etag": "string",
+     "type": "string",
+     "sequence_id": null,
+     "name": "string",
+     "sha1": "string",
+     "file_version": null,
+     "description": "string",
+     "size": "integer",
+     "path_collection": null,
+     "created_at": "string",
+     "modified_at": "string",
+     "trashed_at": "string",
+     "purged_at": "string",
+     "content_created_at": "string",
+     "content_modified_at": "string",
+     "created_by": null,
+     "modified_by": null,
+     "owned_by": null,
+     "shared_link": null,
+     "parent": null,
+     "item_status": "string",
+     "version_number": "string",
+     "comment_count": "integer",
+     "permissions": null,
+     "tags": null,
+     "lock": null,
+     "extension": "string",
+     "is_package": "boolean",
+     "expiring_embed_link": null,
+     "watermark_info": null,
+     "is_accessible_via_shared_link": "boolean",
+     "allowed_invitee_roles": "array",
+     "is_externally_owned": "boolean",
+     "has_collaborations": "boolean",
+     "metadata": null,
+     "expires_at": "string",
+     "representations": null,
+     "classification": null,
+     "uploader_display_name": null,
+     "disposition_at": "string",
+     "shared_link_permission_options": "array",
+     "is_associated_with_app_item": "boolean",
+     "collections": "array",
+     "is_download_available": "boolean",
+     "download_url": "string",
+     "authenticated_download_url": "string",
+     "allowed_shared_link_access_levels": "array",
+     "limit": "integer",
+     "next_marker": "string",
+     "prev_marker": "string",
+     "total_count": "integer",
+     "offset": "integer",
+     "order": "array"
+    },
+    "evidence": [
+     "openapi/_original/box-openapi.json#DELETE /files/{file_id}",
+     "openapi/_original/box-openapi.json#GET /files/{file_id}",
+     "openapi/_original/box-openapi.json#GET /folders/trash/items",
+     "openapi/_original/box-openapi.json#GET /folders/{folder_id}/items",
+     "openapi/_original/box-openapi.json#POST /files/{file_id}",
+     "openapi/_original/box-openapi.json#PUT /files/{file_id}"
+    ]
+   },
+   "canto": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "POST collection"
+    ],
+    "properties": {
+     "asset_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/canto-pim-openapi.json#DELETE /products/{product_id}/assets",
+     "openapi/_original/canto-pim-openapi.json#DELETE /products/{product_id}/assets/{id}",
+     "openapi/_original/canto-pim-openapi.json#DELETE /products/{product_id}/variants/{variant_id}/assets",
+     "openapi/_original/canto-pim-openapi.json#DELETE /products/{product_id}/variants/{variant_id}/assets/{id}",
+     "openapi/_original/canto-pim-openapi.json#POST /products/{product_id}/assets",
+     "openapi/_original/canto-pim-openapi.json#POST /products/{product_id}/variants/{variant_id}/assets"
+    ]
+   },
+   "clio": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "etag": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "deleted_at": "string",
+     "type": "string",
+     "locked": "boolean",
+     "name": "string",
+     "received_at": "string",
+     "filename": "string",
+     "size": "integer",
+     "content_type": "string",
+     "parent": "object",
+     "matter": "object",
+     "contact": "object",
+     "document_category": "object",
+     "creator": "object",
+     "latest_document_version": null,
+     "group": "object",
+     "external_properties": "array",
+     "communication_id": "integer",
+     "multiparts": "array",
+     "copy_version": "boolean",
+     "fully_uploaded": "boolean",
+     "restore": "boolean",
+     "uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/clio-openapi.json#DELETE /documents/{id}.json",
+     "openapi/_original/clio-openapi.json#GET /documents.json",
+     "openapi/_original/clio-openapi.json#GET /documents/{id}.json",
+     "openapi/_original/clio-openapi.json#PATCH /documents/{id}.json",
+     "openapi/_original/clio-openapi.json#POST /documents.json"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "objects",
+     "assets",
+     "file",
+     "files",
+     "uploads"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "result": "array",
+     "result_info": "object",
+     "errors": "array",
+     "messages": "array",
+     "success": "boolean",
+     "hasStoredData": "boolean",
+     "id": "string",
+     "error": "string",
+     "key": "string",
+     "count": "number",
+     "page": "number",
+     "per_page": "number",
+     "total_count": "number",
+     "total_pages": "number",
+     "description": "string",
+     "last_updated": "string",
+     "name": "string",
+     "size_bytes": "integer",
+     "url": "string",
+     "attempts": "integer",
+     "created_at": "string",
+     "feed_id": "integer",
+     "filename": "string",
+     "poll_after_seconds": "integer",
+     "stage": "string",
+     "status": "string",
+     "updated_at": "string",
+     "upload_id": "integer",
+     "custom_metadata": "object",
+     "etag": "string",
+     "http_metadata": "object",
+     "last_modified": "string",
+     "size": "integer",
+     "ssec": "boolean",
+     "storage_class": "string",
+     "uploaded": "string",
+     "version": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{id}/objects",
+     "openapi/_original/cloudflare-durable-objects-openapi.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{namespace_id}/objects",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/workers/durable_objects/namespaces/{id}/objects",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/custom_pages/assets/{asset_name}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}/objects",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}/objects/{object_key}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /zones/{zone_id}/custom_pages/assets/{asset_name}",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/artifacts/namespaces/{namespace}/repos/{name}/file",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/autorag/rags/{id}/files",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/custom_pages/assets",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/custom_pages/assets/{asset_name}",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/intel/indicator-feeds/{feed_id}/uploads/{upload_id}"
+    ]
+   },
+   "docling": {
+    "segments": [
+     "file"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "document": "object",
+     "status": "string",
+     "errors": "array",
+     "processing_time": "number",
+     "timings": "object"
+    },
+    "evidence": [
+     "openapi/_original/docling-serve-openapi.yml#POST /v1/convert/file"
+    ]
+   },
+   "documenso": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "documents": "array",
+     "totalPages": "integer",
+     "documentId": "integer",
+     "recipients": "array",
+     "uploadUrl": "string",
+     "title": "string",
+     "externalId": "string",
+     "folderId": "string",
+     "meta": "object",
+     "formValues": "object",
+     "id": "integer",
+     "userId": "integer",
+     "teamId": "integer",
+     "status": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "completedAt": "string",
+     "fields": "array"
+    },
+    "evidence": [
+     "openapi/_original/documenso-openapi.yml#DELETE /documents/{id}",
+     "openapi/_original/documenso-openapi.yml#GET /documents",
+     "openapi/_original/documenso-openapi.yml#GET /documents/{id}",
+     "openapi/_original/documenso-openapi.yml#POST /documents"
+    ]
+   },
+   "docuseal": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "documents": "array",
+     "slug": "string",
+     "name": "string",
+     "preferences": "object",
+     "schema": "array",
+     "fields": "array",
+     "submitters": "array",
+     "author_id": "integer",
+     "archived_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "source": "string",
+     "external_id": "string",
+     "folder_id": "integer",
+     "folder_name": "string",
+     "shared_link": "boolean",
+     "author": "object",
+     "merge": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/docuseal-docuseal-api-openapi.yml#GET /submissions/{id}/documents",
+     "openapi/_original/docuseal-docuseal-api-openapi.yml#PUT /templates/{id}/documents"
+    ]
+   },
+   "docusign": {
+    "segments": [
+     "documents",
+     "files",
+     "file"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "envelopeId": "string",
+     "envelopeDocuments": "array",
+     "accessibility": "string",
+     "allowMarkup": "string",
+     "allowReassign": "string",
+     "allowRecipientRecursion": "string",
+     "allowViewHistory": "string",
+     "asynchronous": "string",
+     "attachments": "array",
+     "attachmentsUri": "string",
+     "authoritativeCopy": "string",
+     "authoritativeCopyDefault": "string",
+     "autoNavigation": "string",
+     "brandId": "string",
+     "brandLock": "string",
+     "certificateUri": "string",
+     "completedDateTime": "string",
+     "compositeTemplates": "array",
+     "copyRecipientData": "string",
+     "createdDateTime": "string",
+     "customFields": "object",
+     "customFieldsUri": "string",
+     "declinedDateTime": "string",
+     "deletedDateTime": "string",
+     "deliveredDateTime": "string",
+     "disableResponsiveDocument": "string",
+     "documents": "array",
+     "documentsCombinedUri": "string",
+     "documentsUri": "string",
+     "emailBlurb": "string",
+     "emailSettings": "object",
+     "emailSubject": "string",
+     "enableWetSign": "string",
+     "enforceSignerVisibility": "string",
+     "envelopeIdStamping": "string",
+     "envelopeUri": "string",
+     "eventNotification": "object",
+     "initialSentDateTime": "string",
+     "is21CFRPart11": "string",
+     "isSignatureProviderEnvelope": "string",
+     "lastModifiedDateTime": "string",
+     "lockInformation": "object",
+     "messageLock": "string",
+     "notification": "object",
+     "notificationUri": "string",
+     "password": "string",
+     "purgeState": "string",
+     "recipients": "object",
+     "recipientsLock": "string",
+     "recipientsUri": "string",
+     "sentDateTime": "string",
+     "signerCanSignOnMobile": "string",
+     "signingLocation": "string",
+     "status": "string",
+     "statusChangedDateTime": "string",
+     "templateId": "string",
+     "templateRoles": "array",
+     "templatesUri": "string",
+     "transactionId": "string",
+     "useDisclosure": "string",
+     "voidedDateTime": "string",
+     "voidedReason": "string",
+     "documentId": "integer",
+     "name": "string",
+     "roomId": "integer",
+     "ownerId": "integer",
+     "size": "integer",
+     "folderId": "integer",
+     "createdDate": "string",
+     "isSigned": "boolean",
+     "contentType": "string",
+     "base64Contents": "string",
+     "isDynamic": "boolean",
+     "resultSetSize": "integer",
+     "startPosition": "integer",
+     "endPosition": "integer",
+     "nextUri": "string",
+     "priorUri": "string",
+     "totalRowCount": "integer",
+     "docuSignFormId": "string",
+     "isArchived": "boolean",
+     "isVirtual": "boolean",
+     "owner": "object"
+    },
+    "evidence": [
+     "openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}/documents",
+     "openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}",
+     "openapi/_original/docusign-openapi-original.yml#DELETE /v2/accounts/{accountId}/envelopes/{envelopeId}/documents",
+     "openapi/_original/docusign-openapi-original.yml#DELETE /v2/accounts/{accountId}/templates/{templateId}/documents",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/brands/{brandId}/file",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/envelopes/{envelopeId}/documents",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/envelopes/{envelopeId}/documents/{documentId}",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/templates/{templateId}/documents",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/templates/{templateId}/documents/{documentId}",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}/files/{fileId}",
+     "openapi/_original/docusign-openapi-original.yml#POST /v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}/files",
+     "openapi/_original/docusign-openapi-original.yml#PUT /v2/accounts/{accountId}/envelopes/{envelopeId}/documents"
+    ]
+   },
+   "dotloop": {
+    "segments": [
+     "document"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document",
+     "openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document/{document_id}",
+     "openapi/_original/dotloop-openapi.yml#POST /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}/document"
+    ]
+   },
+   "dropbox": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/dropbox-openapi.yml#GET /fax/files/{fax_id}",
+     "openapi/_original/dropbox-openapi.yml#GET /signature_request/files/{signature_request_id}",
+     "openapi/_original/dropbox-openapi.yml#GET /template/files/{template_id}"
+    ]
+   },
+   "element-biosciences": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "files": "array",
+     "subdirectories": "array",
+     "nextPageToken": "string",
+     "isTruncated": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/executions/{execution_id}/files",
+     "openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/runs/{run_id}/files",
+     "openapi/_original/element-biosciences-cloud-api-openapi-original.yml#GET /v1/storage-connections/{storage_connection_id}/files"
+    ]
+   },
+   "figshare": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "size": "integer",
+     "is_link_only": "boolean",
+     "download_url": "string",
+     "supplied_md5": "string",
+     "computed_md5": "string",
+     "mimetype": "string",
+     "viewer_type": "string",
+     "preview_state": "string",
+     "upload_url": "string",
+     "upload_token": "string",
+     "is_attached_to_public_version": "boolean",
+     "location": "string",
+     "link": "string",
+     "md5": "string",
+     "folder_path": "string"
+    },
+    "evidence": [
+     "openapi/_original/figshare-api-openapi.yml#DELETE /account/articles/{article_id}/files/{file_id}",
+     "openapi/_original/figshare-api-openapi.yml#GET /account/articles/{article_id}/files",
+     "openapi/_original/figshare-api-openapi.yml#GET /account/articles/{article_id}/files/{file_id}",
+     "openapi/_original/figshare-api-openapi.yml#GET /account/projects/{project_id}/articles/{article_id}/files",
+     "openapi/_original/figshare-api-openapi.yml#GET /account/projects/{project_id}/articles/{article_id}/files/{file_id}",
+     "openapi/_original/figshare-api-openapi.yml#GET /articles/{article_id}/files",
+     "openapi/_original/figshare-api-openapi.yml#GET /articles/{article_id}/files/{file_id}",
+     "openapi/_original/figshare-api-openapi.yml#GET /articles/{article_id}/versions/{version_id}/files",
+     "openapi/_original/figshare-api-openapi.yml#POST /account/articles/{article_id}/files",
+     "openapi/_original/figshare-api-openapi.yml#POST /account/articles/{article_id}/files/{file_id}"
+    ]
+   },
+   "finalcad": {
+    "segments": [
+     "documents",
+     "uploads"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/finalcad-medias-openapi.yml#POST /medias/uploads",
+     "openapi/_original/finalcad-projects-openapi.yml#DELETE /projects/{project_id}/documents/{document_id}",
+     "openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/documents",
+     "openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/documents/{document_id}",
+     "openapi/_original/finalcad-projects-openapi.yml#POST /projects/{project_id}/documents",
+     "openapi/_original/finalcad-projects-openapi.yml#POST /projects/{project_id}/medias/uploads",
+     "openapi/_original/finalcad-projects-openapi.yml#PUT /projects/{project_id}/documents/{document_id}"
+    ]
+   },
+   "getaccept": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "tags": "string",
+     "company_name": "string",
+     "created_at": "string",
+     "expiration_date": "string",
+     "id": "string",
+     "is_private": "boolean",
+     "is_signing": "boolean",
+     "name": "string",
+     "sender_name": "string",
+     "sender_thumb": "string",
+     "status": "string",
+     "type": "string",
+     "value": "integer",
+     "auto_comment_email": "string",
+     "auto_comment_text": "string",
+     "company_id": "string",
+     "company_logo_url": "string",
+     "company_number": "string",
+     "download_url": "string",
+     "email_send_message": "string",
+     "email_send_subject": "string",
+     "email_send_template_id": "string",
+     "entity_auto_comment_text": "string",
+     "external_client_id": "string",
+     "external_editor_id": "string",
+     "external_editor_type": "string",
+     "external_id": "string",
+     "field_count": "integer",
+     "is_auto_comment": "boolean",
+     "is_auto_comment_email": "boolean",
+     "is_identify_recipient": "boolean",
+     "is_reminder_sending": "boolean",
+     "is_scheduled_sending": "boolean",
+     "is_selfsign": "boolean",
+     "is_signed": "boolean",
+     "is_signing_biometric": "boolean",
+     "is_signing_forward": "boolean",
+     "is_signing_initials": "boolean",
+     "is_signing_order": "boolean",
+     "is_video": "boolean",
+     "parent_id": "string",
+     "preview_url": "string",
+     "recipients": "array",
+     "scheduled_sending_time": "string",
+     "send_date": "string",
+     "sender_email": "string",
+     "sender_thumb_url": "string",
+     "sign_date": "string",
+     "thumb_url": "string",
+     "unique_id": "integer",
+     "user_id": "string",
+     "attachments": "array",
+     "custom_data": "object",
+     "custom_fields": "array",
+     "custom_pricing_tables": "array",
+     "external_eid_signature": "boolean",
+     "external_signature_settings": "object",
+     "file_content": "string",
+     "file_ids": "string",
+     "file_name": "string",
+     "file_url": "string",
+     "is_automatic_sending": "boolean",
+     "is_sms_sending": "boolean",
+     "sender_id": "string",
+     "template_id": "string",
+     "video_id": "string",
+     "contract_end_date": "string",
+     "contract_start_date": "string"
+    },
+    "evidence": [
+     "openapi/_original/getaccept-openapi-original.json#DELETE /documents/{documentId}",
+     "openapi/_original/getaccept-openapi-original.json#GET /documents",
+     "openapi/_original/getaccept-openapi-original.json#GET /documents/{documentId}",
+     "openapi/_original/getaccept-openapi-original.json#POST /documents",
+     "openapi/_original/getaccept-openapi-original.json#PUT /documents/{documentId}"
+    ]
+   },
+   "gonitro": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "createdAt": "string",
+     "status": "string",
+     "ID": "string"
+    },
+    "evidence": [
+     "openapi/_original/gonitro-sign-openapi.json#DELETE /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/gonitro-sign-openapi.json#GET /sign/envelopes/{envelopeID}/documents",
+     "openapi/_original/gonitro-sign-openapi.json#GET /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/gonitro-sign-openapi.json#PATCH /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/gonitro-sign-openapi.json#POST /sign/envelopes/{envelopeID}/documents"
+    ]
+   },
+   "google-cloud-firestore": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "documents": "array",
+     "nextPageToken": "string",
+     "name": "string",
+     "fields": "object",
+     "createTime": "string",
+     "updateTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloud-firestore-openapi.yml#GET /projects/{project}/databases/{database}/documents/{collectionId}",
+     "openapi/_original/cloud-firestore-openapi.yml#POST /projects/{project}/databases/{database}/documents/{collectionId}"
+    ]
+   },
+   "google-docs": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "documentId": "string",
+     "title": "string",
+     "tabs": "array",
+     "revisionId": "string",
+     "suggestionsViewMode": "string",
+     "body": "object",
+     "headers": "object",
+     "footers": "object",
+     "footnotes": "object",
+     "documentStyle": "object",
+     "suggestedDocumentStyleChanges": "object",
+     "namedStyles": "object",
+     "suggestedNamedStylesChanges": "object",
+     "lists": "object",
+     "namedRanges": "object",
+     "inlineObjects": "object",
+     "positionedObjects": "object"
+    },
+    "evidence": [
+     "openapi/_original/google-docs-api-v1-openapi.yml#GET /v1/documents/{documentId}",
+     "openapi/_original/google-docs-api-v1-openapi.yml#POST /v1/documents"
+    ]
+   },
+   "google-drive": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "nextPageToken": "string",
+     "files": "array",
+     "id": "string",
+     "name": "string",
+     "mimeType": "string",
+     "parents": "array",
+     "createdTime": "string",
+     "modifiedTime": "string",
+     "size": "string",
+     "trashed": "boolean",
+     "webViewLink": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-drive-openapi.yml#DELETE /files/{fileId}",
+     "openapi/_original/google-drive-openapi.yml#GET /files",
+     "openapi/_original/google-drive-openapi.yml#GET /files/{fileId}",
+     "openapi/_original/google-drive-openapi.yml#PATCH /files/{fileId}",
+     "openapi/_original/google-drive-openapi.yml#POST /files"
+    ]
+   },
+   "google-suite-docs-sheets-slides-gmail": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "documentId": "string",
+     "title": "string",
+     "body": "object",
+     "revisionId": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-suite-docs-sheets-slides-gmail-openapi.yml#GET /v1/documents/{documentId}",
+     "openapi/_original/google-suite-docs-sheets-slides-gmail-openapi.yml#POST /v1/documents"
+    ]
+   },
+   "google-suites": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "mimeType": "string",
+     "parents": "array",
+     "webViewLink": "string",
+     "size": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-suites-openapi.yml#DELETE /drive/v3/files/{fileId}",
+     "openapi/_original/google-suites-openapi.yml#GET /drive/v3/files",
+     "openapi/_original/google-suites-openapi.yml#GET /drive/v3/files/{fileId}",
+     "openapi/_original/google-suites-openapi.yml#POST /drive/v3/files"
+    ]
+   },
+   "hellosign": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/hellosign-openapi-original.yaml#GET /fax/files/{fax_id}",
+     "openapi/_original/hellosign-openapi-original.yaml#GET /signature_request/files/{signature_request_id}",
+     "openapi/_original/hellosign-openapi-original.yaml#GET /template/files/{template_id}"
+    ]
+   },
+   "hubflo": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "parent_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/messages/{message_id}/files",
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/tasks/{task_id}/files",
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/tasks/{task_id}/files/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/files",
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/files/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#PATCH /api/v2/tasks/{task_id}/files/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#PATCH /api/v2/workspaces/{workspace_id}/files/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#POST /api/v2/tasks/{task_id}/files",
+     "openapi/_original/hubflo-openapi-original.yml#POST /api/v2/workspaces/{workspace_id}/files"
+    ]
+   },
+   "inkit": {
+    "segments": [
+     "document"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "render_id": "string",
+     "template_id": "string",
+     "status": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/inkit-document-generation-api-openapi.yml#DELETE /document/{id}",
+     "openapi/_original/inkit-document-generation-api-openapi.yml#GET /document",
+     "openapi/_original/inkit-document-generation-api-openapi.yml#GET /document/{id}"
+    ]
+   },
+   "intralinks": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "folderId": "string",
+     "fileSize": "integer",
+     "extension": "string",
+     "version": "integer",
+     "note": "string",
+     "createdBy": "string",
+     "createdOn": "string",
+     "updatedOn": "string",
+     "lastAccessedOn": "string"
+    },
+    "evidence": [
+     "openapi/_original/intralinks-api-openapi.yml#DELETE /workspaces/{workspaceId}/documents/{documentId}",
+     "openapi/_original/intralinks-api-openapi.yml#GET /workspaces/{workspaceId}/documents",
+     "openapi/_original/intralinks-api-openapi.yml#GET /workspaces/{workspaceId}/documents/{documentId}",
+     "openapi/_original/intralinks-api-openapi.yml#POST /workspaces/{workspaceId}/documents",
+     "openapi/_original/intralinks-api-openapi.yml#PUT /workspaces/{workspaceId}/documents/{documentId}"
+    ]
+   },
+   "la-poste-groupe": {
+    "segments": [
+     "document",
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/la-poste-groupe-digiposte-openapi.json#GET /partner/procedure/{user_procedure_id}/document/{document_id}",
+     "openapi/_original/la-poste-groupe-digiposte-openapi.json#GET /partner/procedure/{user_procedure_id}/documents"
+    ]
+   },
+   "lawvu": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "displayId": "string",
+     "type": null,
+     "folder": null,
+     "contentType": "string",
+     "resource": null,
+     "restricted": "boolean",
+     "size": "integer",
+     "version": "integer",
+     "created": null,
+     "modified": null
+    },
+    "evidence": [
+     "openapi/_original/lawvu-openapi.yml#DELETE /v2/files/{fileId}",
+     "openapi/_original/lawvu-openapi.yml#GET /v2/contracts/{contractId}/files/{fileId}",
+     "openapi/_original/lawvu-openapi.yml#GET /v2/files",
+     "openapi/_original/lawvu-openapi.yml#GET /v2/files/{fileId}",
+     "openapi/_original/lawvu-openapi.yml#GET /v2/matters/{matterId}/files/{fileId}",
+     "openapi/_original/lawvu-openapi.yml#PATCH /v2/files/{fileId}",
+     "openapi/_original/lawvu-openapi.yml#POST /v2/files",
+     "openapi/_original/lawvu-openapi.yml#POST /v2/files/{fileId}"
+    ]
+   },
+   "lev": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "file_name": "string",
+     "extension": "string",
+     "size_bytes": "integer",
+     "folder_path": "string",
+     "uploaded_at": "string",
+     "vault": "object"
+    },
+    "evidence": [
+     "openapi/_original/lev-openapi-original.json#GET /api/external/v2/deals/{deal_id}/documents",
+     "openapi/_original/lev-openapi-original.json#GET /api/external/v2/deals/{deal_id}/documents/{document_id}"
+    ]
+   },
+   "lightroom": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "base": "string",
+     "resources": "array",
+     "links": "object",
+     "id": "string",
+     "type": "string",
+     "subtype": "string",
+     "created": "string",
+     "updated": "string",
+     "payload": "object"
+    },
+    "evidence": [
+     "openapi/_original/lightroom-albums-openapi.yml#DELETE /catalogs/{catalog_id}/albums/{album_id}/assets/{asset_id}",
+     "openapi/_original/lightroom-albums-openapi.yml#GET /catalogs/{catalog_id}/albums/{album_id}/assets",
+     "openapi/_original/lightroom-albums-openapi.yml#PUT /catalogs/{catalog_id}/albums/{album_id}/assets",
+     "openapi/_original/lightroom-assets-openapi.yml#GET /catalogs/{catalog_id}/assets",
+     "openapi/_original/lightroom-assets-openapi.yml#GET /catalogs/{catalog_id}/assets/{asset_id}",
+     "openapi/_original/lightroom-assets-openapi.yml#PUT /catalogs/{catalog_id}/assets/{asset_id}",
+     "openapi/_original/lightroom-services-openapi.yml#GET /catalogs/{catalog_id}/albums/{album_id}/assets",
+     "openapi/_original/lightroom-services-openapi.yml#GET /catalogs/{catalog_id}/assets",
+     "openapi/_original/lightroom-services-openapi.yml#GET /catalogs/{catalog_id}/assets/{asset_id}",
+     "openapi/_original/lightroom-services-openapi.yml#PUT /catalogs/{catalog_id}/albums/{album_id}/assets",
+     "openapi/_original/lightroom-services-openapi.yml#PUT /catalogs/{catalog_id}/assets/{asset_id}"
+    ]
+   },
+   "loopio": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "filename": "string",
+     "fileExtension": "string",
+     "status": "string",
+     "size": "integer",
+     "creator": "object",
+     "createdDate": "string",
+     "guid": "string",
+     "url": "string",
+     "lastUpdated": "string",
+     "lastUpdatedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/loopio-openapi.yaml#DELETE /files/{fileId}",
+     "openapi/_original/loopio-openapi.yaml#GET /files/{fileId}"
+    ]
+   },
+   "machinelibrary-ai": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "document": null,
+     "id": "string",
+     "uris": "array"
+    },
+    "evidence": [
+     "openapi/_original/machinelibrary-ai-openapi.json#GET /v2/documents/{document_id}"
+    ]
+   },
+   "mediavalet": {
+    "segments": [
+     "assets",
+     "uploads"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "assetCount": "integer",
+     "assets": "array",
+     "brandedPortalId": "string",
+     "versionId": "string",
+     "sectionId": "string",
+     "categoryIds": "array",
+     "assetIds": "array",
+     "sourceSectionId": "string",
+     "destinationSectionId": "string",
+     "assetId": "string",
+     "assetFile": "object",
+     "sectionIds": "array",
+     "_links": "object",
+     "translationKeys": "object",
+     "interpolations": "object",
+     "permissions": "array",
+     "id": "string",
+     "fileSizeInBytes": "integer",
+     "filename": "string",
+     "fileNameVersioning": "boolean",
+     "title": "string",
+     "media": "object",
+     "file": "object",
+     "description": "string",
+     "altText": "string",
+     "containerName": "string",
+     "status": "integer",
+     "rating": "object",
+     "attributes": "object",
+     "record": "object",
+     "categories": "array",
+     "keywords": "array",
+     "relatedassets": "array",
+     "assetCheckOutComment": "string",
+     "assetCheckInComment": "string",
+     "checkedOutBy": "string",
+     "renderAsPdf": "boolean",
+     "wopiEnabled": "boolean",
+     "userViewCounts": "object",
+     "createdAt": "string",
+     "hasVideoIntelligenceContent": "boolean",
+     "followed": "boolean",
+     "op": "string",
+     "path": "string",
+     "value": "object",
+     "from": "string",
+     "downloadStartedAt": "string",
+     "name": "string",
+     "count": "integer",
+     "thumbNailUrl": "string",
+     "type": "string",
+     "uploadUrl": "string",
+     "uploadFileName": "string",
+     "mediaFileId": "string"
+    },
+    "evidence": [
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/sections/{sectionId}/uploads",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/{sectionId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/categories/{categoryId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/lightboxes/{lightboxId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/{brandedPortalId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/{brandedPortalId}/sections/{sectionId}/uploads",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /brandedportals/{brandedPortalId}/{sectionId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /public/{libraryId}/brandedportals/{brandedPortalId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#GET /public/{libraryId}/brandedportals/{brandedPortalId}/{sectionId}/assets",
+     "openapi/_original/mediavalet-branded-portals-api-openapi.yml#POST /brandedportals/validate/assets"
+    ]
+   },
+   "microsoft-graph": {
+    "segments": [
+     "files",
+     "documents",
+     "items",
+     "file"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "@odata.type": "string",
+     "createdDateTime": "string",
+     "displayName": "string",
+     "fileData": null,
+     "fileName": "string",
+     "isDefault": "boolean",
+     "isMajorVersion": "boolean",
+     "language": "string",
+     "localizations": "array",
+     "versions": "array",
+     "azureStorageUri": "string",
+     "azureStorageUriExpirationDateTime": "string",
+     "isCommitted": "boolean",
+     "isDependency": "boolean",
+     "manifest": "string",
+     "name": "string",
+     "size": "number",
+     "sizeEncrypted": "number",
+     "uploadState": null,
+     "audio": null,
+     "bundle": null,
+     "content": "string",
+     "cTag": "string",
+     "deleted": null,
+     "file": null,
+     "fileSystemInfo": null,
+     "folder": null,
+     "image": null,
+     "location": null,
+     "malware": null,
+     "package": null,
+     "pendingOperations": null,
+     "photo": null,
+     "publication": null,
+     "remoteItem": null,
+     "root": null,
+     "searchResult": null,
+     "shared": null,
+     "sharepointIds": null,
+     "specialFolder": null,
+     "video": null,
+     "webDavUrl": "string",
+     "analytics": null,
+     "children": "array",
+     "listItem": null,
+     "permissions": "array",
+     "retentionLabel": null,
+     "subscriptions": "array",
+     "thumbnails": "array",
+     "workbook": null,
+     "contentType": null,
+     "documentSetVersions": "array",
+     "driveItem": null,
+     "fields": null,
+     "createdBy": null,
+     "description": "string",
+     "eTag": "string",
+     "lastModifiedBy": null,
+     "lastModifiedDateTime": "string",
+     "parentReference": null,
+     "webUrl": "string",
+     "createdByUser": null,
+     "lastModifiedByUser": null,
+     "downloadedDateTime": "string",
+     "uploadedDateTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/agreements-openapi-original.yml#DELETE /agreements/{agreement-id}/file",
+     "openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file",
+     "openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/files",
+     "openapi/_original/agreements-openapi-original.yml#PATCH /agreements/{agreement-id}/file",
+     "openapi/_original/agreements-openapi-original.yml#POST /agreements/{agreement-id}/files",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.androidLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.iosLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.macOSDmgApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.macOSLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.managedAndroidLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.managedIOSLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}",
+     "openapi/_original/deviceappmanagement-openapi-original.yml#DELETE /deviceAppManagement/mobileApps/{mobileApp-id}/graph.managedMobileLobApp/contentVersions/{mobileAppContent-id}/files/{mobileAppContentFile-id}"
+    ]
+   },
+   "microsoft-powerpoint": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "size": "integer",
+     "webUrl": "string",
+     "file": "object",
+     "folder": "object",
+     "createdDateTime": "string",
+     "lastModifiedDateTime": "string",
+     "parentReference": "object"
+    },
+    "evidence": [
+     "openapi/_original/powerpoint-driveitems-api-openapi.yml#DELETE /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-driveitems-api-openapi.yml#GET /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-driveitems-api-openapi.yml#PATCH /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-openapi.yml#DELETE /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-openapi.yml#GET /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-openapi.yml#PATCH /me/drive/items/{item-id}"
+    ]
+   },
+   "mycase": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "case_id": "string",
+     "folder_id": "string",
+     "content_type": "string",
+     "size": "integer",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/mycase-open-api-openapi.yml#POST /cases/{caseId}/documents"
+    ]
+   },
+   "nasuni": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/nasuni-portal-v0-openapi.json#GET /cloud-credentials/files/{file_id}",
+     "openapi/_original/nasuni-portal-v0-openapi.yml#GET /cloud-credentials/files/{file_id}"
+    ]
+   },
+   "nhost": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "size": "integer",
+     "bucketId": "string",
+     "etag": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "isUploaded": "boolean",
+     "mimeType": "string",
+     "uploadedByUserId": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/nhost-storage-openapi.yml#DELETE /files/{id}",
+     "openapi/_original/nhost-storage-openapi.yml#GET /files/{id}",
+     "openapi/_original/nhost-storage-openapi.yml#POST /files",
+     "openapi/_original/nhost-storage-openapi.yml#PUT /files/{id}"
+    ]
+   },
+   "nitro-software": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "createdAt": "string",
+     "status": "string",
+     "ID": "string"
+    },
+    "evidence": [
+     "openapi/_original/nitro-software-openapi-original.json#DELETE /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/nitro-software-openapi-original.json#GET /sign/envelopes/{envelopeID}/documents",
+     "openapi/_original/nitro-software-openapi-original.json#GET /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/nitro-software-openapi-original.json#PATCH /sign/envelopes/{envelopeID}/documents/{documentID}",
+     "openapi/_original/nitro-software-openapi-original.json#POST /sign/envelopes/{envelopeID}/documents"
+    ]
+   },
+   "pandadoc": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "status": "string",
+     "date_created": "string",
+     "date_modified": "string",
+     "expiration_date": "string",
+     "version": "string",
+     "template_uuid": "string",
+     "url": "string",
+     "recipients": "array",
+     "fields": "object",
+     "tokens": "array",
+     "metadata": "object",
+     "tags": "array",
+     "folder_uuid": "string",
+     "template": "object",
+     "grand_total": "object"
+    },
+    "evidence": [
+     "openapi/_original/pandadoc-rest-api-openapi.yml#DELETE /documents/{id}",
+     "openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents",
+     "openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/{id}",
+     "openapi/_original/pandadoc-rest-api-openapi.yml#POST /documents"
+    ]
+   },
+   "powerpoint": {
+    "segments": [
+     "items"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "size": "integer",
+     "webUrl": "string",
+     "file": "object",
+     "folder": "object",
+     "createdDateTime": "string",
+     "lastModifiedDateTime": "string",
+     "parentReference": "object"
+    },
+    "evidence": [
+     "openapi/_original/powerpoint-openapi.yml#DELETE /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-openapi.yml#GET /me/drive/items/{item-id}",
+     "openapi/_original/powerpoint-openapi.yml#PATCH /me/drive/items/{item-id}"
+    ]
+   },
+   "progress-software": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "orgID": "string",
+     "originalFileType": "string",
+     "currentFileType": "string",
+     "uploadComment": "string",
+     "uploadIP": "string",
+     "uploadAgentBrand": "string",
+     "uploadAgentVersion": "string",
+     "uploadIntegrity": "integer",
+     "dlpChecked": "boolean",
+     "dlpMetaData": "integer",
+     "dlpViolation": "string",
+     "dlpBlocked": "boolean",
+     "uploadUserFullName": "string",
+     "downloadCount": "integer",
+     "originalFilename": "string",
+     "hash": "string",
+     "folderID": "integer",
+     "uploadUsername": "string",
+     "path": "string",
+     "uploadStamp": "string",
+     "isNew": "boolean",
+     "name": "string",
+     "size": "integer",
+     "id": "string",
+     "fileId": "string",
+     "bytes": "integer",
+     "maxChunkSize": "integer"
+    },
+    "evidence": [
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#DELETE /api/v1/files/{Id}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/files",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/files/{Id}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{Id}/files",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{folderId}/files/{fileId}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#PATCH /api/v1/files/{Id}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#POST /api/v1/folders/{Id}/files"
+    ]
+   },
+   "propertyme": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "ResponseStatus": "object",
+     "IsSuccessful": "boolean",
+     "Id": "string",
+     "LotId": "string",
+     "ContactId": "string",
+     "TenantInvoiceId": "string",
+     "InspectionTaskId": "string",
+     "IsClientVisible": "boolean",
+     "DocumentLinkId": "string",
+     "TenantInvoiceNumber": "integer",
+     "ChartAccountName": "string",
+     "JobTaskId": "string",
+     "TaskId": "string",
+     "JobTaskSummary": "string",
+     "Number": "integer",
+     "FolioType": "string",
+     "LotReference": "string",
+     "CustomerId": "string",
+     "CreatedOn": "string",
+     "MimeType": "string",
+     "FileType": "string",
+     "FileName": "string",
+     "Size": "integer",
+     "ThumbnailsFileSize": "integer",
+     "Status": "string",
+     "IsReadOnly": "boolean",
+     "DocumentType": "string",
+     "DocumentArea": "string",
+     "QuoteId": "string"
+    },
+    "evidence": [
+     "openapi/_original/propertyme-openapi.json#GET /v1/jobtasks/{Id}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/contacts/{Id}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/inspections/{Id}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/jobtasks/{Id}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/jobtasks/{Id}/quotation/{QuoteId}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/lots/{Id}/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/lots/{Id}/folio/documents",
+     "openapi/_original/propertyme-openapi.json#POST /v1/tasks/{Id}/documents"
+    ]
+   },
+   "pure-storage": {
+    "segments": [
+     "file",
+     "files"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "source": null,
+     "source_path": "string",
+     "continuation_token": "string",
+     "more_items_remaining": "boolean",
+     "total_item_count": "integer",
+     "name": "string",
+     "context": null,
+     "target_type": "string",
+     "directory": null,
+     "keep_for": "integer",
+     "keep_size": "integer",
+     "errors": "array",
+     "id": "string",
+     "resource_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/flasharray-rest-api-openapi.yml#DELETE /api/2.52/log-targets/file",
+     "openapi/_original/flasharray-rest-api-openapi.yml#GET /api/2.52/log-targets/file",
+     "openapi/_original/flasharray-rest-api-openapi.yml#PATCH /api/2.52/log-targets/file",
+     "openapi/_original/flasharray-rest-api-openapi.yml#POST /api/2.52/files",
+     "openapi/_original/flasharray-rest-api-openapi.yml#POST /api/2.52/log-targets/file"
+    ]
+   },
+   "rocket-lawyer": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "signable": "boolean",
+     "contentType": "string",
+     "order": "integer",
+     "originalContentChecksum": "string",
+     "inputs": "array",
+     "pages": "array",
+     "metaData": "string"
+    },
+    "evidence": [
+     "openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /documents/{documentId}",
+     "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#DELETE /binders/{binderId}/documents/{documentId}",
+     "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#GET /binders/{binderId}/documents/{documentId}",
+     "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PATCH /binders/{binderId}/documents/{documentId}",
+     "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#POST /binders/{binderId}/documents",
+     "openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PUT /binders/{binderId}/documents/{documentId}"
+    ]
+   },
+   "sadq-holding-limited": {
+    "segments": [
+     "files",
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/documents/{id}",
+     "openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/envelopes/{envelopeId}/files"
+    ]
+   },
+   "sakura-internet": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "created_at": "string",
+     "status": null,
+     "name": "string",
+     "model": "string",
+     "chunk_size": "integer",
+     "chunk_count": "integer",
+     "tags": "array",
+     "error_message": "string",
+     "content": "string",
+     "Count": "integer",
+     "From": "integer",
+     "Total": "integer",
+     "CloudHSMDocuments": "array",
+     "is_ok": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/ai-engine-rag-api.yaml#DELETE /v1/documents/{id}/",
+     "openapi/_original/ai-engine-rag-api.yaml#GET /v1/documents/",
+     "openapi/_original/ai-engine-rag-api.yaml#GET /v1/documents/{id}/",
+     "openapi/_original/ai-engine-rag-api.yaml#PUT /v1/documents/{id}/",
+     "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml#DELETE /v1/documents/{id}/",
+     "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml#GET /v1/documents/",
+     "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml#GET /v1/documents/{id}/",
+     "openapi/_original/sakura-internet-ai-engine-rag-openapi.yml#PUT /v1/documents/{id}/",
+     "openapi/_original/sakura-internet-security-encryption-openapi.yml#GET /cloudhsm/licenses/{license_resource_id}/documents",
+     "openapi/_original/security-encryption-api.yaml#GET /cloudhsm/licenses/{license_resource_id}/documents"
+    ]
+   },
+   "sevalla": {
+    "segments": [
+     "objects"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "key": "string",
+     "size_bytes": "integer",
+     "last_modified": "string",
+     "etag": "string"
+    },
+    "evidence": [
+     "openapi/_original/sevalla-openapi.yml#GET /object-storages/{id}/objects"
+    ]
+   },
+   "seven-bridges": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "href": "string",
+     "id": "string",
+     "name": "string",
+     "project": "string",
+     "parent": "string",
+     "type": "string",
+     "created_on": "string",
+     "modified_on": "string",
+     "size": "integer",
+     "storage": "object",
+     "origin": "object",
+     "metadata": "object",
+     "tags": "array"
+    },
+    "evidence": [
+     "openapi/_original/seven-bridges-cgc-openapi.json#GET /files/{file_id}",
+     "openapi/_original/seven-bridges-cgc-openapi.json#GET /projects/{owner}/{id}/files",
+     "openapi/_original/seven-bridges-platform-openapi.json#DELETE /files/{file_id}",
+     "openapi/_original/seven-bridges-platform-openapi.json#DELETE /files/{folder_id}",
+     "openapi/_original/seven-bridges-platform-openapi.json#GET /files",
+     "openapi/_original/seven-bridges-platform-openapi.json#GET /files/{file_id}",
+     "openapi/_original/seven-bridges-platform-openapi.json#GET /projects/{project_owner}/{project}/files",
+     "openapi/_original/seven-bridges-platform-openapi.json#PATCH /files/{file_id}",
+     "openapi/_original/seven-bridges-platform-openapi.json#POST /files"
+    ]
+   },
+   "signnow": {
+    "segments": [
+     "document"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "document_name": "string",
+     "created": "string",
+     "updated": "string",
+     "origin_document_id": "string",
+     "user_id": "string",
+     "roles": "array",
+     "fields": "array",
+     "requests": "array",
+     "tags": "array",
+     "page_count": "integer",
+     "signing_session_caching": "boolean",
+     "fieldinvite_status": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/signnow-openapi.yml#DELETE /document/{document_id}",
+     "openapi/_original/signnow-openapi.yml#GET /document",
+     "openapi/_original/signnow-openapi.yml#GET /document/{document_id}",
+     "openapi/_original/signnow-openapi.yml#POST /document"
+    ]
+   },
+   "signwell": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "documents": "array",
+     "current_page": "integer",
+     "next_page": "integer",
+     "previous_page": "integer",
+     "total_count": "integer",
+     "total_pages": "integer",
+     "test_mode": "boolean",
+     "id": "string",
+     "api_application_id": "string",
+     "requester_email_address": "string",
+     "custom_requester_name": "string",
+     "custom_requester_email": "string",
+     "name": "string",
+     "subject": "string",
+     "message": "string",
+     "metadata": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "recipients": "array",
+     "status": "string",
+     "reminders": "boolean",
+     "archived": "boolean",
+     "embedded_signing": "boolean",
+     "embedded_edit_url": "string",
+     "embedded_preview_url": "string",
+     "apply_signing_order": "boolean",
+     "redirect_url": "string",
+     "decline_redirect_url": "string",
+     "language": "string",
+     "expires_in": "integer",
+     "decline_message": "string",
+     "error_message": "string",
+     "template_id": "string",
+     "template_ids": "array",
+     "embedded_signing_notifications": "boolean",
+     "attachment_requests": "array",
+     "files": "array",
+     "copied_contacts": "array",
+     "fields": "array",
+     "allow_decline": "boolean",
+     "allow_reassign": "boolean",
+     "labels": "array",
+     "checkbox_groups": "array",
+     "draft": "boolean",
+     "self_sign": "boolean",
+     "with_signature_page": "boolean",
+     "text_tags": "boolean",
+     "exclude_placeholders": "array",
+     "template_fields": "array",
+     "user_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}",
+     "openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/bulk_sends/{id}/documents",
+     "openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents",
+     "openapi/_original/signwell-signwell-api-openapi.yml#GET /api/v1/documents/{id}",
+     "openapi/_original/signwell-signwell-api-openapi.yml#POST /api/v1/document_templates/documents",
+     "openapi/_original/signwell-signwell-api-openapi.yml#POST /api/v1/documents"
+    ]
+   },
+   "skyslope": {
+    "segments": [
+     "files",
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "totalRecords": "number",
+     "files": "array",
+     "fileId": "number",
+     "name": "string",
+     "representationType": "string",
+     "property": "object",
+     "id": "number",
+     "ownedBy": "string",
+     "createdDate": "string",
+     "createdBy": "string",
+     "lastUpdated": "string",
+     "updatedBy": "string",
+     "address": "string",
+     "contactInfo": "string",
+     "fileType": "string",
+     "templateCategory": "string",
+     "closingDateTime": "string",
+     "acceptanceDateTime": "string",
+     "mlsNumber": "string",
+     "purchasePrice": "number",
+     "documentData": "object",
+     "fileData": "object",
+     "transactionMeta": [
+      "null",
+      "object"
+     ],
+     "contacts": "array",
+     "commissions": "array",
+     "isDeleted": "boolean",
+     "isArchived": "boolean",
+     "meta": [
+      "null",
+      "object"
+     ],
+     "didAddendumsChange": "boolean",
+     "formName": "string",
+     "formId": [
+      "null",
+      "number"
+     ],
+     "formVersionId": "number",
+     "formURL": "string",
+     "thumbnailURL": "string",
+     "pageCount": [
+      "null",
+      "number"
+     ],
+     "documentType": "string",
+     "createdOn": "string",
+     "updatedOn": "string",
+     "page": "number",
+     "pageSize": "number",
+     "totalItems": "number",
+     "totalPages": "number",
+     "fields": "array",
+     "documentId": "number"
+    },
+    "evidence": [
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#DELETE /documents/{documentId}",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#GET /documents/{documentId}",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files/{fileId}",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#PATCH /documents/{documentId}",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#PATCH /files/{fileId}",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#POST /files",
+     "openapi/_original/skyslope-forms-partnership-openapi.yml#PUT /files/{fileId}"
+    ]
+   },
+   "slide": {
+    "segments": [
+     "file"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "agent_id": "string",
+     "created_at": "string",
+     "device_id": "string",
+     "expires_at": "string",
+     "file_restore_id": "string",
+     "purpose": "string",
+     "snapshot_id": "string",
+     "passphrase": "string"
+    },
+    "evidence": [
+     "openapi/_original/slide-openapi-original.json#DELETE /v1/restore/file/{file_restore_id}",
+     "openapi/_original/slide-openapi-original.json#GET /v1/restore/file",
+     "openapi/_original/slide-openapi-original.json#GET /v1/restore/file/{file_restore_id}",
+     "openapi/_original/slide-openapi-original.json#POST /v1/restore/file"
+    ]
+   },
+   "smokeball": {
+    "segments": [
+     "documents",
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "query": "string",
+     "filters": null,
+     "id": "string",
+     "href": "string",
+     "relation": "string",
+     "method": "string",
+     "self": null,
+     "task": null,
+     "type": null,
+     "isDeleted": "boolean",
+     "document": null,
+     "documentId": "string"
+    },
+    "evidence": [
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /tasks/{taskId}/documents/{id}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents/{id}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /search/files",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /tasks/{taskId}/documents"
+    ]
+   },
+   "temp-md": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "PUT item"
+    ],
+    "properties": {
+     "ok": null,
+     "sessionId": "string",
+     "fileId": "string",
+     "path": "string",
+     "size": "integer",
+     "hash": "string"
+    },
+    "evidence": [
+     "openapi/_original/temp-md-openapi.json#PUT /publish-sessions/{sessionId}/files/{fileId}",
+     "openapi/_original/temp-md-openapi.yml#PUT /publish-sessions/{sessionId}/files/{fileId}"
+    ]
+   },
+   "tiledb": {
+    "segments": [
+     "files",
+     "assets"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "output_uri": "string",
+     "file_name": "string",
+     "uuid": "string",
+     "asset_type": "string",
+     "asset_backing_type": "string",
+     "asset_ownership_level": "string",
+     "namespace_name": "string",
+     "namespace_uuid": "string",
+     "name": "string",
+     "mime_type": "string",
+     "created_at": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /assets/{namespace}",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#POST /files/{namespace}",
+     "openapi/_original/tiledb-cloud-v1-openapi_2.yaml#GET /assets/{namespace}",
+     "openapi/_original/tiledb-cloud-v1-openapi_2.yaml#POST /files/{namespace}"
+    ]
+   },
+   "uploadcare": {
+    "segments": [
+     "files",
+     "document"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "datetime_removed": "string",
+     "datetime_stored": "string",
+     "datetime_uploaded": "string",
+     "is_image": "boolean",
+     "is_ready": "boolean",
+     "mime_type": "string",
+     "original_file_url": "string",
+     "original_filename": "string",
+     "size": "integer",
+     "url": "string",
+     "uuid": "string",
+     "appdata": "object",
+     "variations": "object",
+     "content_info": "object",
+     "metadata": "object",
+     "error": "string",
+     "format": "object",
+     "converted_groups": "object",
+     "original_source": "string",
+     "token": "integer",
+     "paths": "array",
+     "store": "string",
+     "save_in_group": "string"
+    },
+    "evidence": [
+     "openapi/_original/uploadcare-rest-api-openapi.yml#GET /convert/document/{uuid}/",
+     "openapi/_original/uploadcare-rest-api-openapi.yml#GET /files/",
+     "openapi/_original/uploadcare-rest-api-openapi.yml#GET /files/{uuid}/",
+     "openapi/_original/uploadcare-rest-api-openapi.yml#POST /convert/document/"
+    ]
+   },
+   "zamzar": {
+    "segments": [
+     "files"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "key": "string",
+     "name": "string",
+     "size": "integer",
+     "format": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/zamzar-openapi.yaml#DELETE /files/{fileId}",
+     "openapi/_original/zamzar-openapi.yaml#GET /files",
+     "openapi/_original/zamzar-openapi.yaml#GET /files/{fileId}",
+     "openapi/_original/zamzar-openapi.yaml#POST /files"
+    ]
+   },
+   "zinnia": {
+    "segments": [
+     "documents",
+     "document"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "statusCode": "integer",
+     "timestamp": "string",
+     "message": "string",
+     "appId": "string",
+     "version": "string",
+     "effectiveDate": "string",
+     "totalDocumentCount": "number",
+     "documentDetails": "array",
+     "caseId": "string",
+     "correlationId": "string",
+     "eappId": "string",
+     "documentId": "string",
+     "externalDocumentId": "string",
+     "binaryData": "string",
+     "formNumber": "string",
+     "documentType": "string",
+     "category": "string",
+     "fileName": "string",
+     "displayName": "string",
+     "fileType": "string"
+    },
+    "evidence": [
+     "openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v1/applications/documents",
+     "openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v2/applications/documents",
+     "openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v1/applications/documents",
+     "openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v2/applications/documents",
+     "openapi/_original/zinnia-new-business-openapi.json#POST /newbusiness/v2/application/{eAppId}/document",
+     "openapi/_original/zinnia-new-business-openapi.yml#POST /newbusiness/v2/application/{eAppId}/document"
+    ]
+   },
+   "zoho-writer": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "offset": "integer",
+     "total_count": "integer",
+     "limit": "integer",
+     "documents": "array",
+     "document_id": "string",
+     "document_name": "string",
+     "document_type": "string",
+     "created_time": "string",
+     "modified_time": "string",
+     "creator_id": "string",
+     "created_by": "string",
+     "lastmodified_by": "array",
+     "preview_url": "string",
+     "open_url": "string",
+     "download_url": "string",
+     "published_url": "string",
+     "type": "string",
+     "role": "string",
+     "owner_id": "string",
+     "is_published": "boolean",
+     "is_shared": "boolean",
+     "is_favourite": "boolean",
+     "is_orgpublished": "boolean",
+     "created_time_in_millisecond": "integer",
+     "modified_time_in_millisecond": "integer",
+     "last_opened_time": "string",
+     "thumbnail_url": "string",
+     "permalink": "string",
+     "permissions": "object",
+     "parent_info": "object",
+     "library_id": "string",
+     "collaboration_id": "string",
+     "version": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/zoho-writer-openapi.json#GET /documents",
+     "openapi/_original/zoho-writer-openapi.json#GET /documents/{document_id}",
+     "openapi/_original/zoho-writer-openapi.json#POST /documents"
+    ]
+   }
+  },
+  "folder": {
+   "adobe-suite": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "noun": "string",
+     "imsOrg": "string",
+     "sandboxId": "string",
+     "sandboxName": "string",
+     "createdBy": "string",
+     "createdAt": "string",
+     "modifiedBy": "string",
+     "modifiedAt": "string",
+     "status": "string",
+     "_links": "object"
+    },
+    "evidence": [
+     "openapi/_original/adobe-suite-aep-unified-tags-openapi.yaml#POST /unifiedfolders/folders/{FOLDER_TYPE}"
+    ]
+   },
+   "box": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "etag": "string",
+     "type": "string",
+     "sequence_id": null,
+     "name": "string",
+     "created_at": "string",
+     "modified_at": "string",
+     "description": null,
+     "size": "integer",
+     "path_collection": null,
+     "created_by": null,
+     "modified_by": null,
+     "trashed_at": "string",
+     "purged_at": "string",
+     "content_created_at": "string",
+     "content_modified_at": "string",
+     "owned_by": null,
+     "shared_link": null,
+     "folder_upload_email": "object",
+     "parent": null,
+     "item_status": "string",
+     "item_collection": null,
+     "sync_state": null,
+     "has_collaborations": "boolean",
+     "permissions": null,
+     "tags": null,
+     "can_non_owners_invite": null,
+     "is_externally_owned": "boolean",
+     "metadata": null,
+     "is_collaboration_restricted_to_enterprise": null,
+     "allowed_shared_link_access_levels": "array",
+     "allowed_invitee_roles": "array",
+     "watermark_info": null,
+     "is_accessible_via_shared_link": "boolean",
+     "can_non_owners_view_collaborators": "boolean",
+     "classification": null,
+     "is_associated_with_app_item": "boolean",
+     "collections": "array"
+    },
+    "evidence": [
+     "openapi/_original/box-openapi.json#DELETE /folders/{folder_id}",
+     "openapi/_original/box-openapi.json#GET /folders/{folder_id}",
+     "openapi/_original/box-openapi.json#POST /folders",
+     "openapi/_original/box-openapi.json#POST /folders/{folder_id}",
+     "openapi/_original/box-openapi.json#PUT /folders/{folder_id}"
+    ]
+   },
+   "ci-hub": {
+    "segments": [
+     "folder"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "more": "string",
+     "capabilities": "object",
+     "folders": "array",
+     "assets": "array",
+     "filters": "array",
+     "totalAssetsCount": "number"
+    },
+    "evidence": [
+     "openapi/_original/ci-hub-access-openapi.yml#GET /assets/folder/{folderId}"
+    ]
+   },
+   "clickup": {
+    "segments": [
+     "folder"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "orderindex": "integer",
+     "override_statuses": "boolean",
+     "hidden": "boolean",
+     "space": "object",
+     "task_count": "string",
+     "archived": "boolean",
+     "statuses": "array",
+     "lists": "array",
+     "parent_folder": "string",
+     "parent_folder_id": "string",
+     "permission_level": "string",
+     "folders": "array"
+    },
+    "evidence": [
+     "openapi/_original/clickup-api-v2-reference-openapi.json#DELETE /v2/folder/{folder_id}",
+     "openapi/_original/clickup-api-v2-reference-openapi.json#GET /v2/folder/{folder_id}",
+     "openapi/_original/clickup-api-v2-reference-openapi.json#GET /v2/space/{space_id}/folder",
+     "openapi/_original/clickup-api-v2-reference-openapi.json#POST /v2/space/{space_id}/folder",
+     "openapi/_original/clickup-api-v2-reference-openapi.json#PUT /v2/folder/{folder_id}",
+     "openapi/_original/clickup-api-v2-reference-openapi_2.json#DELETE /v2/folder/{folder_id}",
+     "openapi/_original/clickup-api-v2-reference-openapi_2.json#GET /v2/folder/{folder_id}",
+     "openapi/_original/clickup-api-v2-reference-openapi_2.json#GET /v2/space/{space_id}/folder",
+     "openapi/_original/clickup-api-v2-reference-openapi_2.json#POST /v2/space/{space_id}/folder",
+     "openapi/_original/clickup-api-v2-reference-openapi_2.json#PUT /v2/folder/{folder_id}",
+     "openapi/_original/clickup-folders-openapi.yml#DELETE /folder/{folder_id}",
+     "openapi/_original/clickup-folders-openapi.yml#GET /folder/{folder_id}"
+    ]
+   },
+   "clio": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "etag": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "deleted_at": "string",
+     "type": "string",
+     "locked": "boolean",
+     "name": "string",
+     "root": "boolean",
+     "parent": "object",
+     "matter": "object",
+     "contact": "object",
+     "document_category": "object",
+     "creator": "object",
+     "latest_document_version": "object",
+     "group": "object",
+     "external_properties": "array",
+     "restore": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/clio-openapi.json#DELETE /folders/{id}.json",
+     "openapi/_original/clio-openapi.json#GET /folders.json",
+     "openapi/_original/clio-openapi.json#GET /folders/{id}.json",
+     "openapi/_original/clio-openapi.json#PATCH /folders/{id}.json",
+     "openapi/_original/clio-openapi.json#POST /folders.json"
+    ]
+   },
+   "coda-project": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "name": "string",
+     "icon": "string",
+     "description": "string",
+     "folderType": "string",
+     "isPrivate": "boolean",
+     "acl": "array",
+     "truncatedAcl": "boolean",
+     "browserLink": "string",
+     "createdAt": "string",
+     "canEdit": "boolean",
+     "workspace": "object",
+     "workspaceId": "string"
+    },
+    "evidence": [
+     "openapi/_original/coda-project-admin-openapi-original.json#DELETE /organizations/{organizationId}/workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/folders",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/coda-project-openapi-original.json#DELETE /folders/{folderId}",
+     "openapi/_original/coda-project-openapi-original.json#GET /folders",
+     "openapi/_original/coda-project-openapi-original.json#GET /folders/{folderId}",
+     "openapi/_original/coda-project-openapi-original.json#PATCH /folders/{folderId}",
+     "openapi/_original/coda-project-openapi-original.json#POST /folders"
+    ]
+   },
+   "concord-com": {
+    "segments": [
+     "folders",
+     "folder"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "number",
+     "name": "string",
+     "parentId": "number",
+     "access": "object",
+     "documentCount": "number",
+     "children": "array",
+     "isBookmarked": "boolean",
+     "folderId": "integer",
+     "createdBy": "object",
+     "createdAt": "number",
+     "modifiedAt": "number"
+    },
+    "evidence": [
+     "openapi/_original/concord-com-openapi.yml#DELETE /organizations/{organizationId}/folders/{folderId}",
+     "openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/folders",
+     "openapi/_original/concord-com-openapi.yml#GET /organizations/{organizationId}/folders/{folderId}",
+     "openapi/_original/concord-com-openapi.yml#GET /user/me/organizations/{organizationId}/folders",
+     "openapi/_original/concord-com-openapi.yml#POST /organizations/{organizationId}/folders",
+     "openapi/_original/concord-com-openapi.yml#PUT /organizations/{organizationId}/agreements/{agreementUid}/folder",
+     "openapi/_original/concord-com-openapi.yml#PUT /organizations/{organizationId}/folders/{folderId}"
+    ]
+   },
+   "docusign": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "envelopeIds": "array",
+     "fromFolderId": "string",
+     "callerAuthorization": "object",
+     "contentType": "string",
+     "created": "string",
+     "createdById": "string",
+     "createdByInformation": "object",
+     "extension": "string",
+     "fileSize": "string",
+     "fileUri": "string",
+     "id": "string",
+     "isPublic": "string",
+     "lastModified": "string",
+     "lastModifiedById": "string",
+     "lastModifiedByInformation": "object",
+     "name": "string",
+     "pageCount": "string",
+     "parentFolderId": "string",
+     "parentFolderUri": "string",
+     "type": "string",
+     "uri": "string"
+    },
+    "evidence": [
+     "openapi/_original/docusign-openapi-original.yml#DELETE /v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/folders",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/folders/{folderId}",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/users/{userId}/cloud_storage/{serviceId}/folders",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/users/{userId}/cloud_storage/{serviceId}/folders/{folderId}",
+     "openapi/_original/docusign-openapi-original.yml#GET /v2/accounts/{accountId}/workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/docusign-openapi-original.yml#PUT /v2/accounts/{accountId}/folders/{folderId}"
+    ]
+   },
+   "dotloop": {
+    "segments": [
+     "folder"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder",
+     "openapi/_original/dotloop-openapi.yml#GET /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}",
+     "openapi/_original/dotloop-openapi.yml#PATCH /profile/{profile_id}/loop/{loop_id}/folder/{folder_id}",
+     "openapi/_original/dotloop-openapi.yml#POST /profile/{profile_id}/loop/{loop_id}/folder"
+    ]
+   },
+   "finalcad": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/finalcad-projects-openapi.yml#DELETE /projects/{projectId}/folders/{folderId}",
+     "openapi/_original/finalcad-projects-openapi.yml#GET /projects/{project_id}/folders",
+     "openapi/_original/finalcad-projects-openapi.yml#POST /projects/{project_id}/folders",
+     "openapi/_original/finalcad-projects-openapi.yml#PUT /projects/{projectId}/folders/{folderId}"
+    ]
+   },
+   "getaccept": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "type": "string",
+     "folder": "object",
+     "subfolders": "array"
+    },
+    "evidence": [
+     "openapi/_original/getaccept-openapi-original.json#GET /folders",
+     "openapi/_original/getaccept-openapi-original.json#GET /folders/{folderId}"
+    ]
+   },
+   "hubflo": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "title": "string",
+     "parent_id": "string",
+     "locked": "boolean",
+     "description": "string",
+     "icon": "string"
+    },
+    "evidence": [
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/folders",
+     "openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/folders/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#PATCH /api/v2/workspaces/{workspace_id}/folders/{id}",
+     "openapi/_original/hubflo-openapi-original.yml#POST /api/v2/workspaces/{workspace_id}/folders"
+    ]
+   },
+   "inkit": {
+    "segments": [
+     "folder"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "data_description": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/inkit-document-generation-api-openapi.yml#GET /folder"
+    ]
+   },
+   "intralinks": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "parentId": "string",
+     "indexNumber": "string",
+     "hasChildFolders": "boolean",
+     "version": "integer",
+     "createdOn": "string",
+     "updatedOn": "string"
+    },
+    "evidence": [
+     "openapi/_original/intralinks-api-openapi.yml#DELETE /workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/intralinks-api-openapi.yml#GET /workspaces/{workspaceId}/folders",
+     "openapi/_original/intralinks-api-openapi.yml#GET /workspaces/{workspaceId}/folders/{folderId}",
+     "openapi/_original/intralinks-api-openapi.yml#POST /workspaces/{workspaceId}/folders",
+     "openapi/_original/intralinks-api-openapi.yml#PUT /workspaces/{workspaceId}/folders/{folderId}"
+    ]
+   },
+   "lev": {
+    "segments": [
+     "directory"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "website": "string",
+     "logo_url": "string",
+     "address": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "about": "string",
+     "lender_type": "array",
+     "category": "string",
+     "linkedin_url": "string",
+     "aliases": "array",
+     "domains": "array",
+     "square_logo_url": "string",
+     "programs": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/lev-openapi-original.json#GET /api/external/v2/lenders/directory"
+    ]
+   },
+   "mediavalet": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "assetCount": "integer",
+     "subfolderCount": "integer",
+     "subfolders": "array",
+     "subcats": "object",
+     "tree": "object",
+     "id": "string",
+     "parentId": "string",
+     "record": "object",
+     "categoryFeatures": "object",
+     "includedInBrandedPortalSync": "boolean",
+     "syncedBrandedPortals": "array",
+     "_links": "object",
+     "translationKeys": "object",
+     "interpolations": "object",
+     "permissions": "array",
+     "description": "string",
+     "treeName": "string",
+     "categoryId": "string",
+     "notification": "object",
+     "op": "string",
+     "path": "string",
+     "value": "object",
+     "from": "string"
+    },
+    "evidence": [
+     "openapi/_original/mediavalet-openapi.yml#GET /folders",
+     "openapi/_original/mediavalet-openapi.yml#GET /folders/{categoryGuid}",
+     "openapi/_original/mediavalet-openapi.yml#PATCH /folders/{categoryId}",
+     "openapi/_original/mediavalet-openapi.yml#POST /folders"
+    ]
+   },
+   "microsoft-graph": {
+    "segments": [
+     "directories",
+     "directory"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "discoverabilities": null,
+     "discoveryDateTime": "string",
+     "name": "string",
+     "objects": "array",
+     "readOnly": "boolean",
+     "version": "string",
+     "@odata.type": "string",
+     "administrativeUnits": "array",
+     "attributeSets": "array",
+     "customSecurityAttributeDefinitions": "array",
+     "deletedItems": "array",
+     "deviceLocalCredentials": "array",
+     "federationConfigurations": "array",
+     "onPremisesSynchronization": "array",
+     "publicKeyInfrastructure": null,
+     "subscriptions": "array",
+     "resourceNamespaces": "array",
+     "roleAssignments": "array",
+     "roleAssignmentScheduleInstances": "array",
+     "roleAssignmentScheduleRequests": "array",
+     "roleAssignmentSchedules": "array",
+     "roleDefinitions": "array",
+     "roleEligibilityScheduleInstances": "array",
+     "roleEligibilityScheduleRequests": "array",
+     "roleEligibilitySchedules": "array"
+    },
+    "evidence": [
+     "openapi/_original/applications-openapi-original.yml#DELETE /applications/{application-id}/synchronization/jobs/{synchronizationJob-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#DELETE /applications/{application-id}/synchronization/templates/{synchronizationTemplate-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#GET /applications/{application-id}/synchronization/jobs/{synchronizationJob-id}/schema/directories",
+     "openapi/_original/applications-openapi-original.yml#GET /applications/{application-id}/synchronization/jobs/{synchronizationJob-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#GET /applications/{application-id}/synchronization/templates/{synchronizationTemplate-id}/schema/directories",
+     "openapi/_original/applications-openapi-original.yml#GET /applications/{application-id}/synchronization/templates/{synchronizationTemplate-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#PATCH /applications/{application-id}/synchronization/jobs/{synchronizationJob-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#PATCH /applications/{application-id}/synchronization/templates/{synchronizationTemplate-id}/schema/directories/{directoryDefinition-id}",
+     "openapi/_original/applications-openapi-original.yml#POST /applications/{application-id}/synchronization/jobs/{synchronizationJob-id}/schema/directories",
+     "openapi/_original/applications-openapi-original.yml#POST /applications/{application-id}/synchronization/templates/{synchronizationTemplate-id}/schema/directories",
+     "openapi/_original/directory-openapi-original.yml#DELETE /roleManagement/directory",
+     "openapi/_original/directory-openapi-original.yml#GET /directory"
+    ]
+   },
+   "nuxeo": {
+    "segments": [
+     "directory"
+    ],
+    "operations": [
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "currentPageIndex": "integer",
+     "currentPageOffset": "integer",
+     "currentPageSize": "integer",
+     "entity-type": "string",
+     "entries": "array",
+     "erroMessage": "string",
+     "hasError": "boolean",
+     "isLastPageAvailable": "boolean",
+     "isNext": "boolean",
+     "isPaginable": "boolean",
+     "isPreviousPageAvailable": "boolean",
+     "isSortable": "boolean",
+     "maxPageSize": "integer",
+     "numberOfPages": "integer",
+     "pageCount": "integer",
+     "pageIndex": "integer",
+     "pageSize": "integer",
+     "resultCount": "integer",
+     "totalSize": "integer",
+     "directoryName": "string",
+     "properties": "object"
+    },
+    "evidence": [
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#GET /directory/{directoryName}",
+     "openapi/_original/nuxeo-rest-api-openapi.yaml#POST /directory/{directoryName}"
+    ]
+   },
+   "pandadoc": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "uuid": "string",
+     "name": "string",
+     "date_created": "string",
+     "parent_uuid": "string"
+    },
+    "evidence": [
+     "openapi/_original/pandadoc-rest-api-openapi.yml#GET /documents/folders",
+     "openapi/_original/pandadoc-rest-api-openapi.yml#POST /documents/folders"
+    ]
+   },
+   "pdffiller": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/pdffiller-pdffiller-api-openapi.yml#DELETE /folders/{folder_id}",
+     "openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /folders",
+     "openapi/_original/pdffiller-pdffiller-api-openapi.yml#GET /folders/{folder_id}",
+     "openapi/_original/pdffiller-pdffiller-api-openapi.yml#POST /folders",
+     "openapi/_original/pdffiller-pdffiller-api-openapi.yml#PUT /folders/{folder_id}"
+    ]
+   },
+   "progress-software": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "integer",
+     "parentId": "integer",
+     "name": "string",
+     "lastContentChangeTime": "string",
+     "folderType": "string",
+     "path": "string",
+     "isShared": "boolean",
+     "permission": "object",
+     "subfolderCount": "integer",
+     "totalFileCount": "integer",
+     "sharedWithUsersCount": "integer",
+     "sharedWithGroupsCount": "integer",
+     "orgId": "integer",
+     "owner": "string",
+     "description": "string",
+     "systemType": "string",
+     "cleanType": "string",
+     "cleanTimeDays": "integer",
+     "subfolderCleanTime": "integer",
+     "uploadNotificationConfirmationType": "string",
+     "uploadNotificationConfirmationTime": "integer",
+     "newFileNotificationType": "string",
+     "newFileNotificationTime": "integer",
+     "alertSenderFileIsNotDownloadedTimeType": "string",
+     "alertSenderFileIsNotDownloadedTime": "integer",
+     "deliveryRecepientNotificationType": "string",
+     "responseType": "string",
+     "responseText": "string",
+     "responseTime": "integer",
+     "newTime": "integer",
+     "enforceUniqueFilenames": "boolean",
+     "allowFileOverwrite": "boolean",
+     "parentInheritRights": "integer",
+     "quota": "integer",
+     "totalFilesSize": "integer",
+     "fileMaskRule": "string",
+     "fileMasks": "string",
+     "inheritAccess": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#DELETE /api/v1/folders/{Id}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#GET /api/v1/folders/{Id}",
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#PATCH /api/v1/folders/{Id}"
+    ]
+   },
+   "pure-storage": {
+    "segments": [
+     "directories"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "continuation_token": "string",
+     "more_items_remaining": "boolean",
+     "total_item_count": "integer",
+     "id": "string",
+     "name": "string",
+     "context": null,
+     "created": "integer",
+     "destroyed": "boolean",
+     "directory_name": "string",
+     "file_system": null,
+     "limited_by": null,
+     "path": "string",
+     "space": null,
+     "time_remaining": "integer",
+     "workload": "object",
+     "errors": "array",
+     "resource_type": "string",
+     "source": null,
+     "_as_of": "integer",
+     "arrays": "array"
+    },
+    "evidence": [
+     "openapi/_original/flasharray-rest-api-openapi.yml#DELETE /api/2.52/directories",
+     "openapi/_original/flasharray-rest-api-openapi.yml#GET /api/2.52/directories",
+     "openapi/_original/flasharray-rest-api-openapi.yml#PATCH /api/2.52/directories",
+     "openapi/_original/flasharray-rest-api-openapi.yml#POST /api/2.52/directories",
+     "openapi/_original/pure1-cloud-api-openapi.yml#GET /api/1.5/directories"
+    ]
+   },
+   "sakura-internet": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "parent_id": "integer",
+     "description": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "count": "integer",
+     "next": "string",
+     "previous": "string"
+    },
+    "evidence": [
+     "openapi/_original/iam-api.yaml#DELETE /folders/{folder_id}",
+     "openapi/_original/iam-api.yaml#GET /folders",
+     "openapi/_original/iam-api.yaml#GET /folders/{folder_id}",
+     "openapi/_original/iam-api.yaml#POST /folders",
+     "openapi/_original/iam-api.yaml#PUT /folders/{folder_id}",
+     "openapi/_original/sakura-internet-iam-openapi.yml#DELETE /folders/{folder_id}",
+     "openapi/_original/sakura-internet-iam-openapi.yml#GET /folders",
+     "openapi/_original/sakura-internet-iam-openapi.yml#GET /folders/{folder_id}",
+     "openapi/_original/sakura-internet-iam-openapi.yml#POST /folders",
+     "openapi/_original/sakura-internet-iam-openapi.yml#PUT /folders/{folder_id}"
+    ]
+   },
+   "smokeball": {
+    "segments": [
+     "folders"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "href": "string",
+     "relation": "string",
+     "method": "string",
+     "self": null,
+     "value": "array",
+     "offset": "integer",
+     "limit": "integer",
+     "size": "integer",
+     "first": null,
+     "previous": null,
+     "next": null,
+     "last": null,
+     "parentId": "string",
+     "name": "string",
+     "parentFolderId": "string",
+     "userId": "string"
+    },
+    "evidence": [
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /matters/{matterId}/documents/folders/{folderId}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/folders",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/folders/{folderId}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#PATCH /matters/{matterId}/documents/folders/{folderId}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /matters/{matterId}/documents/folders",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#PUT /matters/{matterId}/documents/folders/{folderId}"
+    ]
+   }
+  },
+  "bucket": {
+   "cloudflare": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "result": "array",
+     "errors": null,
+     "messages": null,
+     "success": "boolean",
+     "locationHint": null,
+     "name": null,
+     "result_info": "object",
+     "creation_date": "string",
+     "location": "string",
+     "jurisdiction": "string",
+     "storage_class": "string",
+     "storageClass": "string"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/r2/buckets",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#GET /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-accounts--openapi-original.yml#POST /accounts/{account_id}/r2/buckets",
+     "openapi/_original/cloudflare-openapi-original.yml#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/r2/buckets",
+     "openapi/_original/cloudflare-openapi-original.yml#GET /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-openapi-original.yml#POST /accounts/{account_id}/r2/buckets",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/r2/buckets",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/r2/buckets/{bucket_name}",
+     "openapi/_original/cloudflare-openapi.json#PATCH /accounts/{account_id}/r2/buckets/{bucket_name}"
+    ]
+   },
+   "crusoe": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "archived_at": "string",
+     "bucket_size": "number",
+     "created_at": "string",
+     "location": "string",
+     "name": "string",
+     "object_lock_enabled": "boolean",
+     "project_id": "string",
+     "retention_mode": "string",
+     "retention_period": "integer",
+     "retention_period_unit": "string",
+     "s3_url": "string",
+     "tags": "object",
+     "updated_at": "string",
+     "user_id": "string",
+     "versioning_state": "string"
+    },
+    "evidence": [
+     "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json#DELETE /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json#GET /projects/{project_id}/storage/s3/buckets",
+     "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json#GET /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json#PATCH /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1-openapi.json#POST /projects/{project_id}/storage/s3/buckets",
+     "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json#DELETE /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json#GET /projects/{project_id}/storage/s3/buckets",
+     "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json#GET /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json#PATCH /projects/{project_id}/storage/s3/buckets/{bucket_name}",
+     "openapi/_original/crusoe-cloud-api-gateway-v1alpha5-openapi.json#POST /projects/{project_id}/storage/s3/buckets"
+    ]
+   },
+   "filebase": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "name": "string",
+     "storage_bytes": "integer",
+     "object_count": "integer",
+     "region": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/filebase-platform-api-openapi.yml#GET /v1/buckets"
+    ]
+   },
+   "leaseweb": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "region": "string",
+     "isVersioningEnabled": "boolean",
+     "quota": "object",
+     "objectCount": "integer",
+     "used": "object",
+     "creationTime": "string",
+     "isBeingDeleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/leaseweb-objectstorage-openapi.yaml#DELETE /objectStorages/{objectStorageId}/buckets/{bucketName}",
+     "openapi/_original/leaseweb-objectstorage-openapi.yaml#GET /objectStorages/{objectStorageId}/buckets",
+     "openapi/_original/leaseweb-objectstorage-openapi.yaml#POST /objectStorages/{objectStorageId}/buckets",
+     "openapi/_original/leaseweb-objectstorage-openapi.yaml#PUT /objectStorages/{objectStorageId}/buckets/{bucketName}",
+     "openapi/_original/leaseweb-objectstorage-openapi.yml#DELETE /objectStorages/{objectStorageId}/buckets/{bucketName}",
+     "openapi/_original/leaseweb-objectstorage-openapi.yml#GET /objectStorages/{objectStorageId}/buckets",
+     "openapi/_original/leaseweb-objectstorage-openapi.yml#POST /objectStorages/{objectStorageId}/buckets",
+     "openapi/_original/leaseweb-objectstorage-openapi.yml#PUT /objectStorages/{objectStorageId}/buckets/{bucketName}"
+    ]
+   },
+   "linode": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "cluster": "string",
+     "created": "string",
+     "endpoint_type": "string",
+     "hostname": "string",
+     "label": "string",
+     "objects": "integer",
+     "region": "string",
+     "s3_endpoint": "string",
+     "size": "integer",
+     "acl": "string",
+     "cors_enabled": "boolean",
+     "page": "integer",
+     "pages": "integer",
+     "results": "integer"
+    },
+    "evidence": [
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/object-storage/buckets",
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/object-storage/buckets/{regionId}",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/object-storage/buckets",
+     "openapi/_original/linode-api-v4-openapi.yml#GET /object-storage/buckets"
+    ]
+   },
+   "microsoft-graph": {
+    "segments": [
+     "buckets",
+     "containers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "orderHint": "string",
+     "planId": "string",
+     "tasks": "array",
+     "@odata.type": "string",
+     "id": "string",
+     "containerTypeId": "string",
+     "createdDateTime": "string",
+     "customProperties": null,
+     "description": "string",
+     "displayName": "string",
+     "lockState": null,
+     "settings": "object",
+     "status": null,
+     "viewpoint": null,
+     "columns": "array",
+     "drive": null,
+     "migrationJobs": "array",
+     "permissions": "array",
+     "recycleBin": null
+    },
+    "evidence": [
+     "openapi/_original/groups-openapi-original.yml#DELETE /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets",
+     "openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/groups-openapi-original.yml#PATCH /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/groups-openapi-original.yml#POST /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets",
+     "openapi/_original/me-openapi-original.yml#DELETE /me/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/me-openapi-original.yml#GET /me/planner/plans/{plannerPlan-id}/buckets",
+     "openapi/_original/me-openapi-original.yml#GET /me/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/me-openapi-original.yml#PATCH /me/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/me-openapi-original.yml#POST /me/planner/plans/{plannerPlan-id}/buckets",
+     "openapi/_original/microsoft-graph-api-openapi.yml#DELETE /groups/{group-id}/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}",
+     "openapi/_original/microsoft-graph-api-openapi.yml#DELETE /me/planner/plans/{plannerPlan-id}/buckets/{plannerBucket-id}"
+    ]
+   },
+   "prisma": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "url": "string",
+     "name": "string",
+     "providerName": "string",
+     "status": "string",
+     "createdAt": "string",
+     "project": "object",
+     "branchId": [
+      "string",
+      "null"
+     ],
+     "projectId": "string",
+     "branchGitName": "string"
+    },
+    "evidence": [
+     "openapi/_original/prisma-postgres-management-api-openapi.json#DELETE /v1/buckets/{bucketId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/buckets",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#GET /v1/buckets/{bucketId}",
+     "openapi/_original/prisma-postgres-management-api-openapi.json#POST /v1/buckets"
+    ]
+   },
+   "pure-storage": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "continuation_token": "string",
+     "more_items_remaining": "boolean",
+     "total_item_count": "integer",
+     "errors": "array",
+     "id": "string",
+     "name": "string",
+     "context": null,
+     "account": null,
+     "created": "integer",
+     "destroyed": "boolean",
+     "object_count": "integer",
+     "time_remaining": "integer",
+     "versioning": "string",
+     "data_reduction": "number",
+     "footprint": "integer",
+     "shared": "integer",
+     "snapshots": "integer",
+     "system": "integer",
+     "thin_provisioning": "number",
+     "total_physical": "integer",
+     "total_provisioned": "integer",
+     "total_reduction": "number",
+     "total_used": "integer",
+     "unique": "integer",
+     "used_provisioned": "integer",
+     "virtual": "integer",
+     "resource_type": "string",
+     "bucket_type": "string",
+     "eradication_config": null,
+     "hard_limit_enabled": "boolean",
+     "object_lock_config": null,
+     "public_access_config": "object",
+     "public_status": "string",
+     "qos_policy": null,
+     "quota_limit": "integer",
+     "retention_lock": "string",
+     "space": null,
+     "storage_class": null,
+     "time_remaining_status": "string",
+     "member": null,
+     "policy": null,
+     "_as_of": "integer",
+     "arrays": "array"
+    },
+    "evidence": [
+     "openapi/_original/flasharray-rest-api-openapi.yml#DELETE /api/2.52/buckets",
+     "openapi/_original/flasharray-rest-api-openapi.yml#GET /api/2.52/buckets",
+     "openapi/_original/flasharray-rest-api-openapi.yml#PATCH /api/2.52/buckets",
+     "openapi/_original/flasharray-rest-api-openapi.yml#POST /api/2.52/buckets",
+     "openapi/_original/flashblade-rest-api-openapi.yml#DELETE /api/2.26/buckets",
+     "openapi/_original/flashblade-rest-api-openapi.yml#GET /api/2.26/buckets",
+     "openapi/_original/flashblade-rest-api-openapi.yml#GET /api/2.26/qos-policies/buckets",
+     "openapi/_original/flashblade-rest-api-openapi.yml#PATCH /api/2.26/buckets",
+     "openapi/_original/flashblade-rest-api-openapi.yml#POST /api/2.26/buckets",
+     "openapi/_original/pure1-cloud-api-openapi.yml#GET /api/1.5/buckets"
+    ]
+   },
+   "sakura-internet": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "name": null,
+     "resource_id": null,
+     "plan": "object",
+     "cluster_id": "string",
+     "year_month": "string",
+     "basic": "object",
+     "storage_usage": "object",
+     "num_objects": "object",
+     "num_transactions": "object",
+     "transfer_amount": "object"
+    },
+    "evidence": [
+     "openapi/_original/objectstorage-api.yaml#DELETE /buckets/{name}",
+     "openapi/_original/objectstorage-api.yaml#GET /buckets",
+     "openapi/_original/objectstorage-api.yaml#GET /metering/buckets/{name}",
+     "openapi/_original/objectstorage-api.yaml#PUT /buckets/{name}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#DELETE /buckets/{name}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#GET /buckets",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#GET /metering/buckets/{name}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#PUT /buckets/{name}"
+    ]
+   },
+   "synadia-communications": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "name": "string",
+     "values": "number",
+     "history": "number",
+     "ttl": "number",
+     "backing_store": "string",
+     "size": "number",
+     "compression": "boolean",
+     "description": "string",
+     "max_value_size": "number",
+     "max_bytes": "number",
+     "storage": "string",
+     "replicas": "number",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#DELETE /kvm/buckets/{bucket}",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#DELETE /objm/buckets/{bucket}",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#GET /kvm/buckets",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#GET /kvm/buckets/{bucket}",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#GET /objm/buckets",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#GET /objm/buckets/{bucket}",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#POST /kvm/buckets/{bucket}",
+     "openapi/_original/synadia-communications-http-gateway-openapi.json#POST /objm/buckets/{bucket}"
+    ]
+   },
+   "upcloud": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "total_objects": "integer",
+     "total_size_bytes": "integer",
+     "deleted": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/upcloud-openapi.json#DELETE /1.3/object-storage-2/{service-uuid}/buckets/{bucket-name}",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/object-storage-2/{service-uuid}/buckets",
+     "openapi/_original/upcloud-openapi.json#POST /1.3/object-storage-2/{service-uuid}/buckets",
+     "openapi/_original/upcloud-openapi.yml#DELETE /1.3/object-storage-2/{service-uuid}/buckets/{bucket-name}",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/object-storage-2/{service-uuid}/buckets",
+     "openapi/_original/upcloud-openapi.yml#POST /1.3/object-storage-2/{service-uuid}/buckets"
+    ]
+   },
+   "weka": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "session_id": "string",
+     "buckets": "array",
+     "data": null,
+     "bucket_name": "string",
+     "policy": "string",
+     "policy_file_content": "string",
+     "hard_quota": "string",
+     "existing_path": "string",
+     "fs_uid": "string"
+    },
+    "evidence": [
+     "openapi/_original/weka-openapi-original.json#DELETE /s3/buckets/{bucket}",
+     "openapi/_original/weka-openapi-original.json#GET /s3/buckets",
+     "openapi/_original/weka-openapi-original.json#POST /s3/buckets"
+    ]
+   },
+   "xsky": {
+    "segments": [
+     "buckets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "PUT item"
+    ],
+    "properties": {
+     "action_status": "string",
+     "bucket": "object",
+     "create": "string",
+     "id": "integer",
+     "key": "object",
+     "mount_clients": "string",
+     "mount_num": "integer",
+     "nfs_gateway": "object",
+     "status": "string",
+     "update": "string",
+     "nfs_gateway_bucket_map": "object"
+    },
+    "evidence": [
+     "openapi/_original/xsky-xms-swagger-original.yaml#DELETE /nfs-gateways/{gateway_id}/buckets/{bucket_id}",
+     "openapi/_original/xsky-xms-swagger-original.yaml#GET /nfs-gateways/{gateway_id}/buckets",
+     "openapi/_original/xsky-xms-swagger-original.yaml#GET /nfs-gateways/{gateway_id}/buckets/{bucket_id}",
+     "openapi/_original/xsky-xms-swagger-original.yaml#PATCH /nfs-gateways/{gateway_id}/buckets/{bucket_id}",
+     "openapi/_original/xsky-xms-swagger-original.yaml#PUT /nfs-gateways/{gateway_id}/buckets/{bucket_id}"
+    ]
+   }
+  },
+  "file_version": {
+   "box": {
+    "segments": [
+     "versions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "total_count": "integer",
+     "limit": "integer",
+     "offset": "integer",
+     "order": "array",
+     "id": "string",
+     "type": "string",
+     "sha1": "string",
+     "name": "string",
+     "size": "integer",
+     "created_at": "string",
+     "modified_at": "string",
+     "modified_by": null,
+     "trashed_at": "string",
+     "trashed_by": null,
+     "restored_at": "string",
+     "restored_by": null,
+     "purged_at": "string",
+     "uploader_display_name": null,
+     "version_number": "string"
+    },
+    "evidence": [
+     "openapi/_original/box-openapi.json#DELETE /files/{file_id}/versions/{file_version_id}",
+     "openapi/_original/box-openapi.json#GET /files/{file_id}/versions",
+     "openapi/_original/box-openapi.json#GET /files/{file_id}/versions/{file_version_id}",
+     "openapi/_original/box-openapi.json#PUT /files/{file_id}/versions/{file_version_id}"
+    ]
+   },
+   "clio": {
+    "segments": [
+     "versions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "document_id": "integer",
+     "etag": "string",
+     "uuid": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "filename": "string",
+     "size": "integer",
+     "version_number": "integer",
+     "content_type": "string",
+     "received_at": "string",
+     "put_url": "string",
+     "fully_uploaded": "boolean",
+     "creator": "object",
+     "put_headers": "array",
+     "multiparts": "array"
+    },
+    "evidence": [
+     "openapi/_original/clio-openapi.json#GET /documents/{id}/versions.json"
+    ]
+   },
+   "getaccept": {
+    "segments": [
+     "revisions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "message": "string",
+     "send_document": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/getaccept-openapi-original.json#POST /documents/{documentId}/revisions"
+    ]
+   },
+   "microsoft-graph": {
+    "segments": [
+     "versions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "@odata.type": "string",
+     "createdDateTime": "string",
+     "displayName": "string",
+     "fileData": null,
+     "fileName": "string",
+     "isDefault": "boolean",
+     "isMajorVersion": "boolean",
+     "language": "string"
+    },
+    "evidence": [
+     "openapi/_original/agreements-openapi-original.yml#DELETE /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions",
+     "openapi/_original/agreements-openapi-original.yml#GET /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/agreements-openapi-original.yml#PATCH /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/agreements-openapi-original.yml#POST /agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions",
+     "openapi/_original/identity-openapi-original.yml#DELETE /identityGovernance/termsOfUse/agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/identity-openapi-original.yml#DELETE /identityGovernance/termsOfUse/agreements/{agreement-id}/files/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/identity-openapi-original.yml#GET /identityGovernance/termsOfUse/agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions",
+     "openapi/_original/identity-openapi-original.yml#GET /identityGovernance/termsOfUse/agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/identity-openapi-original.yml#GET /identityGovernance/termsOfUse/agreements/{agreement-id}/files/{agreementFileLocalization-id}/versions",
+     "openapi/_original/identity-openapi-original.yml#GET /identityGovernance/termsOfUse/agreements/{agreement-id}/files/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}",
+     "openapi/_original/identity-openapi-original.yml#PATCH /identityGovernance/termsOfUse/agreements/{agreement-id}/file/localizations/{agreementFileLocalization-id}/versions/{agreementFileVersion-id}"
+    ]
+   }
+  },
+  "permission": {
+   "adobe-suite": {
+    "segments": [
+     "share",
+     "shares"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "shareId": "string",
+     "imsOrgId": "string",
+     "shareToId": "integer",
+     "shareToImsId": "string",
+     "shareToType": "string",
+     "shareFromImsId": "string",
+     "componentType": "string",
+     "componentId": "string",
+     "shareToDisplayName": "string",
+     "shareToLogin": "string",
+     "accessLevel": "string",
+     "shares": "array",
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/adobe-suite-analytics-openapi.json#DELETE /{globalCompanyId}/componentmetadata/shares/{id}",
+     "openapi/_original/adobe-suite-analytics-openapi.json#GET /{globalCompanyId}/componentmetadata/shares",
+     "openapi/_original/adobe-suite-analytics-openapi.json#GET /{globalCompanyId}/componentmetadata/shares/{id}",
+     "openapi/_original/adobe-suite-analytics-openapi.json#POST /{globalCompanyId}/componentmetadata/shares",
+     "openapi/_original/adobe-suite-analytics-openapi.json#PUT /{globalCompanyId}/componentmetadata/shares",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /category/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /category/{id}/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /document/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /document/{id}/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /documentfolder/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /documentfolder/{id}/share",
+     "openapi/_original/adobe-suite-workfront-workflow-openapi.json#PUT /group/share"
+    ]
+   },
+   "boldsign": {
+    "segments": [
+     "share"
+    ],
+    "operations": [
+     "PATCH collection"
+    ],
+    "properties": {
+     "teamId": "string",
+     "action": "string",
+     "accessLevel": "string"
+    },
+    "evidence": [
+     "openapi/_original/boldsign-esignature-openapi.yml#PATCH /v1/template/share"
+    ]
+   },
+   "box": {
+    "segments": [
+     "collaborations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "limit": "integer",
+     "next_marker": "string",
+     "prev_marker": "string",
+     "id": "string",
+     "type": "string",
+     "item": null,
+     "app_item": null,
+     "accessible_by": "object",
+     "invite_email": "string",
+     "role": "string",
+     "expires_at": "string",
+     "is_access_only": "boolean",
+     "status": "string",
+     "acknowledged_at": "string",
+     "created_by": null,
+     "created_at": "string",
+     "modified_at": "string",
+     "acceptance_requirements_status": "object",
+     "can_view_path": "boolean",
+     "total_count": "integer",
+     "offset": "integer"
+    },
+    "evidence": [
+     "openapi/_original/box-openapi.json#DELETE /collaborations/{collaboration_id}",
+     "openapi/_original/box-openapi.json#GET /collaborations",
+     "openapi/_original/box-openapi.json#GET /collaborations/{collaboration_id}",
+     "openapi/_original/box-openapi.json#GET /files/{file_id}/collaborations",
+     "openapi/_original/box-openapi.json#GET /folders/{folder_id}/collaborations",
+     "openapi/_original/box-openapi.json#GET /groups/{group_id}/collaborations",
+     "openapi/_original/box-openapi.json#POST /collaborations",
+     "openapi/_original/box-openapi.json#PUT /collaborations/{collaboration_id}"
+    ]
+   },
+   "citrix-sharefile": {
+    "segments": [
+     "shares"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "Id": "string",
+     "ShareType": "string",
+     "Title": "string",
+     "Items": "array",
+     "Recipients": "array",
+     "HasSentMessage": "boolean",
+     "SentMessageTitle": "string",
+     "IsViewOnly": "boolean",
+     "RequireLogin": "boolean",
+     "RequireUserInfo": "boolean",
+     "Creator": "object",
+     "CreationDate": "string",
+     "ExpirationDate": "string",
+     "MaxDownloads": "integer",
+     "TotalDownloads": "integer",
+     "IsConsumed": "boolean",
+     "IsRead": "boolean",
+     "url": "string"
+    },
+    "evidence": [
+     "openapi/_original/citrix-sharefile-openapi.yml#GET /Shares",
+     "openapi/_original/citrix-sharefile-openapi.yml#POST /Shares"
+    ]
+   },
+   "cloudflare": {
+    "segments": [
+     "shares",
+     "permissions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "createdAt": "string",
+     "resourceId": "string",
+     "resourceType": "string",
+     "role": "string",
+     "subjectId": "string",
+     "subjectType": "string",
+     "updatedAt": "string",
+     "uuid": "string",
+     "message": "string",
+     "success": "boolean",
+     "errors": "array",
+     "result": "array",
+     "result_info": "object",
+     "account_id": "string",
+     "account_name": "string",
+     "associated_recipient_count": "integer",
+     "associating_recipient_count": "integer",
+     "created": "string",
+     "disassociated_recipient_count": "integer",
+     "disassociating_recipient_count": "integer",
+     "id": "string",
+     "kind": "string",
+     "modified": "string",
+     "name": "string",
+     "organization_id": "string",
+     "resources": "array",
+     "status": "string",
+     "target_type": "string",
+     "recipients": "array"
+    },
+    "evidence": [
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions/{grant_id}",
+     "openapi/_original/cloudflare-openapi.json#DELETE /accounts/{account_id}/shares/{share_id}",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/shares",
+     "openapi/_original/cloudflare-openapi.json#GET /accounts/{account_id}/shares/{share_id}",
+     "openapi/_original/cloudflare-openapi.json#GET /organizations/{organization_id}/shares",
+     "openapi/_original/cloudflare-openapi.json#POST /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions",
+     "openapi/_original/cloudflare-openapi.json#POST /accounts/{account_id}/shares",
+     "openapi/_original/cloudflare-openapi.json#PUT /accounts/{account_id}/cloudforce-one/events/dataset/{dataset_id}/permissions/{grant_id}",
+     "openapi/_original/cloudflare-openapi.json#PUT /accounts/{account_id}/shares/{share_id}"
+    ]
+   },
+   "coda-project": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "type": "string",
+     "principal": null,
+     "id": "string",
+     "access": "string",
+     "suppressEmail": "boolean",
+     "bypassOrgExternalSharingRestrictions": "boolean",
+     "creationTimestamp": "number",
+     "modificationUserId": "number",
+     "principals": "array",
+     "permissionId": "string"
+    },
+    "evidence": [
+     "openapi/_original/coda-project-admin-openapi-original.json#DELETE /organizations/{organizationId}/docs/{docId}/acl/permissions/{docPermissionId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#DELETE /organizations/{organizationId}/packs/configurations/{packConfigurationId}/permissions/{packConfigurationPermissionId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#DELETE /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/acl/permissions/{docPermissionId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#DELETE /organizations/{organizationId}/workspaces/{workspaceId}/folders/{folderId}/acl/permissions/{permissionId}",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/docs/{docId}/acl/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/packs/configurations/{packConfigurationId}/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/acl/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#GET /organizations/{organizationId}/workspaces/{workspaceId}/folders/{folderId}/acl/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#POST /organizations/{organizationId}/docs/{docId}/acl/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#POST /organizations/{organizationId}/packs/configurations/{packConfigurationId}/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#POST /organizations/{organizationId}/workspaces/{workspaceId}/docs/{docId}/acl/permissions",
+     "openapi/_original/coda-project-admin-openapi-original.json#POST /organizations/{organizationId}/workspaces/{workspaceId}/folders/{folderId}/acl/permissions"
+    ]
+   },
+   "concord-com": {
+    "segments": [
+     "permission"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "permission": "string"
+    },
+    "evidence": [
+     "openapi/_original/concord-com-openapi.yml#PUT /organizations/{organizationId}/agreements/{agreementUid}/members/delayed-invitations/{delayedInvitationId}/permission",
+     "openapi/_original/concord-com-openapi.yml#PUT /organizations/{organizationId}/agreements/{agreementUid}/members/invitations/{invitationId}/permission",
+     "openapi/_original/concord-com-openapi.yml#PUT /organizations/{organizationId}/agreements/{agreementUid}/members/users/{userId}/permission"
+    ]
+   },
+   "docusign": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "permissions": "array"
+    },
+    "evidence": [
+     "openapi/_original/docusign-admin-openapi-original.yml#GET /v2/organizations/{organizationId}/accounts/{accountId}/permissions"
+    ]
+   },
+   "eon": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "permissionType": "string",
+     "description": "string",
+     "allowConditions": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/eon-openapi-original.yml#GET /v1/permissions"
+    ]
+   },
+   "google-drive": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "nextPageToken": "string",
+     "permissions": "array",
+     "id": "string",
+     "type": "string",
+     "role": "string",
+     "emailAddress": "string",
+     "domain": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-drive-openapi.yml#GET /files/{fileId}/permissions",
+     "openapi/_original/google-drive-openapi.yml#POST /files/{fileId}/permissions"
+    ]
+   },
+   "intralinks": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "groupId": "string",
+     "folderId": "string",
+     "permission": "string"
+    },
+    "evidence": [
+     "openapi/_original/intralinks-api-openapi.yml#GET /workspaces/{workspaceId}/permissions",
+     "openapi/_original/intralinks-api-openapi.yml#POST /workspaces/{workspaceId}/permissions"
+    ]
+   },
+   "la-poste-groupe": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "name": "string",
+     "email": "string",
+     "department": "string",
+     "departmentName": "string",
+     "roles": "array",
+     "operations": "array",
+     "classes": "array"
+    },
+    "evidence": [
+     "openapi/_original/la-poste-groupe-open-data-openapi.json#GET /datasets/{id}/permissions",
+     "openapi/_original/la-poste-groupe-open-data-openapi.json#PUT /datasets/{id}/permissions"
+    ]
+   },
+   "linode": {
+    "segments": [
+     "access",
+     "share"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "ips": "array",
+     "linode_id": "integer",
+     "acl": "string",
+     "acl_xml": "string",
+     "cors_enabled": "boolean",
+     "cors_xml": "string"
+    },
+    "evidence": [
+     "openapi/_original/linode-api-v4-official-openapi.json#GET /{apiVersion}/object-storage/buckets/{regionId}/{bucket}/access",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/networking/ips/share",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/networking/ipv4/share",
+     "openapi/_original/linode-api-v4-official-openapi.json#POST /{apiVersion}/object-storage/buckets/{regionId}/{bucket}/access",
+     "openapi/_original/linode-api-v4-official-openapi.json#PUT /{apiVersion}/object-storage/buckets/{regionId}/{bucket}/access"
+    ]
+   },
+   "mediavalet": {
+    "segments": [
+     "share",
+     "permissions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "sharedWithUsers": "array",
+     "sharedWithGroups": "array",
+     "pinnedForGroups": "array",
+     "savedSearchId": "string",
+     "shareWithUsers": "array",
+     "shareWithGroups": "array",
+     "sharedAt": "string",
+     "sharedBy": "object",
+     "state": "string",
+     "expiryDate": "string",
+     "_links": "object",
+     "translationKeys": "object",
+     "interpolations": "object",
+     "permissions": "array",
+     "id": "string",
+     "userName": "string",
+     "address": "string",
+     "orgUnitId": "string",
+     "applicationName": "string",
+     "defaultGroup": "string",
+     "userDomain": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "department": "string",
+     "position": "string",
+     "title": "string",
+     "officeNumber": "string",
+     "cellularNumber": "string",
+     "faxNumber": "string",
+     "emailAddress": "string",
+     "comment": "string",
+     "defaultSkin": "string",
+     "additionalMessage": "string",
+     "adminNotes": "string",
+     "lastActiveAt": "string",
+     "lastLockedOutAt": "string",
+     "lastLoginAt": "string",
+     "createdAt": "string",
+     "expiresAt": "string",
+     "termsandconditionsacceptedat": "string",
+     "termsConditionsAcceptanceStatus": "string",
+     "website": "string",
+     "alertsEnabled": "boolean",
+     "newUserNotification": "boolean",
+     "password": "string",
+     "organizationName": "string",
+     "isLockedOut": "boolean",
+     "isSuspended": "boolean",
+     "isApproved": "boolean",
+     "userType": "string",
+     "isExternalUser": "boolean",
+     "roleId": "string"
+    },
+    "evidence": [
+     "openapi/_original/mediavalet-openapi.yml#GET /public/share/{shareCode}",
+     "openapi/_original/mediavalet-openapi.yml#GET /savedsearches/{savedSearchId}/share",
+     "openapi/_original/mediavalet-openapi.yml#GET /users/current/permissions",
+     "openapi/_original/mediavalet-openapi.yml#POST /savedsearches/{savedSearchId}/share",
+     "openapi/_original/mediavalet-saved-searches-api-openapi.yml#GET /savedsearches/{savedSearchId}/share",
+     "openapi/_original/mediavalet-saved-searches-api-openapi.yml#POST /savedsearches/{savedSearchId}/share"
+    ]
+   },
+   "microsoft-graph": {
+    "segments": [
+     "permissions",
+     "shares",
+     "share"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "expirationDateTime": "string",
+     "grantedTo": null,
+     "grantedToIdentities": "array",
+     "grantedToIdentitiesV2": "array",
+     "grantedToV2": null,
+     "hasPassword": "boolean",
+     "inheritedFrom": null,
+     "invitation": null,
+     "link": null,
+     "roles": "array",
+     "shareId": "string",
+     "@odata.type": "string",
+     "notifyTeam": "boolean",
+     "startDateTime": "string",
+     "endDateTime": "string",
+     "id": "string",
+     "capabilities": null,
+     "defaults": null,
+     "displayName": "string",
+     "isAcceptingJobs": "boolean",
+     "location": null,
+     "manufacturer": "string",
+     "model": "string",
+     "status": "object",
+     "jobs": "array",
+     "allowAllUsers": "boolean",
+     "createdDateTime": "string",
+     "viewPoint": null,
+     "allowedGroups": "array",
+     "allowedUsers": "array",
+     "printer": null,
+     "createdBy": null,
+     "description": "string",
+     "eTag": "string",
+     "lastModifiedBy": null,
+     "lastModifiedDateTime": "string",
+     "name": "string",
+     "parentReference": null,
+     "webUrl": "string",
+     "createdByUser": null,
+     "lastModifiedByUser": null,
+     "owner": null,
+     "driveItem": null,
+     "items": "array",
+     "list": null,
+     "listItem": null,
+     "permission": null,
+     "root": null,
+     "site": null
+    },
+    "evidence": [
+     "openapi/_original/drives-openapi-original.yml#DELETE /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}",
+     "openapi/_original/drives-openapi-original.yml#GET /drives/{drive-id}/items/{driveItem-id}/permissions",
+     "openapi/_original/drives-openapi-original.yml#GET /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}",
+     "openapi/_original/drives-openapi-original.yml#PATCH /drives/{drive-id}/items/{driveItem-id}/permissions/{permission-id}",
+     "openapi/_original/drives-openapi-original.yml#POST /drives/{drive-id}/items/{driveItem-id}/permissions",
+     "openapi/_original/groups-openapi-original.yml#DELETE /groups/{group-id}/sites/{site-id}/permissions/{permission-id}",
+     "openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/sites/{site-id}/getByPath(path='{path}')/permissions",
+     "openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/sites/{site-id}/permissions",
+     "openapi/_original/groups-openapi-original.yml#GET /groups/{group-id}/sites/{site-id}/permissions/{permission-id}",
+     "openapi/_original/groups-openapi-original.yml#PATCH /groups/{group-id}/sites/{site-id}/permissions/{permission-id}",
+     "openapi/_original/groups-openapi-original.yml#POST /groups/{group-id}/sites/{site-id}/getByPath(path='{path}')/permissions",
+     "openapi/_original/groups-openapi-original.yml#POST /groups/{group-id}/sites/{site-id}/permissions"
+    ]
+   },
+   "nasuni": {
+    "segments": [
+     "shares",
+     "permissions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "filer_serial_number": "string",
+     "volume_guid": "string",
+     "name": "string",
+     "path": "string",
+     "comment": "string",
+     "readonly": "boolean",
+     "browseable": "boolean",
+     "hosts_allow": "string",
+     "hide_unreadable": "boolean",
+     "enable_previous_vers": "boolean",
+     "case_sensitive": "boolean",
+     "enable_snapshot_dirs": "boolean",
+     "homedir_support": "integer",
+     "mobile": "boolean",
+     "browser_access": "boolean",
+     "browser_access_settings": "object",
+     "aio_enabled": "boolean",
+     "veto_files": "string",
+     "fruit_enabled": "boolean",
+     "smb_encrypt": "string",
+     "auth": "object",
+     "links": "object",
+     "href": "string",
+     "limit": "integer",
+     "next": "string",
+     "offset": "integer",
+     "previous": "string",
+     "total": "integer",
+     "agl_oplocks": "boolean",
+     "key": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/nasuni-nmc-v1-0-openapi.json#GET /volumes/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.json#GET /volumes/{volume_guid}/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.json#GET /volumes/{volume_guid}/filers/{filer_serial}/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.json#GET /volumes/{volume_guid}/filers/{filer_serial}/shares/{share_id}/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.yml#GET /volumes/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.yml#GET /volumes/{volume_guid}/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.yml#GET /volumes/{volume_guid}/filers/{filer_serial}/shares/",
+     "openapi/_original/nasuni-nmc-v1-0-openapi.yml#GET /volumes/{volume_guid}/filers/{filer_serial}/shares/{share_id}/",
+     "openapi/_original/nasuni-nmc-v1-1-openapi.json#DELETE /volumes/{volume_guid}/filers/{filer_serial}/shares/{share_id}/",
+     "openapi/_original/nasuni-nmc-v1-1-openapi.json#GET /volumes/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-1-openapi.json#GET /volumes/{volume_guid}/filers/shares/",
+     "openapi/_original/nasuni-nmc-v1-1-openapi.json#GET /volumes/{volume_guid}/filers/{filer_serial}/shares/"
+    ]
+   },
+   "progress-software": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "passwordChangeEmailNotificationType": "string",
+     "allowToChangeOwnPassword": "boolean",
+     "allowPasswordChangeRequests": "boolean",
+     "isRecaptchaRequired": "boolean",
+     "isSecurityQuestionsRequired": "boolean",
+     "passwordEmailLinkMaxAge": "integer"
+    },
+    "evidence": [
+     "openapi/_original/progress-software-moveit-transfer-openapi-original.json#POST /api/v1/settings/security/password/permissions"
+    ]
+   },
+   "pure-storage": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "continuation_token": "string",
+     "total_item_count": "integer",
+     "context": null,
+     "actions": "array",
+     "resource": "string",
+     "role": null,
+     "id": "string",
+     "name": "string",
+     "errors": "array"
+    },
+    "evidence": [
+     "openapi/_original/flashblade-rest-api-openapi.yml#DELETE /api/2.26/management-access-policies/roles/permissions",
+     "openapi/_original/flashblade-rest-api-openapi.yml#GET /api/2.26/management-access-policies/roles/permissions",
+     "openapi/_original/flashblade-rest-api-openapi.yml#PATCH /api/2.26/management-access-policies/roles/permissions",
+     "openapi/_original/flashblade-rest-api-openapi.yml#POST /api/2.26/management-access-policies/roles/permissions"
+    ]
+   },
+   "sakura-internet": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": null,
+     "display_name": null,
+     "bucket_controls": null,
+     "created_at": null
+    },
+    "evidence": [
+     "openapi/_original/objectstorage-api.yaml#DELETE /permissions/{id}",
+     "openapi/_original/objectstorage-api.yaml#GET /permissions",
+     "openapi/_original/objectstorage-api.yaml#GET /permissions/{id}",
+     "openapi/_original/objectstorage-api.yaml#POST /permissions",
+     "openapi/_original/objectstorage-api.yaml#PUT /permissions/{id}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#DELETE /permissions/{id}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#GET /permissions",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#GET /permissions/{id}",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#POST /permissions",
+     "openapi/_original/sakura-internet-objectstorage-openapi.yml#PUT /permissions/{id}"
+    ]
+   },
+   "seven-bridges": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "PATCH collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "write": "boolean",
+     "read": "boolean",
+     "copy": "boolean",
+     "execute": "boolean",
+     "admin": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/seven-bridges-platform-openapi.json#PATCH /projects/{project_owner}/{project}/members/{username}/permissions",
+     "openapi/_original/seven-bridges-platform-openapi.json#PATCH /storage/volumes/{volume_owner}/{volume_name}/members/{username}/permissions",
+     "openapi/_original/seven-bridges-platform-openapi.json#PUT /projects/{project_owner}/{project}/members/{username}/permissions",
+     "openapi/_original/seven-bridges-platform-openapi.json#PUT /storage/volumes/{volume_owner}/{volume_name}/members/{username}/permissions"
+    ]
+   },
+   "synadia-communications": {
+    "segments": [
+     "shares"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "target_account_nkey_public": "string",
+     "created": "string",
+     "id": "string",
+     "jwt": "string",
+     "jwt_claims": "object",
+     "subject_export_id": "string",
+     "target_accounts": "array",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#DELETE /core/beta/stream-exports/{streamExportId}/shares/{targetAccountNKeyPublic}",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#DELETE /core/beta/subject-exports/{subjectExportId}/shares/{targetAccountNKeyPublic}",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#GET /core/beta/stream-exports/{streamExportId}/shares",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#GET /core/beta/subject-exports/{subjectExportId}/shares",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#POST /core/beta/stream-exports/{streamExportId}/shares",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#POST /core/beta/subject-exports/{subjectExportId}/shares",
+     "openapi/_original/synadia-communications-control-plane-openapi.yaml#POST /core/beta/systems/{systemId}/bulk/shares"
+    ]
+   },
+   "tiledb": {
+    "segments": [
+     "share"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "actions": "array",
+     "namespace": "string",
+     "namespace_type": "string",
+     "invitee_email": "array",
+     "array_actions": "array",
+     "group_actions": "array",
+     "invitee_email_or_name": "array"
+    },
+    "evidence": [
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#DELETE /invitations/group/{invitation}/{namespace}/{group_name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#DELETE /invitations/{invitation}/{namespace}/{array}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /arrays/{namespace}/{array}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /groups/{group_namespace}/{group_name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /taskgraphs/{namespace}/registered/{name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#GET /udf/{namespace}/{name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#PATCH /arrays/{namespace}/{array}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#PATCH /groups/{group_namespace}/{group_name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#PATCH /taskgraphs/{namespace}/registered/{name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#PATCH /udf/{namespace}/{name}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#POST /invitations/group/{namespace}/{group}/share",
+     "openapi/_original/tiledb-cloud-v1-openapi.yaml#POST /invitations/{namespace}/{array}/share"
+    ]
+   },
+   "upcloud": {
+    "segments": [
+     "shares",
+     "permission"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "options": "object",
+     "target_identifier": "string",
+     "target_type": null,
+     "user": "string",
+     "name": "string",
+     "path": "string",
+     "acl": "array"
+    },
+    "evidence": [
+     "openapi/_original/upcloud-openapi.json#DELETE /1.3/file-storage/{service-uuid}/shares/{share-name}",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/file-storage/{service-uuid}/shares",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/file-storage/{service-uuid}/shares/{share-name}",
+     "openapi/_original/upcloud-openapi.json#GET /1.3/permission",
+     "openapi/_original/upcloud-openapi.json#PATCH /1.3/file-storage/{service-uuid}/shares/{share-name}",
+     "openapi/_original/upcloud-openapi.json#POST /1.3/file-storage/{service-uuid}/shares",
+     "openapi/_original/upcloud-openapi.json#PUT /1.3/permission",
+     "openapi/_original/upcloud-openapi.yml#DELETE /1.3/file-storage/{service-uuid}/shares/{share-name}",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/file-storage/{service-uuid}/shares",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/file-storage/{service-uuid}/shares/{share-name}",
+     "openapi/_original/upcloud-openapi.yml#GET /1.3/permission",
+     "openapi/_original/upcloud-openapi.yml#PATCH /1.3/file-storage/{service-uuid}/shares/{share-name}"
+    ]
+   },
+   "weka": {
+    "segments": [
+     "permissions",
+     "shares"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "group_id": "string",
+     "privileged_port": "boolean",
+     "supported_versions": "array",
+     "id": "string",
+     "obs_direct": "boolean",
+     "anon_uid": "string",
+     "manage_gids": "boolean",
+     "custom_options": "string",
+     "filesystem": "string",
+     "uid": "string",
+     "group": "string",
+     "filesystem_id": "string",
+     "permission_type": "string",
+     "mount_options": "string",
+     "path": "string",
+     "squash_mode": "string",
+     "root_squashing": "boolean",
+     "anon_gid": "string",
+     "enable_auth_types": "array",
+     "exportId": "integer",
+     "container_restart_needed": "boolean",
+     "acl_type": "string",
+     "force_acl_type": "boolean",
+     "priority": "number",
+     "data": null,
+     "innerPath": "string",
+     "fileCreateMask": "string",
+     "mountOptions": "string",
+     "readWriteUsers": "array",
+     "readOnly": "boolean",
+     "validUsers": "array",
+     "invalidUsers": "array",
+     "hidden": "boolean",
+     "shareName": "string",
+     "readOnlyUsers": "array",
+     "encryption": "string",
+     "acl": "boolean",
+     "additionalShareOptions": "array",
+     "directoryCreateMask": "string",
+     "description": "string",
+     "obsDirect": "boolean",
+     "allowGuestAccess": "boolean",
+     "fsName": "string",
+     "caseSensitivity": "boolean",
+     "namedStreams": "boolean",
+     "mapAcls": "string",
+     "share_name": "string",
+     "fs_name": "string",
+     "sub_path": "string",
+     "file_create_mask": "string",
+     "directory_create_mask": "string",
+     "allow_guest_access": "boolean",
+     "case_sensitivity": "boolean",
+     "read_only": "boolean",
+     "user_list_type": "string",
+     "users": "array",
+     "additional_share_options": "array",
+     "named_streams": "boolean",
+     "map_acls": "string"
+    },
+    "evidence": [
+     "openapi/_original/weka-openapi-original.json#DELETE /nfs/permissions/{uid}",
+     "openapi/_original/weka-openapi-original.json#DELETE /smb/shares/{uid}",
+     "openapi/_original/weka-openapi-original.json#GET /nfs/permissions",
+     "openapi/_original/weka-openapi-original.json#GET /nfs/permissions/{uid}",
+     "openapi/_original/weka-openapi-original.json#GET /smb/shares",
+     "openapi/_original/weka-openapi-original.json#POST /nfs/permissions",
+     "openapi/_original/weka-openapi-original.json#POST /smb/shares",
+     "openapi/_original/weka-openapi-original.json#PUT /nfs/permissions/{uid}",
+     "openapi/_original/weka-openapi-original.json#PUT /smb/shares/{uid}"
+    ]
+   },
+   "zadara": {
+    "segments": [
+     "permissions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "permissions": "array",
+     "count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/zadara-command-center-25.07.yml#GET /permissions.json",
+     "openapi/_original/zadara-command-center-openapi.yml#GET /permissions.json"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "acronis",
+    "actionstep",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "amazon-s3",
+    "arch",
+    "archil",
+    "autodesk-bim360",
+    "automq",
+    "azure-storage-accounts",
+    "bitrix24",
+    "bluebeam",
+    "boldsign",
+    "box",
+    "bytark",
+    "canto",
+    "ceph",
+    "ci-hub",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "cloudkit",
+    "coda-project",
+    "commvault",
+    "concord-com",
+    "contabo",
+    "convertapi",
+    "crusoe",
+    "cubefs",
+    "docling",
+    "documenso",
+    "docuseal",
+    "docusign",
+    "dotloop",
+    "dropbox",
+    "egnyte",
+    "element-biosciences",
+    "eon",
+    "figshare",
+    "filebase",
+    "filevine",
+    "finalcad",
+    "formstack",
+    "gcp-cloud-storage",
+    "getaccept",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-docs",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "govinfo",
+    "hellosign",
+    "hubflo",
+    "iconik",
+    "imgauth-api-di-attestazione-opere-digitali",
+    "imgbb",
+    "impossible-cloud",
+    "inkit",
+    "intralinks",
+    "ipfs",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lawvu",
+    "leaseweb",
+    "lev",
+    "lightroom",
+    "linode",
+    "loopio",
+    "lucidlink",
+    "machinelibrary-ai",
+    "mediavalet",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "mycase",
+    "nasuni",
+    "nextcloud",
+    "nhost",
+    "nitro-software",
+    "nuxeo",
+    "oracle-cloud",
+    "pandadoc",
+    "pdffiller",
+    "plangrid",
+    "postalform-com",
+    "powerpoint",
+    "prisma",
+    "progress-software",
+    "propertyme",
+    "pure-storage",
+    "relativityone",
+    "ricoh-usa",
+    "rocket-lawyer",
+    "sadq-holding-limited",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signnow",
+    "signwell",
+    "skyslope",
+    "slide",
+    "smokeball",
+    "synadia-communications",
+    "temp-md",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "veeva",
+    "vultr",
+    "warpstream",
+    "weka",
+    "workist",
+    "xiaomi",
+    "xsky",
+    "zadara",
+    "zamzar",
+    "zinnia",
+    "zoho-sign",
+    "zoho-writer"
+   ],
+   "kebab-case": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "amazon-efs",
+    "amazon-s3",
+    "arch",
+    "autodesk-bim360",
+    "automq",
+    "bytark",
+    "cloudflare",
+    "concord-com",
+    "contabo",
+    "convertapi",
+    "crusoe",
+    "documenso",
+    "dotloop",
+    "egnyte",
+    "element-biosciences",
+    "eon",
+    "figshare",
+    "filevine",
+    "finalcad",
+    "formstack",
+    "getaccept",
+    "gonitro",
+    "hubflo",
+    "imgauth-api-di-attestazione-opere-digitali",
+    "impossible-cloud",
+    "ipfs",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lev",
+    "linode",
+    "lucidlink",
+    "machinelibrary-ai",
+    "mediavalet",
+    "nasuni",
+    "nhost",
+    "nitro-software",
+    "pandadoc",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "pure-storage",
+    "relativityone",
+    "rocket-lawyer",
+    "sadq-holding-limited",
+    "sakura-internet",
+    "sevalla",
+    "skyslope",
+    "slide",
+    "smokeball",
+    "synadia-communications",
+    "temp-md",
+    "upcloud",
+    "vultr",
+    "weka",
+    "workist",
+    "xsky",
+    "zinnia"
+   ],
+   "other": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "amazon-efs",
+    "amazon-s3",
+    "amazon-simpledb",
+    "amazon-storage-gateway",
+    "autodesk-bim360",
+    "automq",
+    "aws-s3",
+    "azure-storage-accounts",
+    "bitrix24",
+    "box",
+    "citrix-sharefile",
+    "cloudflare",
+    "cloudflare-r2",
+    "concord-com",
+    "cubefs",
+    "docusign",
+    "dropbox",
+    "filebase",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-docs",
+    "google-suite-docs-sheets-slides-gmail",
+    "hellosign",
+    "la-poste-groupe",
+    "microsoft-azure-blob-storage",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "nasuni",
+    "nhost",
+    "nitro-software",
+    "nuxeo",
+    "outline",
+    "postalform-com",
+    "powerpoint",
+    "progress-software",
+    "pure-storage",
+    "rook",
+    "seven-bridges",
+    "skyslope",
+    "temp-md",
+    "tigris-data",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "vultr",
+    "xiaomi",
+    "xsky"
+   ],
+   "snake_case": [
+    "acronis",
+    "adobe-suite",
+    "autodesk-bim360",
+    "box",
+    "canto",
+    "ceph",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "docusign",
+    "dropbox",
+    "figshare",
+    "finalcad",
+    "getaccept",
+    "hellosign",
+    "hubflo",
+    "la-poste-groupe",
+    "lakekeeper",
+    "linode",
+    "microsoft-graph",
+    "mycase",
+    "nasuni",
+    "pdffiller",
+    "plangrid",
+    "progress-software",
+    "pure-storage",
+    "sakura-internet",
+    "seven-bridges",
+    "signwell",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "warpstream",
+    "weka",
+    "workist",
+    "zadara"
+   ],
+   "camelCase": [
+    "adobe-suite",
+    "amazon-s3",
+    "azure-storage-accounts",
+    "boldsign",
+    "box",
+    "ci-hub",
+    "clickup",
+    "cloudflare",
+    "coda-project",
+    "commvault",
+    "contabo",
+    "cubefs",
+    "docusign",
+    "formstack",
+    "gcp-cloud-storage",
+    "google-cloud-transfer-service",
+    "google-suites",
+    "lawvu",
+    "leaseweb",
+    "lightroom",
+    "loopio",
+    "mediavalet",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "nuxeo",
+    "oracle-cloud",
+    "powerpoint",
+    "prisma",
+    "progress-software",
+    "ricoh-usa",
+    "rocket-lawyer",
+    "weka",
+    "xiaomi",
+    "zinnia"
+   ],
+   "PascalCase": [
+    "acronis",
+    "adobe-creative-cloud",
+    "azure-storage-accounts",
+    "boldsign",
+    "citrix-sharefile",
+    "cloudflare",
+    "commvault",
+    "oracle-cloud",
+    "propertyme",
+    "sadq-holding-limited",
+    "vultr",
+    "xerox",
+    "zinnia"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "amazon-s3",
+    "arch",
+    "archil",
+    "autodesk-bim360",
+    "aws-s3",
+    "azure-file-storage",
+    "bluebeam",
+    "boldsign",
+    "box",
+    "bytark",
+    "canto",
+    "ceph",
+    "ci-hub",
+    "citrix-sharefile",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "cloudflare-r2",
+    "coda-project",
+    "commvault",
+    "concord-com",
+    "contabo",
+    "convertapi",
+    "crusoe",
+    "cubefs",
+    "documenso",
+    "docuseal",
+    "docusign",
+    "dotloop",
+    "dropbox",
+    "egnyte",
+    "element-biosciences",
+    "figshare",
+    "filebase",
+    "filevine",
+    "formstack",
+    "gcp-cloud-storage",
+    "getaccept",
+    "google-cloud-transfer-service",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "govinfo",
+    "hellosign",
+    "hubflo",
+    "iconik",
+    "imgauth-api-di-attestazione-opere-digitali",
+    "imgbb",
+    "impossible-cloud",
+    "inkit",
+    "intralinks",
+    "ipfs",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lawvu",
+    "leaseweb",
+    "lev",
+    "lightroom",
+    "linode",
+    "loopio",
+    "machinelibrary-ai",
+    "mediavalet",
+    "microsoft-azure-blob-storage",
+    "microsoft-graph",
+    "nasuni",
+    "nextcloud",
+    "nhost",
+    "nuxeo",
+    "oracle-cloud",
+    "pandadoc",
+    "pdffiller",
+    "plangrid",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "pure-storage",
+    "relativityone",
+    "rocket-lawyer",
+    "rook",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signnow",
+    "signwell",
+    "skyslope",
+    "slide",
+    "smokeball",
+    "synadia-communications",
+    "temp-md",
+    "tigris-data",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "veeva",
+    "vultr",
+    "weka",
+    "workist",
+    "xerox",
+    "xiaomi",
+    "xsky",
+    "zadara",
+    "zamzar",
+    "zinnia",
+    "zoho-writer"
+   ],
+   "camelCase": [
+    "acronis",
+    "adobe-suite",
+    "amazon-s3",
+    "arch",
+    "autodesk-bim360",
+    "aws-s3",
+    "bluebeam",
+    "boldsign",
+    "bytark",
+    "ci-hub",
+    "citrix-sharefile",
+    "cloudflare",
+    "coda-project",
+    "commvault",
+    "concord-com",
+    "contabo",
+    "convertapi",
+    "cubefs",
+    "documenso",
+    "docusign",
+    "egnyte",
+    "element-biosciences",
+    "eon",
+    "filevine",
+    "formstack",
+    "gcp-cloud-storage",
+    "getaccept",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-docs",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "govinfo",
+    "intralinks",
+    "la-poste-groupe",
+    "lakekeeper",
+    "leaseweb",
+    "loopio",
+    "lucidlink",
+    "mediavalet",
+    "microsoft-azure-blob-storage",
+    "microsoft-graph",
+    "nextcloud",
+    "nhost",
+    "nitro-software",
+    "nuxeo",
+    "oracle-cloud",
+    "prisma",
+    "progress-software",
+    "rocket-lawyer",
+    "sadq-holding-limited",
+    "sakura-internet",
+    "skyslope",
+    "smokeball",
+    "synadia-communications",
+    "tigris-data",
+    "vultr",
+    "weka",
+    "xerox",
+    "xiaomi",
+    "zinnia"
+   ],
+   "snake_case": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "autodesk-bim360",
+    "box",
+    "canto",
+    "ceph",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "crusoe",
+    "docuseal",
+    "docusign",
+    "dotloop",
+    "dropbox",
+    "figshare",
+    "getaccept",
+    "hellosign",
+    "hubflo",
+    "iconik",
+    "inkit",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lev",
+    "lightroom",
+    "linode",
+    "machinelibrary-ai",
+    "nasuni",
+    "nhost",
+    "pandadoc",
+    "pdffiller",
+    "plangrid",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "pure-storage",
+    "sakura-internet",
+    "seven-bridges",
+    "signnow",
+    "signwell",
+    "slide",
+    "synadia-communications",
+    "temp-md",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "vultr",
+    "weka",
+    "workist",
+    "xsky",
+    "zadara",
+    "zoho-sign",
+    "zoho-writer"
+   ],
+   "other": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "autodesk-bim360",
+    "azure-storage-accounts",
+    "citrix-sharefile",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "concord-com",
+    "google-cloud-firestore",
+    "lawvu",
+    "lev",
+    "loopio",
+    "microsoft-graph",
+    "nhost",
+    "prisma",
+    "progress-software",
+    "sakura-internet",
+    "seven-bridges",
+    "signwell",
+    "xerox"
+   ],
+   "kebab-case": [
+    "adobe-suite",
+    "amazon-s3",
+    "aws-s3",
+    "azure-storage-accounts",
+    "box",
+    "cloudflare",
+    "cloudflare-r2",
+    "cubefs",
+    "filebase",
+    "ipfs",
+    "la-poste-groupe",
+    "lakekeeper",
+    "nasuni",
+    "nhost",
+    "rook",
+    "tigris-data",
+    "zinnia"
+   ],
+   "PascalCase": [
+    "acronis",
+    "adobe-suite",
+    "amazon-efs",
+    "amazon-simpledb",
+    "amazon-storage-gateway",
+    "aws-s3",
+    "boldsign",
+    "ipfs",
+    "propertyme",
+    "sakura-internet",
+    "smokeball"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "acronis",
+    "actionstep",
+    "adobe-suite",
+    "amazon-s3",
+    "arch",
+    "archil",
+    "azure-storage-accounts",
+    "box",
+    "canto",
+    "ceph",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "cloudflare-r2",
+    "concord-com",
+    "contabo",
+    "crusoe",
+    "cubefs",
+    "documenso",
+    "docuseal",
+    "egnyte",
+    "element-biosciences",
+    "eon",
+    "filebase",
+    "finalcad",
+    "gcp-cloud-storage",
+    "google-cloud-firestore",
+    "google-suite-docs-sheets-slides-gmail",
+    "govinfo",
+    "hubflo",
+    "imgauth-api-di-attestazione-opere-digitali",
+    "inkit",
+    "ipfs",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lawvu",
+    "leaseweb",
+    "linode",
+    "loopio",
+    "lucidlink",
+    "machinelibrary-ai",
+    "mediavalet",
+    "microsoft-azure-blob-storage",
+    "nasuni",
+    "nhost",
+    "nuxeo",
+    "oracle-cloud",
+    "pandadoc",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "propertyme",
+    "rook",
+    "sadq-holding-limited",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signwell",
+    "smokeball",
+    "synadia-communications",
+    "tigris-data",
+    "tiledb",
+    "turbopuffer",
+    "upcloud",
+    "uploadcare",
+    "vultr",
+    "weka",
+    "workist",
+    "xsky",
+    "zadara",
+    "zamzar",
+    "zinnia"
+   ],
+   "camelCase": [
+    "acronis",
+    "actionstep",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "arch",
+    "archil",
+    "autodesk-bim360",
+    "azure-file-storage",
+    "azure-storage-accounts",
+    "bluebeam",
+    "bytark",
+    "ci-hub",
+    "cloudflare",
+    "coda-project",
+    "commvault",
+    "concord-com",
+    "contabo",
+    "convertapi",
+    "documenso",
+    "docusign",
+    "egnyte",
+    "eon",
+    "filebase",
+    "finalcad",
+    "formstack",
+    "gcp-cloud-storage",
+    "getaccept",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-docs",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "govinfo",
+    "impossible-cloud",
+    "intralinks",
+    "la-poste-groupe",
+    "lawvu",
+    "leaseweb",
+    "linode",
+    "loopio",
+    "mediavalet",
+    "mycase",
+    "nextcloud",
+    "nitro-software",
+    "nuxeo",
+    "oracle-cloud",
+    "prisma",
+    "progress-software",
+    "relativityone",
+    "rocket-lawyer",
+    "sadq-holding-limited",
+    "sakura-internet",
+    "sevalla",
+    "skyslope",
+    "smokeball",
+    "synadia-communications",
+    "temp-md",
+    "upcloud",
+    "veeva",
+    "weka",
+    "xiaomi",
+    "zamzar",
+    "zinnia"
+   ],
+   "snake_case": [
+    "acronis",
+    "adobe-suite",
+    "autodesk-bim360",
+    "box",
+    "canto",
+    "ceph",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "crusoe",
+    "docling",
+    "dotloop",
+    "dropbox",
+    "element-biosciences",
+    "figshare",
+    "finalcad",
+    "hellosign",
+    "hubflo",
+    "iconik",
+    "la-poste-groupe",
+    "lakekeeper",
+    "lev",
+    "lightroom",
+    "machinelibrary-ai",
+    "nasuni",
+    "pandadoc",
+    "pdffiller",
+    "plangrid",
+    "postalform-com",
+    "progress-software",
+    "sakura-internet",
+    "seven-bridges",
+    "signnow",
+    "slide",
+    "tiledb",
+    "upcloud",
+    "vultr",
+    "weka",
+    "xsky",
+    "zadara",
+    "zoho-sign",
+    "zoho-writer"
+   ],
+   "other": [
+    "adobe-suite",
+    "amazon-s3",
+    "clickup",
+    "cloudflare",
+    "cloudflare-r2",
+    "cubefs",
+    "finalcad",
+    "linode",
+    "microsoft-azure-blob-storage",
+    "microsoft-graph",
+    "progress-software",
+    "upcloud",
+    "xiaomi"
+   ],
+   "kebab-case": [
+    "acronis",
+    "adobe-suite",
+    "cloudflare",
+    "lakekeeper",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "powerpoint",
+    "upcloud",
+    "vultr"
+   ],
+   "PascalCase": [
+    "adobe-suite",
+    "amazon-efs",
+    "amazon-s3",
+    "aws-s3",
+    "azure-storage-accounts",
+    "leaseweb",
+    "progress-software",
+    "propertyme"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "acronis",
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "amazon-storage-gateway",
+    "arch",
+    "archil",
+    "autodesk-bim360",
+    "bluebeam",
+    "box",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "coda-project",
+    "commvault",
+    "concord-com",
+    "contabo",
+    "crusoe",
+    "docuseal",
+    "docusign",
+    "figshare",
+    "filebase",
+    "formstack",
+    "getaccept",
+    "intralinks",
+    "ipfs",
+    "leaseweb",
+    "lev",
+    "lightroom",
+    "machinelibrary-ai",
+    "nasuni",
+    "nextcloud",
+    "oracle-cloud",
+    "plangrid",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "propertyme",
+    "pure-storage",
+    "rocket-lawyer",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signwell",
+    "slide",
+    "smokeball",
+    "synadia-communications",
+    "upcloud",
+    "uploadcare",
+    "veeva",
+    "weka",
+    "xsky",
+    "zadara",
+    "zamzar",
+    "zinnia"
+   ],
+   "page": [
+    "acronis",
+    "adobe-suite",
+    "boldsign",
+    "bytark",
+    "clickup",
+    "cloudflare",
+    "concord-com",
+    "contabo",
+    "crusoe",
+    "documenso",
+    "docusign",
+    "dropbox",
+    "figshare",
+    "formstack",
+    "hellosign",
+    "hubflo",
+    "iconik",
+    "inkit",
+    "la-poste-groupe",
+    "lev",
+    "linode",
+    "loopio",
+    "nasuni",
+    "oracle-cloud",
+    "pandadoc",
+    "pdffiller",
+    "progress-software",
+    "sakura-internet",
+    "signnow",
+    "signwell",
+    "skyslope",
+    "tiledb",
+    "workist",
+    "zadara",
+    "zinnia"
+   ],
+   "offset": [
+    "acronis",
+    "adobe-suite",
+    "arch",
+    "autodesk-bim360",
+    "bluebeam",
+    "box",
+    "cloudflare",
+    "concord-com",
+    "figshare",
+    "getaccept",
+    "govinfo",
+    "intralinks",
+    "ipfs",
+    "leaseweb",
+    "lev",
+    "lightroom",
+    "mediavalet",
+    "nasuni",
+    "nextcloud",
+    "nuxeo",
+    "oracle-cloud",
+    "prisma",
+    "propertyme",
+    "pure-storage",
+    "rocket-lawyer",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "slide",
+    "smokeball",
+    "upcloud",
+    "veeva",
+    "xsky",
+    "zinnia"
+   ],
+   "page_size": [
+    "acronis",
+    "adobe-suite",
+    "boldsign",
+    "cloudflare",
+    "crusoe",
+    "docusign",
+    "dropbox",
+    "element-biosciences",
+    "eon",
+    "figshare",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-drive",
+    "google-suites",
+    "govinfo",
+    "hellosign",
+    "inkit",
+    "lakekeeper",
+    "linode",
+    "loopio",
+    "nuxeo",
+    "progress-software",
+    "rocket-lawyer",
+    "sakura-internet",
+    "skyslope",
+    "turbopuffer",
+    "workist",
+    "zinnia"
+   ],
+   "cursor": [
+    "acronis",
+    "adobe-suite",
+    "archil",
+    "clickup",
+    "cloudflare",
+    "docusign",
+    "lev",
+    "postalform-com",
+    "prisma",
+    "progress-software",
+    "rocket-lawyer",
+    "sakura-internet",
+    "smokeball",
+    "turbopuffer",
+    "vultr"
+   ],
+   "count": [
+    "acronis",
+    "adobe-suite",
+    "cloudflare",
+    "cubefs",
+    "docusign",
+    "egnyte",
+    "ipfs",
+    "mediavalet",
+    "microsoft-graph",
+    "pandadoc",
+    "prisma",
+    "pure-storage",
+    "sakura-internet",
+    "vultr",
+    "zadara"
+   ],
+   "start": [
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "clickup",
+    "cloudflare",
+    "concord-com",
+    "crusoe",
+    "docusign",
+    "microsoft-graph",
+    "oracle-cloud",
+    "progress-software",
+    "relativityone",
+    "tiledb",
+    "zadara"
+   ],
+   "per_page": [
+    "acronis",
+    "cloudflare",
+    "documenso",
+    "hubflo",
+    "iconik",
+    "pdffiller",
+    "progress-software",
+    "sakura-internet",
+    "signnow",
+    "tiledb",
+    "vultr",
+    "zadara"
+   ],
+   "page_token": [
+    "clio",
+    "cloudflare",
+    "coda-project",
+    "element-biosciences",
+    "eon",
+    "gcp-cloud-storage",
+    "google-cloud-firestore",
+    "google-cloud-transfer-service",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "lakekeeper"
+   ],
+   "size": [
+    "acronis",
+    "adobe-suite",
+    "bytark",
+    "ci-hub",
+    "cloudflare",
+    "contabo",
+    "filebase",
+    "ipfs",
+    "la-poste-groupe",
+    "progress-software"
+   ],
+   "after": [
+    "acronis",
+    "cloudflare",
+    "docuseal",
+    "filebase",
+    "ipfs",
+    "la-poste-groupe",
+    "progress-software",
+    "xsky",
+    "zamzar"
+   ],
+   "before": [
+    "acronis",
+    "cloudflare",
+    "docuseal",
+    "filebase",
+    "ipfs",
+    "la-poste-groupe",
+    "progress-software",
+    "xsky",
+    "zamzar"
+   ],
+   "skip": [
+    "acronis",
+    "citrix-sharefile",
+    "lawvu",
+    "microsoft-graph",
+    "plangrid",
+    "prisma",
+    "xerox"
+   ],
+   "max_results": [
+    "amazon-s3",
+    "cloudflare",
+    "gcp-cloud-storage",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "nuxeo"
+   ],
+   "top": [
+    "citrix-sharefile",
+    "lawvu",
+    "microsoft-graph"
+   ],
+   "next": [
+    "sakura-internet"
+   ]
+  },
+  "property": {
+   "lower": [
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "arch",
+    "bluebeam",
+    "boldsign",
+    "box",
+    "ci-hub",
+    "citrix-sharefile",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "coda-project",
+    "concord-com",
+    "crusoe",
+    "docling",
+    "documenso",
+    "docuseal",
+    "docusign",
+    "element-biosciences",
+    "eon",
+    "figshare",
+    "filebase",
+    "getaccept",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-docs",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "hubflo",
+    "inkit",
+    "intralinks",
+    "la-poste-groupe",
+    "lawvu",
+    "leaseweb",
+    "lev",
+    "lightroom",
+    "linode",
+    "loopio",
+    "machinelibrary-ai",
+    "mediavalet",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "mycase",
+    "nasuni",
+    "nhost",
+    "nitro-software",
+    "nuxeo",
+    "pandadoc",
+    "pdffiller",
+    "powerpoint",
+    "prisma",
+    "progress-software",
+    "pure-storage",
+    "rocket-lawyer",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signnow",
+    "signwell",
+    "skyslope",
+    "slide",
+    "smokeball",
+    "synadia-communications",
+    "temp-md",
+    "tiledb",
+    "upcloud",
+    "uploadcare",
+    "weka",
+    "xsky",
+    "zadara",
+    "zamzar",
+    "zinnia",
+    "zoho-writer"
+   ],
+   "camelCase": [
+    "adobe-creative-cloud",
+    "adobe-suite",
+    "arch",
+    "bluebeam",
+    "boldsign",
+    "ci-hub",
+    "cloudflare",
+    "coda-project",
+    "concord-com",
+    "documenso",
+    "docusign",
+    "element-biosciences",
+    "eon",
+    "gonitro",
+    "google-cloud-firestore",
+    "google-docs",
+    "google-drive",
+    "google-suite-docs-sheets-slides-gmail",
+    "google-suites",
+    "intralinks",
+    "la-poste-groupe",
+    "lawvu",
+    "leaseweb",
+    "loopio",
+    "mediavalet",
+    "microsoft-graph",
+    "microsoft-powerpoint",
+    "nhost",
+    "nitro-software",
+    "nuxeo",
+    "powerpoint",
+    "prisma",
+    "progress-software",
+    "rocket-lawyer",
+    "skyslope",
+    "smokeball",
+    "temp-md",
+    "weka",
+    "zinnia"
+   ],
+   "snake_case": [
+    "adobe-creative-cloud",
+    "box",
+    "canto",
+    "clickup",
+    "clio",
+    "cloudflare",
+    "crusoe",
+    "docling",
+    "docuseal",
+    "figshare",
+    "filebase",
+    "getaccept",
+    "hubflo",
+    "inkit",
+    "lev",
+    "linode",
+    "mycase",
+    "nasuni",
+    "pandadoc",
+    "pdffiller",
+    "pure-storage",
+    "sakura-internet",
+    "sevalla",
+    "seven-bridges",
+    "signnow",
+    "signwell",
+    "slide",
+    "synadia-communications",
+    "tiledb",
+    "upcloud",
+    "uploadcare",
+    "weka",
+    "xsky",
+    "zamzar",
+    "zoho-writer"
+   ],
+   "PascalCase": [
+    "boldsign",
+    "citrix-sharefile",
+    "gonitro",
+    "nitro-software",
+    "propertyme",
+    "sakura-internet"
+   ],
+   "other": [
+    "adobe-suite",
+    "mediavalet",
+    "microsoft-graph",
+    "pure-storage"
+   ],
+   "kebab-case": [
+    "nuxeo"
+   ]
+  }
+ }
+}

@@ -1,0 +1,14 @@
+provider: sadq-holding-limited
+apis_io: https://apis.io/providers/sadq-holding-limited/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - documents
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/documents/{id}
+    - openapi/_original/sadq-holding-limited-openapi-original.json#GET /api/v1/envelopes/{envelopeId}/files

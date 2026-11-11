@@ -1,0 +1,24 @@
+provider: figshare
+apis_io: https://apis.io/providers/figshare/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id: id
+      name: name
+      mime_type: mimetype
+      size: size
+      url:
+      - download_url
+      - location
+      - link
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/figshare-api-openapi.yml#DELETE /account/articles/{article_id}/files/{file_id}
+    - openapi/_original/figshare-api-openapi.yml#GET /account/articles/{article_id}/files
+    - openapi/_original/figshare-api-openapi.yml#GET /account/articles/{article_id}/files/{file_id}
+    - openapi/_original/figshare-api-openapi.yml#GET /account/projects/{project_id}/articles/{article_id}/files
+    - openapi/_original/figshare-api-openapi.yml#GET /account/projects/{project_id}/articles/{article_id}/files/{file_id}

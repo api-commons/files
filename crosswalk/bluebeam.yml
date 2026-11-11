@@ -1,0 +1,18 @@
+provider: bluebeam
+apis_io: https://apis.io/providers/bluebeam/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      created_at: uploadedAt
+      size: fileSize
+      owner_id: uploadedBy
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/bluebeam-studio-openapi.yml#GET /studio/v1/sessions/{sessionId}/documents
+    - openapi/_original/bluebeam-studio-openapi.yml#POST /studio/v1/sessions/{sessionId}/documents

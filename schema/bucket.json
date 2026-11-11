@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/files/main/schema/bucket.json",
+  "title": "Bucket",
+  "description": "The common bucket in Files and Documents, distilled from 4 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "name",
+        "displayName"
+      ]
+    }
+  },
+  "required": [],
+  "x-commons": {
+    "context": "files",
+    "concept": "bucket",
+    "providers": 4,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

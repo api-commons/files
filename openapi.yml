@@ -1,0 +1,446 @@
+openapi: 3.1.0
+info:
+  title: Files and Documents (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Files and Documents interface, distilled from the harvested OpenAPI of 133 providers
+    in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already shares, measured,
+    so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /files/{file_id}:
+    parameters:
+    - $ref: '#/components/parameters/file_id'
+    get:
+      operationId: getFile
+      summary: Get a file
+      tags:
+      - Files
+      x-commons-tier: core
+      x-commons-share: 0.796
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/File'
+    delete:
+      operationId: deleteFile
+      summary: Delete a file
+      tags:
+      - Files
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateFile
+      summary: Update a file
+      tags:
+      - Files
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /files:
+    get:
+      operationId: listFiles
+      summary: List files
+      tags:
+      - Files
+      x-commons-tier: core
+      x-commons-share: 0.755
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFile
+      summary: Create a file
+      tags:
+      - Files
+      x-commons-tier: core
+      x-commons-share: 0.694
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /folders:
+    get:
+      operationId: listFolders
+      summary: List folders
+      tags:
+      - Folders
+      x-commons-tier: core
+      x-commons-share: 0.846
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Folder'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createFolder
+      summary: Create a folder
+      tags:
+      - Folders
+      x-commons-tier: core
+      x-commons-share: 0.769
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /folders/{folder_id}:
+    parameters:
+    - $ref: '#/components/parameters/folder_id'
+    patch:
+      operationId: updateFolder
+      summary: Update a folder
+      tags:
+      - Folders
+      x-commons-tier: core
+      x-commons-share: 0.846
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    get:
+      operationId: getFolder
+      summary: Get a folder
+      tags:
+      - Folders
+      x-commons-tier: core
+      x-commons-share: 0.769
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteFolder
+      summary: Delete a folder
+      tags:
+      - Folders
+      x-commons-tier: core
+      x-commons-share: 0.615
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+  /buckets:
+    get:
+      operationId: listBuckets
+      summary: List buckets
+      tags:
+      - Buckets
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Bucket'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBucket
+      summary: Create a bucket
+      tags:
+      - Buckets
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /buckets/{bucket_id}:
+    parameters:
+    - $ref: '#/components/parameters/bucket_id'
+    delete:
+      operationId: deleteBucket
+      summary: Delete a bucket
+      tags:
+      - Buckets
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    get:
+      operationId: getBucket
+      summary: Get a bucket
+      tags:
+      - Buckets
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateBucket
+      summary: Update a bucket
+      tags:
+      - Buckets
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /files/{file_id}/versions:
+    parameters:
+    - $ref: '#/components/parameters/file_id'
+    get:
+      operationId: listFileVersions
+      summary: List versions
+      tags:
+      - File Versions
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FileVersion'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /permissions:
+    get:
+      operationId: listPermissions
+      summary: List permissions
+      tags:
+      - Permissions
+      x-commons-tier: core
+      x-commons-share: 0.846
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Permission'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPermission
+      summary: Create a permission
+      tags:
+      - Permissions
+      x-commons-tier: core
+      x-commons-share: 0.769
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /permissions/{permission_id}:
+    parameters:
+    - $ref: '#/components/parameters/permission_id'
+    get:
+      operationId: getPermission
+      summary: Get a permission
+      tags:
+      - Permissions
+      x-commons-tier: extended
+      x-commons-share: 0.462
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deletePermission
+      summary: Delete a permission
+      tags:
+      - Permissions
+      x-commons-tier: extended
+      x-commons-share: 0.385
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updatePermission
+      summary: Update a permission
+      tags:
+      - Permissions
+      x-commons-tier: extended
+      x-commons-share: 0.385
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    File:
+      $ref: ./schema/file.json
+    Folder:
+      $ref: ./schema/folder.json
+    Bucket:
+      $ref: ./schema/bucket.json
+    FileVersion:
+      $ref: ./schema/file_version.json
+    Permission:
+      $ref: ./schema/permission.json
+  parameters:
+    file_id:
+      name: file_id
+      in: path
+      required: true
+      schema:
+        type: string
+    folder_id:
+      name: folder_id
+      in: path
+      required: true
+      schema:
+        type: string
+    bucket_id:
+      name: bucket_id
+      in: path
+      required: true
+      schema:
+        type: string
+    file_version_id:
+      name: file_version_id
+      in: path
+      required: true
+      schema:
+        type: string
+    permission_id:
+      name: permission_id
+      in: path
+      required: true
+      schema:
+        type: string

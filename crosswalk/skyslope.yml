@@ -1,0 +1,28 @@
+provider: skyslope
+apis_io: https://apis.io/providers/skyslope/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    - documents
+    properties:
+      id:
+      - fileId
+      - id
+      name: name
+      mime_type: fileType
+      created_at:
+      - createdDate
+      - createdOn
+      owner_id:
+      - ownedBy
+      - createdBy
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#DELETE /documents/{documentId}
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /documents/{documentId}
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#GET /files/{fileId}
+    - openapi/_original/skyslope-forms-partnership-openapi.yml#PATCH /documents/{documentId}

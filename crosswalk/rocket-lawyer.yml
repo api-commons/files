@@ -1,0 +1,20 @@
+provider: rocket-lawyer
+apis_io: https://apis.io/providers/rocket-lawyer/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      name: name
+      mime_type: contentType
+      metadata: metaData
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/rocket-lawyer-rocketdocument-api-openapi.yml#GET /documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#DELETE /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#GET /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#PATCH /binders/{binderId}/documents/{documentId}
+    - openapi/_original/rocket-lawyer-rocketsign-binders-api-openapi.yml#POST /binders/{binderId}/documents

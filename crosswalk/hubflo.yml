@@ -1,0 +1,31 @@
+provider: hubflo
+apis_io: https://apis.io/providers/hubflo/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      name: title
+      parent_id: parent_id
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/messages/{message_id}/files
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/tasks/{task_id}/files
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/tasks/{task_id}/files/{id}
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/files
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/files/{id}
+  folder:
+    path_segment:
+    - folders
+    properties:
+      name: title
+      parent_id: parent_id
+      description: description
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/folders
+    - openapi/_original/hubflo-openapi-original.yml#GET /api/v2/workspaces/{workspace_id}/folders/{id}
+    - openapi/_original/hubflo-openapi-original.yml#PATCH /api/v2/workspaces/{workspace_id}/folders/{id}
+    - openapi/_original/hubflo-openapi-original.yml#POST /api/v2/workspaces/{workspace_id}/folders

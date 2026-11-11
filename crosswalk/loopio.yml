@@ -1,0 +1,21 @@
+provider: loopio
+apis_io: https://apis.io/providers/loopio/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - files
+    properties:
+      id:
+      - id
+      - guid
+      name: filename
+      created_at: createdDate
+      size: size
+      owner_id: creator
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/loopio-openapi.yaml#DELETE /files/{fileId}
+    - openapi/_original/loopio-openapi.yaml#GET /files/{fileId}

@@ -1,0 +1,20 @@
+provider: lightroom
+apis_io: https://apis.io/providers/lightroom/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      mime_type: type
+      created_at: created
+      updated_at: updated
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/lightroom-albums-openapi.yml#DELETE /catalogs/{catalog_id}/albums/{album_id}/assets/{asset_id}
+    - openapi/_original/lightroom-albums-openapi.yml#GET /catalogs/{catalog_id}/albums/{album_id}/assets
+    - openapi/_original/lightroom-albums-openapi.yml#PUT /catalogs/{catalog_id}/albums/{album_id}/assets
+    - openapi/_original/lightroom-assets-openapi.yml#GET /catalogs/{catalog_id}/assets
+    - openapi/_original/lightroom-assets-openapi.yml#GET /catalogs/{catalog_id}/assets/{asset_id}
