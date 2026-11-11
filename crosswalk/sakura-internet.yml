@@ -10,8 +10,8 @@ concepts:
       id: id
       name: name
       created_at: created_at
-      metadata: tags
       status: status
+      metadata: tags
     core_coverage: 0.6
     evidence:
     - openapi/_original/ai-engine-rag-api.yaml#DELETE /v1/documents/{id}/

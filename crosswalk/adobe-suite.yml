@@ -15,12 +15,12 @@ concepts:
       name:
       - name
       - filename
-      mime_type:
-      - type
-      - mediaType
       created_at:
       - created
       - createTime
+      mime_type:
+      - type
+      - mediaType
       size: size
       updated_at: updated
       status: status

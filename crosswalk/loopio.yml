@@ -13,8 +13,8 @@ concepts:
       name: filename
       created_at: createdDate
       size: size
-      owner_id: creator
       status: status
+      owner_id: creator
     core_coverage: 0.8
     evidence:
     - openapi/_original/loopio-openapi.yaml#DELETE /files/{fileId}

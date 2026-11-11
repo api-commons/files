@@ -2,14 +2,14 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://raw.githubusercontent.com/api-commons/files/main/schema/file.json",
   "title": "File",
-  "description": "The common file in Files and Documents, distilled from 42 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "description": "The common file in Files and Documents, distilled from 44 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.81,
-      "x-commons-providers": 34,
+      "x-commons-share": 0.818,
+      "x-commons-providers": 36,
       "x-commons-spellings": [
         "id",
         "uuid",
@@ -22,40 +22,24 @@
     "name": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.762,
-      "x-commons-providers": 32,
+      "x-commons-share": 0.773,
+      "x-commons-providers": 34,
       "x-commons-spellings": [
         "name",
         "filename",
         "title",
+        "fileName",
         "file_name",
         "displayName",
-        "fileName",
         "originalName",
         "originalFilename"
-      ]
-    },
-    "mime_type": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.619,
-      "x-commons-providers": 26,
-      "x-commons-spellings": [
-        "type",
-        "contentType",
-        "extension",
-        "mimeType",
-        "mediaType",
-        "content_type",
-        "fileType",
-        "mime_type"
       ]
     },
     "created_at": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.595,
-      "x-commons-providers": 25,
+      "x-commons-share": 0.614,
+      "x-commons-providers": 27,
       "x-commons-spellings": [
         "created_at",
         "created",
@@ -68,16 +52,32 @@
       ],
       "format": "date-time"
     },
+    "mime_type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.614,
+      "x-commons-providers": 27,
+      "x-commons-spellings": [
+        "type",
+        "contentType",
+        "extension",
+        "mimeType",
+        "mediaType",
+        "content_type",
+        "fileType",
+        "mime_type"
+      ]
+    },
     "size": {
       "type": "integer",
       "x-commons-tier": "core",
-      "x-commons-share": 0.595,
-      "x-commons-providers": 25,
+      "x-commons-share": 0.614,
+      "x-commons-providers": 27,
       "x-commons-spellings": [
         "size",
         "size_bytes",
-        "fileSize",
         "sizeBytes",
+        "fileSize",
         "bytes",
         "Size"
       ]
@@ -85,8 +85,8 @@
     "updated_at": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.357,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.386,
+      "x-commons-providers": 17,
       "x-commons-spellings": [
         "updated",
         "updated_at",
@@ -94,19 +94,19 @@
         "last_modified",
         "modified_at",
         "modifiedTime",
-        "modified",
-        "updatedAt"
+        "date_modified",
+        "modified"
       ],
       "format": "date-time"
     },
     "parent_id": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.31,
-      "x-commons-providers": 13,
+      "x-commons-share": 0.318,
+      "x-commons-providers": 14,
       "x-commons-spellings": [
-        "parent",
         "folder",
+        "parent",
         "folderId",
         "parents",
         "parentReference",
@@ -115,11 +115,21 @@
         "folderID"
       ]
     },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.295,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "status",
+        "Status"
+      ]
+    },
     "metadata": {
       "type": "object",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.262,
-      "x-commons-providers": 11,
+      "x-commons-share": 0.273,
+      "x-commons-providers": 12,
       "x-commons-spellings": [
         "metadata",
         "tags",
@@ -132,33 +142,23 @@
     "owner_id": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.262,
-      "x-commons-providers": 11,
+      "x-commons-share": 0.273,
+      "x-commons-providers": 12,
       "x-commons-spellings": [
         "createdBy",
         "created_by",
         "creator",
+        "ownerId",
         "user_id",
         "uploadedBy",
         "owned_by",
-        "ownerId",
         "owner"
-      ]
-    },
-    "status": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.262,
-      "x-commons-providers": 11,
-      "x-commons-spellings": [
-        "status",
-        "Status"
       ]
     },
     "url": {
       "type": "string",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.238,
+      "x-commons-share": 0.227,
       "x-commons-providers": 10,
       "x-commons-spellings": [
         "download_url",
@@ -177,7 +177,7 @@
   "x-commons": {
     "context": "files",
     "concept": "file",
-    "providers": 42,
+    "providers": 44,
     "generated": "2026-11-10",
     "version": "0.1.0-draft.20261110",
     "status": "draft"

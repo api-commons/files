@@ -10,16 +10,16 @@ concepts:
     - file
     properties:
       name: name
-      mime_type: contentType
       created_at: createdDate
+      mime_type: contentType
       size: size
       updated_at: lastModifiedDateTime
       parent_id: folderId
+      status: status
       metadata: customFields
       owner_id:
       - ownerId
       - owner
-      status: status
     core_coverage: 0.8
     evidence:
     - openapi/_original/docusign-esignature-openapi.yml#GET /accounts/{accountId}/envelopes/{envelopeId}/documents

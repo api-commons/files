@@ -13,10 +13,10 @@ concepts:
       - filename
       - title
       - name
-      mime_type: type
       created_at: createdAt
-      metadata: attributes
+      mime_type: type
       status: status
+      metadata: attributes
     core_coverage: 0.8
     evidence:
     - openapi/_original/mediavalet-branded-portals-api-openapi.yml#DELETE /brandedportals/{brandedPortalId}/assets

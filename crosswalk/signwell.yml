@@ -11,11 +11,11 @@ concepts:
       name: name
       created_at: created_at
       updated_at: updated_at
+      status: status
       metadata:
       - metadata
       - labels
       owner_id: user_id
-      status: status
     core_coverage: 0.6
     evidence:
     - openapi/_original/signwell-signwell-api-openapi.yml#DELETE /api/v1/documents/{id}

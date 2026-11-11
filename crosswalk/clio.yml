@@ -13,10 +13,10 @@ concepts:
       name:
       - name
       - filename
+      created_at: created_at
       mime_type:
       - type
       - content_type
-      created_at: created_at
       size: size
       updated_at: updated_at
       parent_id: parent

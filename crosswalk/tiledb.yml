@@ -12,8 +12,8 @@ concepts:
       name:
       - file_name
       - name
-      mime_type: mime_type
       created_at: created_at
+      mime_type: mime_type
       metadata: metadata
     core_coverage: 0.8
     evidence:

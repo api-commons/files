@@ -105,6 +105,11 @@ adopters:
   concepts:
   - file
   - folder
+- provider: iconik
+  apis_io: https://apis.io/providers/iconik/
+  crosswalk: crosswalk/iconik.yml
+  concepts:
+  - file
 - provider: intralinks
   apis_io: https://apis.io/providers/intralinks/
   crosswalk: crosswalk/intralinks.yml
@@ -262,6 +267,11 @@ adopters:
 - provider: uploadcare
   apis_io: https://apis.io/providers/uploadcare/
   crosswalk: crosswalk/uploadcare.yml
+  concepts:
+  - file
+- provider: veeva
+  apis_io: https://apis.io/providers/veeva/
+  crosswalk: crosswalk/veeva.yml
   concepts:
   - file
 - provider: zamzar

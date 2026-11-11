@@ -1037,6 +1037,39 @@
      "openapi/_original/hubflo-openapi-original.yml#POST /api/v2/workspaces/{workspace_id}/files"
     ]
    },
+   "iconik": {
+    "segments": [
+     "assets"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "objects": "array",
+     "page": "integer",
+     "pages": "integer",
+     "total": "integer",
+     "id": "string",
+     "title": "string",
+     "type": "string",
+     "status": "string",
+     "date_created": "string",
+     "date_modified": "string"
+    },
+    "evidence": [
+     "openapi/_original/iconik-openapi.yml#DELETE /assets/v1/assets/{asset_id}/",
+     "openapi/_original/iconik-openapi.yml#GET /assets/v1/assets/",
+     "openapi/_original/iconik-openapi.yml#GET /assets/v1/assets/{asset_id}/",
+     "openapi/_original/iconik-openapi.yml#PATCH /assets/v1/assets/{asset_id}/",
+     "openapi/_original/iconik-openapi.yml#POST /assets/v1/assets/",
+     "openapi/_original/iconik-openapi.yml#PUT /assets/v1/assets/{asset_id}/"
+    ]
+   },
    "inkit": {
     "segments": [
      "document"
@@ -2100,35 +2133,74 @@
    },
    "smokeball": {
     "segments": [
-     "documents",
-     "files"
+     "files",
+     "documents"
     ],
     "operations": [
      "DELETE item",
      "GET collection",
      "GET item",
-     "POST collection"
+     "PATCH item",
+     "POST collection",
+     "PUT item"
     ],
     "properties": {
-     "query": "string",
-     "filters": null,
      "id": "string",
      "href": "string",
      "relation": "string",
      "method": "string",
      "self": null,
+     "value": "array",
+     "offset": "integer",
+     "limit": "integer",
+     "size": "integer",
+     "first": null,
+     "previous": null,
+     "next": null,
+     "last": null,
+     "fileName": "string",
+     "folderId": "string",
+     "userId": "string",
+     "folderPath": "string",
+     "fileAdditionalData": "object",
+     "dateCreated": "string",
+     "dateModified": "string",
+     "versionId": "string",
+     "folder": null,
+     "matter": null,
+     "name": "string",
+     "fileExtension": "string",
+     "ownerId": "string",
+     "to": "string",
+     "from": "string",
+     "sizeBytes": "integer",
+     "downloadInfo": null,
+     "additionalData": "object",
+     "isFavorite": "boolean",
+     "isUploaded": "boolean",
+     "isCancelled": "boolean",
+     "isDuplicate": "boolean",
+     "isDeleted": "boolean",
+     "query": "string",
+     "filters": null,
      "task": null,
      "type": null,
-     "isDeleted": "boolean",
      "document": null,
      "documentId": "string"
     },
     "evidence": [
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /matters/{matterId}/documents/files/{fileId}",
      "openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /tasks/{taskId}/documents/{id}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/files",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/files/{fileId}",
      "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents",
      "openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents/{id}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#PATCH /matters/{matterId}/documents/files/{fileId}",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /matters/{matterId}/documents/files",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /matters/{matterId}/documents/files/bulk",
      "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /search/files",
-     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /tasks/{taskId}/documents"
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#POST /tasks/{taskId}/documents",
+     "openapi/_original/smokeball-smokeball-api-openapi.yml#PUT /matters/{matterId}/documents/files/{fileId}"
     ]
    },
    "temp-md": {
@@ -2223,6 +2295,38 @@
      "openapi/_original/uploadcare-rest-api-openapi.yml#POST /convert/document/"
     ]
    },
+   "veeva": {
+    "segments": [
+     "documents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "responseStatus": "string",
+     "documents": "array",
+     "size": "integer",
+     "start": "integer",
+     "id": "integer",
+     "external_id__v": "string",
+     "major_version_number__v": "integer",
+     "minor_version_number__v": "integer",
+     "document": "object",
+     "versions": "array",
+     "errors": "array"
+    },
+    "evidence": [
+     "openapi/_original/veeva-vault-openapi.yml#DELETE /objects/documents/{documentId}",
+     "openapi/_original/veeva-vault-openapi.yml#GET /objects/documents",
+     "openapi/_original/veeva-vault-openapi.yml#GET /objects/documents/{documentId}",
+     "openapi/_original/veeva-vault-openapi.yml#POST /objects/documents",
+     "openapi/_original/veeva-vault-openapi.yml#PUT /objects/documents/{documentId}"
+    ]
+   },
    "zamzar": {
     "segments": [
      "files"
@@ -2254,37 +2358,94 @@
      "document"
     ],
     "operations": [
-     "POST collection"
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
     ],
     "properties": {
-     "statusCode": "integer",
-     "timestamp": "string",
+     "documentID": "string",
+     "pageCount": "string",
+     "documentDate": "string",
+     "importDate": "string",
+     "fileName": "string",
+     "fileType": "string",
+     "displayName": "string",
+     "sourceFileName": "string",
+     "status": "string",
+     "documentType": "string",
+     "contractNumber": "string",
+     "masterNumber": "string",
+     "repMan": "string",
+     "clientID": "string",
+     "history": "boolean",
+     "docStatus": "string",
+     "documentNumber": "string",
+     "caseId": "number",
+     "zinniaLiveCaseId": "string",
+     "docPopUrl": "string",
+     "attachmentType": "string",
+     "periodYear": "string",
+     "periodQuarter": "string",
+     "clientInstitution": "string",
+     "lob": "string",
+     "contract": "string",
+     "agentNumber": "string",
+     "externalId": "string",
+     "processCompanyCode": "string",
+     "contractStatusCode": "string",
+     "system": "string",
+     "productLine": "string",
+     "productName": "string",
+     "productCompanyCode": "string",
+     "ssNTaxId": "string",
+     "batchId": "string",
+     "route": "string",
+     "source": "string",
+     "sysMailToAddress": "string",
+     "sysMailFromAddress": "string",
+     "dateReceived": "string",
+     "onBaseDt": "string",
+     "queueName": "string",
+     "transactionType": "string",
+     "sysDocumentHandle": "string",
+     "agentTaxId": "string",
+     "documentTypeGroup": "string",
+     "distributionChannel": "string",
+     "businessUnit": "string",
+     "productCategory": "string",
+     "deliveryMethod": "string",
+     "documentId": "string",
+     "correlationId": "string",
      "message": "string",
+     "statusCode": "integer",
+     "success": "boolean",
+     "metadata": "object",
+     "timestamp": "string",
      "appId": "string",
      "version": "string",
      "effectiveDate": "string",
      "totalDocumentCount": "number",
      "documentDetails": "array",
-     "caseId": "string",
-     "correlationId": "string",
      "eappId": "string",
-     "documentId": "string",
      "externalDocumentId": "string",
      "binaryData": "string",
      "formNumber": "string",
-     "documentType": "string",
-     "category": "string",
-     "fileName": "string",
-     "displayName": "string",
-     "fileType": "string"
+     "category": "string"
     },
     "evidence": [
+     "openapi/_original/zinnia-documents-openapi.json#GET /document/v2/documents",
+     "openapi/_original/zinnia-documents-openapi.json#GET /document/v2/documents/{documentId}",
+     "openapi/_original/zinnia-documents-openapi.json#GET /document/v3/documents/{documentId}",
+     "openapi/_original/zinnia-documents-openapi.json#POST /document/v3/documents",
+     "openapi/_original/zinnia-documents-openapi.json#PUT /document/v3/documents/{documentId}",
+     "openapi/_original/zinnia-documents-openapi.yml#GET /document/v2/documents",
+     "openapi/_original/zinnia-documents-openapi.yml#GET /document/v2/documents/{documentId}",
+     "openapi/_original/zinnia-documents-openapi.yml#GET /document/v3/documents/{documentId}",
+     "openapi/_original/zinnia-documents-openapi.yml#POST /document/v3/documents",
+     "openapi/_original/zinnia-documents-openapi.yml#PUT /document/v3/documents/{documentId}",
      "openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v1/applications/documents",
-     "openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v2/applications/documents",
-     "openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v1/applications/documents",
-     "openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v2/applications/documents",
-     "openapi/_original/zinnia-new-business-openapi.json#POST /newbusiness/v2/application/{eAppId}/document",
-     "openapi/_original/zinnia-new-business-openapi.yml#POST /newbusiness/v2/application/{eAppId}/document"
+     "openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v2/applications/documents"
     ]
    },
    "zoho-writer": {
@@ -4083,6 +4244,23 @@
      "openapi/_original/la-poste-groupe-open-data-openapi.json#PUT /datasets/{id}/permissions"
     ]
    },
+   "lakekeeper": {
+    "segments": [
+     "access"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "allowed-actions": "array"
+    },
+    "evidence": [
+     "openapi/_original/lakekeeper-management-api-openapi.yml#GET /management/v1/permissions/project/access",
+     "openapi/_original/lakekeeper-management-api-openapi.yml#GET /management/v1/permissions/server/access",
+     "openapi/_original/lakekeeper-management-plus-api-openapi.yml#GET /management/v1/permissions/project/access",
+     "openapi/_original/lakekeeper-management-plus-api-openapi.yml#GET /management/v1/permissions/server/access"
+    ]
+   },
    "linode": {
     "segments": [
      "access",
@@ -5798,6 +5976,7 @@
     "google-suite-docs-sheets-slides-gmail",
     "google-suites",
     "hubflo",
+    "iconik",
     "inkit",
     "intralinks",
     "la-poste-groupe",
@@ -5836,6 +6015,7 @@
     "tiledb",
     "upcloud",
     "uploadcare",
+    "veeva",
     "weka",
     "xsky",
     "zadara",
@@ -5881,6 +6061,7 @@
     "skyslope",
     "smokeball",
     "temp-md",
+    "veeva",
     "weka",
     "zinnia"
    ],
@@ -5898,6 +6079,7 @@
     "filebase",
     "getaccept",
     "hubflo",
+    "iconik",
     "inkit",
     "lev",
     "linode",
@@ -5933,9 +6115,11 @@
     "adobe-suite",
     "mediavalet",
     "microsoft-graph",
-    "pure-storage"
+    "pure-storage",
+    "veeva"
    ],
    "kebab-case": [
+    "lakekeeper",
     "nuxeo"
    ]
   }

@@ -12,10 +12,10 @@ concepts:
       - fileId
       - id
       name: name
-      mime_type: fileType
       created_at:
       - createdDate
       - createdOn
+      mime_type: fileType
       owner_id:
       - ownedBy
       - createdBy

@@ -8,8 +8,8 @@ concepts:
     - assets
     properties:
       id: id
-      mime_type: type
       created_at: created
+      mime_type: type
       updated_at: updated
     core_coverage: 0.6
     evidence:

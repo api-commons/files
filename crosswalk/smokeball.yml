@@ -5,19 +5,33 @@ generated: '2026-11-10'
 concepts:
   file:
     path_segment:
-    - documents
     - files
+    - documents
     properties:
       id: id
+      name:
+      - fileName
+      - name
+      created_at: dateCreated
       mime_type: type
+      size:
+      - size
+      - sizeBytes
+      updated_at: dateModified
+      parent_id:
+      - folderId
+      - folder
+      owner_id:
+      - userId
+      - ownerId
       url: href
-    core_coverage: 0.4
+    core_coverage: 1.0
     evidence:
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /matters/{matterId}/documents/files/{fileId}
     - openapi/_original/smokeball-smokeball-api-openapi.yml#DELETE /tasks/{taskId}/documents/{id}
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/files
+    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /matters/{matterId}/documents/files/{fileId}
     - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents
-    - openapi/_original/smokeball-smokeball-api-openapi.yml#GET /tasks/{taskId}/documents/{id}
-    - openapi/_original/smokeball-smokeball-api-openapi.yml#POST /search/files
-    - openapi/_original/smokeball-smokeball-api-openapi.yml#POST /tasks/{taskId}/documents
   folder:
     path_segment:
     - folders

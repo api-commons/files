@@ -1,0 +1,18 @@
+provider: veeva
+apis_io: https://apis.io/providers/veeva/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - documents
+    properties:
+      id: id
+      size: size
+    core_coverage: 0.4
+    evidence:
+    - openapi/_original/veeva-vault-openapi.yml#DELETE /objects/documents/{documentId}
+    - openapi/_original/veeva-vault-openapi.yml#GET /objects/documents
+    - openapi/_original/veeva-vault-openapi.yml#GET /objects/documents/{documentId}
+    - openapi/_original/veeva-vault-openapi.yml#POST /objects/documents
+    - openapi/_original/veeva-vault-openapi.yml#PUT /objects/documents/{documentId}

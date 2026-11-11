@@ -1,0 +1,22 @@
+provider: iconik
+apis_io: https://apis.io/providers/iconik/
+context: files
+generated: '2026-11-10'
+concepts:
+  file:
+    path_segment:
+    - assets
+    properties:
+      id: id
+      name: title
+      created_at: date_created
+      mime_type: type
+      updated_at: date_modified
+      status: status
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/iconik-openapi.yml#DELETE /assets/v1/assets/{asset_id}/
+    - openapi/_original/iconik-openapi.yml#GET /assets/v1/assets/
+    - openapi/_original/iconik-openapi.yml#GET /assets/v1/assets/{asset_id}/
+    - openapi/_original/iconik-openapi.yml#PATCH /assets/v1/assets/{asset_id}/
+    - openapi/_original/iconik-openapi.yml#POST /assets/v1/assets/

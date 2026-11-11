@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       name: name
-      mime_type: extension
       created_at: createdOn
+      mime_type: extension
       size: fileSize
       parent_id: folderId
       owner_id: createdBy

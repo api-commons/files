@@ -12,13 +12,13 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| file | 49 | 42 | id 81%, name 76%, mime_type 62%, created_at 60%, size 60% | files 28, documents 18, file 7, assets 6 |
+| file | 51 | 44 | id 82%, name 77%, created_at 61%, mime_type 61%, size 61% | files 28, documents 19, assets 7, file 7 |
 | folder | 13 | 11 | name 100%, id 91%, parent_id 82%, created_at 64% | folders 11, folder 1, directories 1 |
 | bucket | 4 | 4 | name 100% | buckets 4, containers 1 |
 | file_version | 3 | 3 | id 100%, name 100% | versions 3 |
 | permission | 13 | 13 | id 77%, name 54% | permissions 12, shares 3, share 2, collaborations 1 |
 
-Cohort: 133 providers with harvested OpenAPI, 49 crosswalks. Of the providers exposing a file: 69% create, 76% list, 80% fetch, 43% update, 57% delete. Generated 2026-11-10 by build.py.
+Cohort: 133 providers with harvested OpenAPI, 51 crosswalks. Of the providers exposing a file: 71% create, 78% list, 82% fetch, 49% update, 59% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

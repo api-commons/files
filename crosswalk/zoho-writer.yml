@@ -7,13 +7,13 @@ concepts:
     path_segment:
     - documents
     properties:
-      mime_type: type
       created_at: created_time
+      mime_type: type
       updated_at: modified_time
+      status: status
       owner_id:
       - created_by
       - owner_id
-      status: status
       url: download_url
     core_coverage: 0.4
     evidence:

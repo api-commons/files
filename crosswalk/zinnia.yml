@@ -12,10 +12,12 @@ concepts:
       - fileName
       - displayName
       mime_type: fileType
+      status: status
+      metadata: metadata
     core_coverage: 0.4
     evidence:
-    - openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v1/applications/documents
-    - openapi/_original/zinnia-new-business-annuity-openapi.json#POST /eApp/v2/applications/documents
-    - openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v1/applications/documents
-    - openapi/_original/zinnia-new-business-annuity-openapi.yml#POST /eApp/v2/applications/documents
-    - openapi/_original/zinnia-new-business-openapi.json#POST /newbusiness/v2/application/{eAppId}/document
+    - openapi/_original/zinnia-documents-openapi.json#GET /document/v2/documents
+    - openapi/_original/zinnia-documents-openapi.json#GET /document/v2/documents/{documentId}
+    - openapi/_original/zinnia-documents-openapi.json#GET /document/v3/documents/{documentId}
+    - openapi/_original/zinnia-documents-openapi.json#POST /document/v3/documents
+    - openapi/_original/zinnia-documents-openapi.json#PUT /document/v3/documents/{documentId}

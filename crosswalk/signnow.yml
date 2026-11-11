@@ -10,9 +10,9 @@ concepts:
       id: id
       created_at: created
       updated_at: updated
+      status: status
       metadata: tags
       owner_id: user_id
-      status: status
     core_coverage: 0.4
     evidence:
     - openapi/_original/signnow-openapi.yml#DELETE /document/{document_id}
